@@ -202,7 +202,7 @@ Pro toho, kdo bude ladit vzhled (redesign „Námořní mapa“ je hotový, viz 
 
 1. **Měň jen soubory `.css` a JSX v komponentách `*Game.tsx`, `*Help.tsx`, `Home.tsx` a `src/shared/components/`.** Nesahej na `logic.ts`, `categories.ts`, `scene.ts`, `shape.ts`, `src/shared/*.ts`, `src/data/` ani `scripts/`. Tam je herní logika a data, vzhled se jich netýká.
 0. **Zadání vzhledu, podle kterého je aplikace přestavěná, je v `DESIGN-PROMPT.md`** (motiv „Námořní mapa“), maketa v `design/maketa.html`. Slouží jako vzor, kdyby se vzhled ladil dál; body níže jsou obecná pravidla.
-2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 198 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
+2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 255 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
 3. **Barvy a písmo se mění na jednom místě:** proměnné `--ink`, `--sea-deep`, `--sea`, `--land`, `--paper`, `--red`, `--yellow`, `--green`, ... nahoře v `src/styles/base.css`. Většina aplikace je bere odtud.
    Výjimky, kde jsou barvy napsané přímo: barevná škála Tajemné země (`HEAT_STOPS` v `src/games/mystery/logic.ts` + přechod v `mystery.css`, musí zůstat stejné; studené body ztmavené kvůli světlému moři), barvy tipů v `RouteGame.tsx` (`KIND_COLOR`), `NeighborsGame.tsx` (`COLORS`), vymyšlené vlajky her v `src/shared/components/Emblem.tsx`.
 4. **Kde co je:**
@@ -214,9 +214,18 @@ Pro toho, kdo bude ladit vzhled (redesign „Námořní mapa“ je hotový, viz 
 7. Rozložení her: většina má mapu vlevo a panel 380 px vpravo (`.game`), pod 900 px se skládá pod sebe. Countryle, Víc nebo míň a GeoGrid mají vlastní rozložení.
 8. Písmo je Bricolage Grotesque (variabilní, v balíčku). Jiné písmo: nainstalovat balíček `@fontsource-variable/<název>`, importovat v `src/main.tsx` a přepsat `--font` v `base.css`.
 
+### Atlas, Slabá místa, Dnes, Záloha, zkratky, náhled odkazu
+
+- **Atlas zemí** (`#atlas`, `#atlas-CZE` = přímý odkaz na zemi; `AtlasPage.tsx`, logika filtrů a řazení v `atlas.ts` s testy): všech 197 zemí s hledáním (bez diakritiky), filtry kontinent / barvy vlajky / symboly na vlajce (všechny vybrané musí platit) a řazením (název česky s CH, obyvatelé, rozloha, hustota). Karta země má vlajku, mapku, čísla s pořadím, hustotu, teplotu, HDP, podíly barev vlajky, symboly a sousedy. U zemí ve Sbírce je tečka. Na úzké obrazovce se po výběru přescrolluje na kartu. Symboly na vlajkách jsou psané ručně (u filtru je upozornění).
+- **Slabá místa** (`#slaba-mista`, `WeakSpotsPage.tsx`, `weak.ts` s testy): ke každé zemi, která byla hledaná a hráč ji **nevyřešil**, se zapíše klíč `weak` `{ rounds, lost, fixed, last }`. Zapisují to hry Tajemná země, Countryle, Tajemná vlajka, Silueta a Sousedé (`recordRound` vedle `recordResult`). Cesta, GeoGrid, Víc nebo míň a Nakresli hranici ne (nemají jednu hledanou zemi, resp. neúspěch u kreslení není neznalost). Procvičování bere až 10 nejslabších, střídá otázku „vlajka → země“ a „hlavní město → země“; správná odpověď zvýší `fixed` (odečítá potíž, nejvýš do `lost`). Data se sbírají až od nasazení této verze.
+- **Přehled Dnes** (`TodayPanel.tsx`, `today.ts`): na domovské stránce počet dohraných denních výzev z 9, proužek stavů, tlačítko na další výzvu (rozehraná má přednost) a nejdelší trvající série. Opravena chyba: dlaždice ukazovaly starou sérii i po vynechaných dnech; `activeDailyStreak` v `stats.ts` počítá sérii jen pokud poslední výhra byla dnes nebo včera.
+- **Záloha postupu** (`BackupModal.tsx`, `backup.ts` s testy; odkaz na domovské stránce): všechny klíče `geohry:*` (kromě rozehraných denních her ze starších dnů) jako kód `GEOHRY1:` + base64 nebo soubor `.json`. Načtení má „Sloučit“ (sbírka se sjednotí s dřívějším datem, statistiky platí z toho zařízení, kde se hrálo víc, slabá místa a příznaky se spojí, ostatní zůstává místní) a „Nahradit“ (smaže místní). Vstup se validuje (tvar klíčů, platný JSON, velikost, kódy zemí jen `[A-Z]{3}`). Po načtení se stránka znovu načte.
+- **Klávesové zkratky** (`shortcuts.ts` s testy, `ShortcutsModal.tsx`, posluchač v `App.tsx`): `?` přehled, `D` tmavý režim, `M` domů, na přehledu `S` sbírka / `A` atlas / `L` slabá místa / `B` záloha, ve hře `N` nová hra / `R` denní↔volná / `P` jak hrát / `T` statistiky. Nespouští se při psaní do políčka ani nad otevřeným oknem. Protože hry mají políčko pro zemi s automatickým zaostřením, **zkratky ve hře fungují až po klávese Esc** (první Esc zavře nabídku, druhé políčko opustí; po každém novém kole se políčko zaostří znovu). Prvky, na které míří, mají atribut `data-shortcut`. Číslice na zkratky nejsou záměrně: na české klávesnici se píší přes Shift.
+- **Ikona a náhled odkazu:** `public/favicon.svg`, `icon-192/512.png`, `apple-touch-icon.png`, `og-image.png`, `manifest.webmanifest`. Zdroje jsou v `design/brand/` (`icon.svg`, `og-image.html`), vykreslí je `python3 scripts/render-brand.py` (potřebuje playwright a Chrome). Adresu pro `og:image` doplňuje `vite.config.ts` z proměnné `SITE_URL`, kterou nastavuje workflow (`https://<uživatel>.github.io/<repozitář>/`); při běžném vývoji zůstane relativní cesta. Service worker (offline) záměrně není: po potížích s cache na dvou zařízeních by jen zhoršil zastaralé verze.
+
 ### Klíče v localStorage (prefix `geohry:`)
 
-`stats:<hra>:<daily|free>` statistiky, `daily:<hra>:<datum>` stav denní výzvy, `help-seen:<hra>` nápověda už byla zobrazena, `album` sbírka uhodnutých zemí `{ CZE: '2026-11-16' }`.
+`stats:<hra>:<daily|free>` statistiky, `daily:<hra>:<datum>` stav denní výzvy, `help-seen:<hra>` nápověda už byla zobrazena, `album` sbírka uhodnutých zemí `{ CZE: '2026-11-16' }`, `weak` slabá místa `{ TCD: { rounds, lost, fixed, last } }`, `trivia-seen` země s ukázanou perličkou, `milestone:<název>` pamětní okamžik už proběhl, `theme` `"dark"` / `"light"`.
 
 ### Rozhodnutí o datech (fáze 1)
 
@@ -255,6 +264,7 @@ Pro toho, kdo bude ladit vzhled (redesign „Námořní mapa“ je hotový, viz 
 HANDOFF.md                      tento soubor
 DESIGN-PROMPT.md                zadání pro přepracování vzhledu („Námořní mapa“), určené pro jiný model
 design/maketa.html, maketa.png  maketa cílového vzhledu (obyčejná stránka, aplikace ji nenačítá)
+design/brand/                   zdroje ikony a náhledového obrázku (viz „Ikona a náhled odkazu“)
 package.json, vite.config.ts    nastavení projektu
 index.html                      vstupní stránka
 scripts/
@@ -264,6 +274,7 @@ scripts/
   fetch-temperature.mjs         ruční obnova průměrných teplot (potřebuje internet)
   fetch-gdp.mjs                 ruční obnova HDP (potřebuje internet)
   analyze-flags.mjs             automatický rozbor barev a pruhů vlajek (`npm run flags`)
+  render-brand.py               vykreslí ikony a og-image.png z design/brand/ (playwright + Chrome)
   sources/
     names-cs.mjs                ruční úpravy českých názvů + aliasy + názvy území
     capitals-cs.mjs             česká hlavní města
@@ -294,12 +305,14 @@ src/
     theme.ts                    tmavý režim (useTheme, setTheme, initTheme)
     trivia.ts, collection.ts    perličky o zemích a domény; pořadí a postup po kontinentech pro Sbírku
     flagOfDay.ts, dailyAnswers.ts   vlajka dne a seznam dnešních hledaných zemí
+    atlas.ts, weak.ts, today.ts     filtry a řazení Atlasu; slabá místa a procvičování; přehled Dnes
+    backup.ts, shortcuts.ts         záloha a sloučení postupu; klávesové zkratky
     milestones.ts               197. odehraná hra
     storage.ts                  loadJson / saveJson (bezpečný localStorage)
     stats.ts                    statistiky (applyResult, recordResult), denní stav, album
     world.ts, useWorld.ts       líné načtení mapy a příprava SVG tvarů
     router.ts                   useRoute (část adresy za #)
-    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg, Toast, FlagRain, ThemeToggle, SignalFlags, CompassRose, CompassButton, CollectionPage, FlagOfDay
+    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg, Toast, FlagRain, ThemeToggle, SignalFlags, CompassRose, CompassButton, CollectionPage, FlagOfDay, AtlasPage, WeakSpotsPage, TodayPanel, BackupModal, ShortcutsModal
     *.test.ts                   testy sdílené logiky
   games/
     registry.ts                 seznam všech her (názvy, adresy, popisy, komponenty)
@@ -313,6 +326,7 @@ src/
     border/                     hra 5 Nakresli hranici (logic.ts = hodnocení překryvu, scene.ts = výřez mapy, logic.test.ts, BorderGame.tsx, BorderHelp.tsx, border.css)
     geogrid/                    hra 4 GeoGrid (categories.ts = seznam kategorií, logic.ts, logic.test.ts, GeoGridGame.tsx, GeoGridHelp.tsx, geogrid.css)
 public/flags/<iso2>.svg         vlajky
+public/                         dále favicon.svg, ikony PNG, og-image.png, manifest.webmanifest
 ```
 
 ### Tvar záznamu země (`countries.json`)
@@ -379,6 +393,7 @@ flag { colors ["red","white","blue"], shares { red: 36, white: 36, blue: 28 } (p
 | – | Tmavý režim | **hotovo** | tlačítko, pamatuje si volbu |
 | – | Další easter eggy | **hotovo** | viz „Katalog easter eggů“ |
 | – | Sbírka zemí a Vlajka dne | **hotovo** | `#sbirka`, rámeček na domovské stránce |
+| – | Atlas, Slabá místa, Dnes, Záloha, zkratky, ikona a náhled odkazu | **hotovo** | viz „Atlas, Slabá místa, Dnes, Záloha, zkratky, náhled odkazu“ |
 | 10 | Vlajkový kvíz* | nezačato | jen nápad, autor ho zatím nechtěl |
 | 11 | Flagle* | nezačato | jen nápad |
 | 12 | Klikni na mapu* | nezačato | jen nápad |
@@ -402,6 +417,10 @@ Nic rozdělaného. Fáze 0–5 jsou hotové a commitnuté: devět her a easter e
 
 ## Známé chyby a dluhy
 
+- **Nová část (Atlas, Slabá místa, Záloha, zkratky) je ověřená headless Chrome a testy logiky, ne rukama na telefonu ani ve Firefoxu/Safari.** Zkratky ve hře vyžadují nejdřív Esc (políčko pro zemi je zaostřené); jestli to bude vadit, zvážit zkratky s modifikátorem.
+- **Slabá místa se počítají jen z prohry** (země nevyřešena). Dřívější hry se nezapočítají. Kdyby to bylo příliš pomalé, jde zapisovat i špatné tipy v Tajemné vlajce a Siluetě.
+- **Záloha: „Sloučit“ u statistik bere celou sadu z jednoho zařízení** (kde je víc odehraných her), nesčítá je. Sbírka a slabá místa se spojují po zemích.
+- **Náhled odkazu (og:image) funguje až po nasazení** s nastaveným `SITE_URL` (to dělá workflow). Chat aplikace si náhled ukládají, po změně obrázku může trvat, než se obnoví. Jestli prohlížeč nabídne instalaci jako aplikaci, záleží na něm (manifest je, service worker ne).
 - **Mobil není odladěný.** Rozložení se pod 900 px skládá pod sebe a mapa reaguje na dotyk, ale nikdo to na telefonu nezkoušel. Autor hraje na počítači, takže nízká priorita.
 - **Vizuální kontrola** proběhla jen v Chrome (headless, 1440×900). Firefox a Safari nezkoušeny.
 - **Cesta mezi zeměmi: výhra nebyla proklikána v prohlížeči**, jen prohra a nápověda. Výhru pokrývají testy logiky (`isConnected`, `roundStatus`) a UI větev je stejná jako u ostatních her.
@@ -460,3 +479,4 @@ Nic rozdělaného. Fáze 0–5 jsou hotové a commitnuté: devět her a easter e
 - 2026-11-16: Fáze 6: `.github/workflows/deploy.yml` (GitHub Pages přes Actions), `NASAZENI.md` (návod pro začátečníka), na domovské stránce odstavec „Zdroje dat“ (licence CC BY, ODbL a CC BY-SA vyžadují uvedení zdroje). Build ověřen v podsložce `/moje-hry/` (dlaždice, mapa, vlajky, obnovení stránky). 170 testů prochází.
 - 2026-11-16: Tmavý režim „noční mapa“ s tlačítkem (proměnné `:root[data-theme='dark']`, `theme.ts`, test) a sada dalších easter eggů (tajná slova, Konami kód, klikací vlajky a kompas, svátky, titulek karty, pozdrav v konzoli; komponenty `Toast`, `FlagRain`, `CompassButton`). Vitest nově spouští i `*.test.tsx`. 183 testů prochází, tmavý režim prohlédnut ve všech hrách.
 - 2026-11-16: Z návrhů jiného modelu (`PROMPT-NAPADY.md`) vybráno jen to, co sedí k zeměpisu a vlajkám a nejsou to hry: Sbírka zemí s mapou a kartou, Vlajka dne, domény, tajná slova (Sealand, Bir Tawil, Liberland, Pobřeží Čech, Bod Nemo), perličky o vlajkách, tajný plán, 197. hra, výročí zákona o vlajce a apríl. Vynecháno: všechny nové hry, nápady kolem námořnictví (signální šifra, hodnosti, maják, loď, SOS), nápady vyžadující zápis historie po dnech (Lodní deník, Tři ztroskotání), narozeniny (chybí datum) a nápady vázané na zoom mapy nebo konec hry. 198 testů prochází.
+- 2026-11-16: Šest věcí, které stránce chyběly vedle her: Atlas zemí, Slabá místa s procvičováním (zápis `weak` z pěti her), přehled Dnes na domovské stránce (+ oprava zastaralé série na dlaždicích), Záloha postupu (kód / soubor, sloučení nebo nahrazení), klávesové zkratky s přehledem na `?`, ikona + `og:image` + manifest (`SITE_URL` ve workflow). Stránky Sbírka, Atlas a Slabá místa dostaly chybějící okraje (`shell__main`). 255 testů prochází, vše projeto v headless Chrome ve světlém i tmavém režimu a na úzké obrazovce.

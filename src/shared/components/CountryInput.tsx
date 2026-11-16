@@ -89,7 +89,9 @@ export function CountryInput({ onSelect, exclude, placeholder = 'Napiš zemi…'
       }
       if (hits[active]) choose(hits[active].country)
     } else if (event.key === 'Escape') {
-      setOpen(false)
+      // nejdřív zavře nabídku, podruhé políčko opustí (pak fungují klávesové zkratky)
+      if (open && text.trim()) setOpen(false)
+      else inputRef.current?.blur()
     }
   }
 

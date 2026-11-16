@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../node_modules/@fontsource-variable/bricolage-grotesque/standard.css">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: #f3f8fa; font-family: 'Bricolage Grotesque Variable', sans-serif; color: #14171c; }
+  .frame { position: absolute; inset: 22px; padding: 12px; outline: 2px solid #14171c;
+    background:
+      repeating-linear-gradient(90deg, #14171c 0 40px, #fdfdf9 40px 80px) top / 100% 12px no-repeat,
+      repeating-linear-gradient(90deg, #fdfdf9 0 40px, #14171c 40px 80px) bottom / 100% 12px no-repeat,
+      repeating-linear-gradient(0deg, #14171c 0 40px, #fdfdf9 40px 80px) left / 12px 100% no-repeat,
+      repeating-linear-gradient(0deg, #fdfdf9 0 40px, #14171c 40px 80px) right / 12px 100% no-repeat,
+      #fdfdf9; }
+  .inner { position: relative; width: 100%; height: 100%; border: 2px solid #14171c; padding: 52px 64px; }
+  .signal { display: flex; gap: 10px; }
+  .signal svg { width: 72px; height: 72px; border: 2px solid #14171c; display: block; }
+  h1 { margin-top: 18px; font-size: 230px; font-weight: 800; font-stretch: 75%; letter-spacing: -0.02em; line-height: 0.9; }
+  .lead { margin-top: 22px; font-size: 40px; font-weight: 500; }
+  .flags { position: absolute; left: 64px; bottom: 44px; display: flex; gap: 14px; }
+  .flags img { width: 78px; height: 58px; object-fit: cover; border: 1.5px solid rgb(20 23 28 / .35); display: block; }
+  .rose { position: absolute; right: 56px; top: 50%; width: 340px; height: 340px; margin-top: -170px; color: #b5127a; }
+</style>
+</head>
+<body>
+<div class="frame"><div class="inner">
+  <div class="signal" id="signal"></div>
+  <h1>GeoHry</h1>
+  <p class="lead">Hry o mapách a vlajkách</p>
+  <div class="flags" id="flags"></div>
+  <svg class="rose" viewBox="-100 -100 200 200" fill="none" stroke="currentColor" id="rose"></svg>
+</div></div>
+<script>
+const B='#0b3d91',R='#d62828',Y='#ffd23f';
+const sig=[
+`<rect width="60" height="60" fill="${Y}"/><rect x="10" width="10" height="60" fill="${B}"/><rect x="30" width="10" height="60" fill="${B}"/><rect x="50" width="10" height="60" fill="${B}"/>`,
+`<rect width="60" height="30" fill="${B}"/><rect y="30" width="60" height="30" fill="${R}"/>`,
+`<rect width="60" height="60" fill="${R}"/><path d="M0 0 L60 60 L0 60 Z" fill="${Y}"/>`,
+`<rect width="30" height="60" fill="#fff"/><rect x="30" width="30" height="60" fill="${R}"/>`,
+`<rect width="60" height="60" fill="${R}"/><rect x="24" width="12" height="60" fill="${Y}"/><rect y="24" width="60" height="12" fill="${Y}"/>`,
+`<rect width="60" height="60" fill="${Y}"/><g transform="rotate(-45 30 30)" fill="${R}">${[-3.94,13.03,30,46.97,63.94].map(y=>`<rect x="-30" y="${y}" width="120" height="8.485"/>`).join('')}</g>`];
+document.getElementById('signal').innerHTML = sig.map(s=>`<svg viewBox="0 0 60 60">${s}</svg>`).join('');
+document.getElementById('flags').innerHTML = ['cz','np','ch','td','ro','ie','ci','jp','br','za'].map(c=>`<img src="../../public/flags/${c}.svg">`).join('');
+// kompasová růžice stejná jako na webu (src/shared/components/CompassRose.tsx)
+const ticks = Array.from({length:72},(_,i)=>{const a=i*5*Math.PI/180,inner=i%3===0?84:87,p=r=>`${(Math.sin(a)*r).toFixed(1)} ${(-Math.cos(a)*r).toFixed(1)}`;return `M${p(inner)}L${p(92)}`}).join('');
+document.getElementById('rose').innerHTML = `<circle r="92" stroke-width="1.2"/><circle r="80" stroke-width="0.8"/><circle r="52" stroke-width="0.8"/><path d="${ticks}" stroke-width="0.7"/><path d="M0-78 9-9 78 0 9 9 0 78-9 9-78 0-9-9Z" stroke-width="1.2"/><path d="M0-78 0 0 9-9ZM78 0 0 0 9 9ZM0 78 0 0-9 9ZM-78 0 0 0-9-9Z" fill="currentColor" stroke="none"/><path d="M36-36 12 0 36 36 0 12-36 36-12 0-36-36 0-12Z" stroke-width="0.9"/>`;
+</script>
+</body>
+</html>

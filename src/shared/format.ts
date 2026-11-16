@@ -34,3 +34,8 @@ export function formatRounded(value: number, unit: string): string {
   const rounded = Math.round(value / step) * step
   return `${rounded < 10 ? decimal.format(value) : whole.format(rounded)} ${unit}`
 }
+
+/** Hustota zalidnění: 1 309 -> "1 309 obyv./km²", 3,4 -> "3,4 obyv./km²" */
+export function formatDensity(perKm2: number): string {
+  return `${perKm2 < 10 ? decimal.format(perKm2) : whole.format(perKm2)} obyv./km²`
+}

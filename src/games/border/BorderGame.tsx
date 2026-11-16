@@ -183,13 +183,13 @@ function Round({ world, mode, onNextRound, onPlayFree }: { world: World; mode: G
             <p className="muted">Číslo říká, jak velká část plochy se překrývá: společná plocha obou tvarů dělená plochou, kterou zabírají dohromady.</p>
             <ShareButton text={buildShareText(mode === 'daily' ? formatDateKey(today) : 'volná hra', result.score, state.difficulty)} />
             {mode === 'free' ? (
-              <button type="button" className="button" onClick={onNextRound}>
+              <button type="button" className="button" data-shortcut="new" onClick={onNextRound}>
                 Kreslit další zemi
               </button>
             ) : (
               <>
                 <p className="muted">Další denní výzva bude zítra.</p>
-                <button type="button" className="button" onClick={onPlayFree}>
+                <button type="button" className="button" data-shortcut="new" onClick={onPlayFree}>
                   Hrát volnou hru
                 </button>
               </>

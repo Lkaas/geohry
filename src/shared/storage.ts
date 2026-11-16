@@ -26,3 +26,45 @@ export function saveJson(key: string, value: unknown): void {
     // úložiště není dostupné, zůstává jen kopie v paměti
   }
 }
+
+/** Všechny uložené klíče (bez předpony). Slouží záloze postupu. */
+export function listKeys(): string[] {
+  const keys = new Set(memory.keys())
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i)
+      if (key?.startsWith(PREFIX)) keys.add(key.slice(PREFIX.length))
+    }
+  } catch {
+    // úložiště není dostupné, zůstávají klíče z paměti
+  }
+  return [...keys].sort()
+}
+
+/** Uložený text tak, jak je (JSON), nebo null. */
+export function loadRaw(key: string): string | null {
+  try {
+    return localStorage.getItem(PREFIX + key) ?? memory.get(key) ?? null
+  } catch {
+    return memory.get(key) ?? null
+  }
+}
+
+/** Zapíše hotový JSON text. Vstup musí být platný JSON. */
+export function saveRaw(key: string, raw: string): void {
+  memory.set(key, raw)
+  try {
+    localStorage.setItem(PREFIX + key, raw)
+  } catch {
+    // úložiště není dostupné, zůstává jen kopie v paměti
+  }
+}
+
+export function removeKey(key: string): void {
+  memory.delete(key)
+  try {
+    localStorage.removeItem(PREFIX + key)
+  } catch {
+    // nic
+  }
+}

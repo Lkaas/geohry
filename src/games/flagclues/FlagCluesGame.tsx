@@ -7,6 +7,7 @@ import { ShareButton } from '../../shared/components/ShareButton'
 import { getCountry } from '../../shared/data'
 import { dateKey, formatDateKey } from '../../shared/random'
 import { collectCountry, loadDaily, recordResult, saveDaily, type DailyStatus } from '../../shared/stats'
+import { recordRound } from '../../shared/weak'
 import { plural } from '../../shared/text'
 import type { Country, GameMode } from '../../shared/types'
 import { FlagCluesHelp } from './FlagCluesHelp'
@@ -63,6 +64,7 @@ function Round({ mode, onNextRound, onPlayFree }: { mode: GameMode; onNextRound:
     if (next.status !== 'playing') {
       recordResult(GAME_ID, mode, { won: next.status === 'won', attempts: guesses.length, date: mode === 'daily' ? today : undefined })
       if (next.status === 'won') collectCountry(state.targetId, today)
+      recordRound(state.targetId, next.status !== 'won', today)
     }
   }
   const guess = (country: Country) => {
@@ -93,13 +95,13 @@ function Round({ mode, onNextRound, onPlayFree }: { mode: GameMode; onNextRound:
             <h2 className="result__country">{target.name}</h2>
             <ShareButton text={buildShareText(mode === 'daily' ? formatDateKey(today) : 'volná hra', state.targetId, state.guesses, clues.length)} />
             {mode === 'free' ? (
-              <button type="button" className="button" onClick={onNextRound}>
+              <button type="button" className="button" data-shortcut="new" onClick={onNextRound}>
                 Hrát další vlajku
               </button>
             ) : (
               <>
                 <p className="muted">Další denní výzva bude zítra.</p>
-                <button type="button" className="button" onClick={onPlayFree}>
+                <button type="button" className="button" data-shortcut="new" onClick={onPlayFree}>
                   Hrát volnou hru
                 </button>
               </>

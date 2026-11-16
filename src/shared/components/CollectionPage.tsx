@@ -45,18 +45,20 @@ export default function CollectionPage() {
           <ThemeToggle />
         </div>
       </header>
-      <div className="game collection">
-        <section className="game__map">
-          <WorldMap fills={fills} labels={labels} outlineIds={outline} onCountryClick={onCountryClick} />
-        </section>
-        <aside className="game__panel">
-          {selected ? (
-            <CountryCard id={selected} foundOn={album[selected]} have={have} onSelect={setSelected} />
-          ) : (
-            <Summary count={have.size} have={have} hint={hint} />
-          )}
-        </aside>
-      </div>
+      <main className="shell__main">
+        <div className="game collection">
+          <section className="game__map">
+            <WorldMap fills={fills} labels={labels} outlineIds={outline} onCountryClick={onCountryClick} />
+          </section>
+          <aside className="game__panel">
+            {selected ? (
+              <CountryCard id={selected} foundOn={album[selected]} have={have} onSelect={setSelected} />
+            ) : (
+              <Summary count={have.size} have={have} hint={hint} />
+            )}
+          </aside>
+        </div>
+      </main>
     </div>
   )
 }

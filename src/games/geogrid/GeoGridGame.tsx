@@ -170,13 +170,13 @@ function Round({ mode, onNextRound, onPlayFree }: { mode: GameMode; onNextRound:
             </p>
             <ShareButton text={buildShareText(mode === 'daily' ? formatDateKey(today) : 'volná hra', state, state.cells, state.guessesUsed)} />
             {mode === 'free' ? (
-              <button type="button" className="button" onClick={onNextRound}>
+              <button type="button" className="button" data-shortcut="new" onClick={onNextRound}>
                 Hrát další mřížku
               </button>
             ) : (
               <>
                 <p className="muted">Další denní výzva bude zítra.</p>
-                <button type="button" className="button" onClick={onPlayFree}>
+                <button type="button" className="button" data-shortcut="new" onClick={onPlayFree}>
                   Hrát volnou hru
                 </button>
               </>

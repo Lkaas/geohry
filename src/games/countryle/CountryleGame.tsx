@@ -8,6 +8,7 @@ import { getCountry } from '../../shared/data'
 import { compass, formatKm } from '../../shared/geo'
 import { dateKey, formatDateKey } from '../../shared/random'
 import { collectCountry, loadDaily, recordResult, saveDaily, type DailyStatus } from '../../shared/stats'
+import { recordRound } from '../../shared/weak'
 import { plural } from '../../shared/text'
 import type { Country, GameMode } from '../../shared/types'
 import { CountryleHelp } from './CountryleHelp'
@@ -63,6 +64,7 @@ function Round({ mode, onNextRound, onPlayFree }: { mode: GameMode; onNextRound:
     if (next.status !== 'playing') {
       recordResult(GAME_ID, mode, { won: next.status === 'won', attempts: guesses.length, date: mode === 'daily' ? today : undefined })
       if (next.status === 'won') collectCountry(next.targetId, today)
+      recordRound(next.targetId, next.status !== 'won', today)
     }
   }
 
@@ -83,11 +85,11 @@ function Round({ mode, onNextRound, onPlayFree }: { mode: GameMode; onNextRound:
               <div className="countryle__actions">
                 <ShareButton text={buildShareText(mode === 'daily' ? formatDateKey(today) : 'volná hra', comparisons, state.status === 'won')} />
                 {mode === 'free' ? (
-                  <button type="button" className="button" onClick={onNextRound}>
+                  <button type="button" className="button" data-shortcut="new" onClick={onNextRound}>
                     Hrát další zemi
                   </button>
                 ) : (
-                  <button type="button" className="button" onClick={onPlayFree}>
+                  <button type="button" className="button" data-shortcut="new" onClick={onPlayFree}>
                     Hrát volnou hru
                   </button>
                 )}

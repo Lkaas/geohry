@@ -9,7 +9,11 @@ import { dateKey, formatDateKey } from './shared/random'
 import { reachedOnce, totalPlayed } from './shared/milestones'
 import { isAprilFools, specialDayNote } from './shared/secrets'
 import { showToast } from './shared/toast'
-import { collectedCountries, dailyStatus, loadStats } from './shared/stats'
+import { activeDailyStreak, collectedCountries, dailyStatus, loadStats } from './shared/stats'
+import { weakList } from './shared/weak'
+import { BackupModal } from './shared/components/BackupModal'
+import { TodayPanel } from './shared/components/TodayPanel'
+import { openShortcuts } from './shared/shortcuts'
 import { COUNTRIES } from './shared/data'
 
 const STATUS_TEXT = {
@@ -29,6 +33,8 @@ export function Home() {
   const dayNote = specialDayNote(now)
   const april = isAprilFools(now)
   const [planClicks, setPlanClicks] = useState(0)
+  const [showBackup, setShowBackup] = useState(false)
+  const weakCount = weakList().length
 
   // easter egg: 197. odehraná hra (jedna za každou zemi)
   useEffect(() => {
@@ -53,9 +59,22 @@ export function Home() {
             Dnes je {formatDateKey(today)}. Ve <a href="#sbirka">sbírce</a> máš {collected} z {COUNTRIES.length} zemí.
           </p>
           {dayNote && <p className="home__day">{dayNote}</p>}
+          <nav className="home__nav" aria-label="Další stránky">
+            <a href="#sbirka">Sbírka zemí</a>
+            <a href="#atlas">Atlas zemí</a>
+            <a href="#slaba-mista">Slabá místa{weakCount > 0 ? ` (${weakCount})` : ''}</a>
+            <button type="button" data-shortcut="backup" onClick={() => setShowBackup(true)}>
+              Záloha postupu
+            </button>
+            <button type="button" onClick={openShortcuts}>
+              Klávesové zkratky
+            </button>
+          </nav>
         </div>
         <CompassButton />
       </header>
+
+      <TodayPanel />
 
       <FlagOfDay />
 
@@ -86,6 +105,8 @@ export function Home() {
         </ul>
       </section>
 
+      {showBackup && <BackupModal onClose={() => setShowBackup(false)} />}
+
       <footer className="home__sources">
         <h2>Zdroje dat</h2>
         <p>
@@ -109,7 +130,7 @@ function GameTile({ game, today, number }: { game: GameInfo; today: string; numb
     )
   }
   const status = dailyStatus(game.id, today)
-  const streak = loadStats(game.id, 'daily').currentStreak
+  const streak = activeDailyStreak(loadStats(game.id, 'daily'), today)
   return (
     <a className="tile" href={`#${game.route}`}>
       <Emblem kind={game.emblem} />

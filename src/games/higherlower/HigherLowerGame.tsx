@@ -159,11 +159,11 @@ function Round({ mode, param, today, onNextRound, onPlayFree }: RoundProps) {
           <div className="hl__actions">
             <ShareButton text={buildShareText(mode === 'daily' ? formatDateKey(today) : 'volná hra', param, state.streak, completed)} />
             {mode === 'free' ? (
-              <button type="button" className="button" onClick={onNextRound}>
+              <button type="button" className="button" data-shortcut="new" onClick={onNextRound}>
                 Hrát znovu
               </button>
             ) : (
-              <button type="button" className="button" onClick={onPlayFree}>
+              <button type="button" className="button" data-shortcut="new" onClick={onPlayFree}>
                 Hrát volnou hru
               </button>
             )}

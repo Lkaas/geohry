@@ -51,6 +51,15 @@ export function applyResult(stats: GameStats, result: GameResult, mode: GameMode
   return next
 }
 
+/**
+ * Série denních výher, která ještě trvá: poslední výhra byla dnes nebo včera.
+ * Uložené `currentStreak` se přepočítá až při další hře, takže po vynechaných dnech by ukazovalo starou hodnotu.
+ */
+export function activeDailyStreak(stats: GameStats, today: string): number {
+  if (!stats.lastDailyWon) return 0
+  return stats.lastDailyWon === today || stats.lastDailyWon === previousDateKey(today) ? stats.currentStreak : 0
+}
+
 const statsKey = (gameId: string, mode: GameMode) => `stats:${gameId}:${mode}`
 
 export function loadStats(gameId: string, mode: GameMode): GameStats {

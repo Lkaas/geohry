@@ -44,19 +44,19 @@ export function GameShell({ game, mode, onModeChange, help, attemptsLabel, forma
           <h1>{game.title}</h1>
         </div>
         <div className="segmented" role="group" aria-label="Režim hry">
-          <button type="button" aria-pressed={mode === 'daily'} onClick={() => onModeChange('daily')}>
+          <button type="button" data-shortcut="mode" aria-pressed={mode === 'daily'} onClick={() => onModeChange('daily')}>
             Denní výzva
           </button>
-          <button type="button" aria-pressed={mode === 'free'} onClick={() => onModeChange('free')}>
+          <button type="button" data-shortcut="mode" aria-pressed={mode === 'free'} onClick={() => onModeChange('free')}>
             Volná hra
           </button>
         </div>
         <div className="shell__actions">
           <ThemeToggle />
-          <button type="button" className="button button--ghost" onClick={() => setShowStats(true)}>
+          <button type="button" className="button button--ghost" data-shortcut="stats" onClick={() => setShowStats(true)}>
             Statistiky
           </button>
-          <button type="button" className="button button--ghost" onClick={() => setShowHelp(true)}>
+          <button type="button" className="button button--ghost" data-shortcut="help" onClick={() => setShowHelp(true)}>
             Jak hrát
           </button>
         </div>
