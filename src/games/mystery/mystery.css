@@ -38,9 +38,9 @@
 }
 
 .feedback__trend--hotter {
-  color: #c0271f;
+  color: var(--hot-text);
 }
 
 .feedback__trend--colder {
-  color: #2c62a8;
+  color: var(--cold-text);
 }

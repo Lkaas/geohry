@@ -7,6 +7,7 @@ import { Emblem } from './Emblem'
 import { Modal } from './Modal'
 import { SignalFlags } from './SignalFlags'
 import { StatsView } from './StatsView'
+import { ThemeToggle } from './ThemeToggle'
 
 interface GameShellProps {
   game: GameInfo
@@ -51,6 +52,7 @@ export function GameShell({ game, mode, onModeChange, help, attemptsLabel, forma
           </button>
         </div>
         <div className="shell__actions">
+          <ThemeToggle />
           <button type="button" className="button button--ghost" onClick={() => setShowStats(true)}>
             Statistiky
           </button>

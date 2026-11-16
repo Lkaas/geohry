@@ -105,7 +105,8 @@ Sestavený web (obsah `dist/`) je publikovaný jako soukromá stránka na claude
 - Barvy jsou jako CSS proměnné v `:root` nahoře v `src/styles/base.css`. Mimo ně: `HEAT_STOPS` v `mystery/logic.ts` (+ přechod v `mystery.css`), `KIND_COLOR` v `RouteGame.tsx`, `COLORS` v `NeighborsGame.tsx`, barvy vlajek her v `Emblem.tsx`.
 - Nápis GeoHry tvoří šest signálních vlajek G-E-O-H-R-Y (`SignalFlags.tsx`, malá verze v hlavičce her), na domovské stránce vpravo `CompassRose.tsx`. Dlaždice her jsou vlajky na stožáru s číslem „list N“. Mapy, plocha Nakresli hranici a Siluety mají dílkovaný rám jako stupnici na okraji mapy (jedno společné pravidlo ve `components.css`, třídy `.map`, `.border__canvas`, `.silhouette__canvas`).
 - Každá hra má místo ikony vlastní vymyšlenou vlajku 4:3 (`src/shared/components/Emblem.tsx`).
-- Nadpisy zúženým řezem (`font-stretch: 80%`), žádné verzálky, žádný tmavý režim. Jediná animace: zkosení vlajky na dlaždici po najetí myší.
+- Nadpisy zúženým řezem (`font-stretch: 80%`), žádné verzálky. Animace: zkosení vlajky na dlaždici po najetí myší a easter eggy (níže); `prefers-reduced-motion` všechny animace vypíná.
+- **Tmavý režim („noční mapa“)** se přepíná **tlačítkem** (ne automaticky podle systému) v hlavičce her i vpravo nahoře na domovské stránce (`ThemeToggle.tsx`). Volba se pamatuje v `geohry:theme` (`"dark"`/`"light"`). `src/shared/theme.ts` nastavuje atribut `data-theme` na `<html>`, `index.html` ho nastaví hned při načtení (bez bliknutí). Barvy tmavého režimu jsou v bloku `:root[data-theme='dark']` v `base.css`; v CSS tedy nikdy nepiš pevné barvy, ber proměnné (kromě záměrných: barvy vlajek, tipy v hrách s pevnými jasnými barvami, smuteční easter egg). Při přidání nové barvy ji přidej do obou bloků.
 - Easter egg má vlastní šedý smuteční vzhled (vlajka na půl žerdi), nepatří do palety výše.
 
 ### Jak přidat novou hru
@@ -170,13 +171,26 @@ Sestavený web (obsah `dist/`) je publikovaný jako soukromá stránka na claude
 
 Společné styly seznamu tipů (`.guess-list`, `.guess`) a výsledku kola (`.result`) jsou v `src/styles/components.css`.
 
+### Katalog easter eggů (aby je autor mohl případně prozradit nebo zakázat)
+
+Nic se neukazuje samo, všechno se musí najít. Zprávy dole na obrazovce (`Toast`, mizí po 5,5 s nebo klikem) posílá `showToast` ze `src/shared/toast.ts`.
+
+- **Československo** (slovo v políčku pro zemi): smuteční obrazovka a hymna (popsáno výše).
+- **Tajná slova v políčku pro zemi** (`SECRET_WORDS` v `src/shared/secrets.ts`, po Enteru hláška, tip se nepočítá): Wakanda, Narnie, Mordor, Atlantida, Kocourkov, Země/Svět/Zeměkoule, Měsíc, Antarktida a věcné poznámky o zaniklých státech (Sovětský svaz/SSSR, Jugoslávie, NDR, Rakousko-Uhersko). Nové slovo = nový záznam v poli; test hlídá, že nepatří skutečné zemi.
+- **Konami kód** (↑ ↑ ↓ ↓ ← → ← → B A, kdekoli): déšť signálních vlajek (`FlagRain.tsx`), při `prefers-reduced-motion` jen hláška.
+- **Klik na signální vlajky nad nápisem GeoHry** (domovská stránka): hláška, co vlajka znamená (`FLAG_MEANINGS`; G potřebuji lodivoda, E měním kurz doprava, O člověk přes palubu, H mám lodivoda na palubě, R dnes bez významu, Y vleče se mi kotva). Významy jsem ověřil vyhledáním, **kresby vlajek ne**.
+- **Klik na kompasovou růžici** (domovská stránka): roztočí se, sedmý klik v řadě přidá hlášku.
+- **Svátky** (`specialDayNote`): věta pod datem na domovské stránce 28. 10., 17. 11., 1. 1. a 22. 4. (Den Země).
+- **Přepnutí na jinou kartu**: titulek karty se změní na „Mapa na tebe čeká…“, po návratu se vrátí.
+- **Konzole prohlížeče** (F12): pozdrav s nápovědou (`main.tsx`).
+
 ## Průvodce úpravami vzhledu
 
 Pro toho, kdo bude ladit vzhled (redesign „Námořní mapa“ je hotový, viz oddíl „Vzhled“). Pravidla:
 
 1. **Měň jen soubory `.css` a JSX v komponentách `*Game.tsx`, `*Help.tsx`, `Home.tsx` a `src/shared/components/`.** Nesahej na `logic.ts`, `categories.ts`, `scene.ts`, `shape.ts`, `src/shared/*.ts`, `src/data/` ani `scripts/`. Tam je herní logika a data, vzhled se jich netýká.
 0. **Zadání vzhledu, podle kterého je aplikace přestavěná, je v `DESIGN-PROMPT.md`** (motiv „Námořní mapa“), maketa v `design/maketa.html`. Slouží jako vzor, kdyby se vzhled ladil dál; body níže jsou obecná pravidla.
-2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 168 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
+2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 183 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
 3. **Barvy a písmo se mění na jednom místě:** proměnné `--ink`, `--sea-deep`, `--sea`, `--land`, `--paper`, `--red`, `--yellow`, `--green`, ... nahoře v `src/styles/base.css`. Většina aplikace je bere odtud.
    Výjimky, kde jsou barvy napsané přímo: barevná škála Tajemné země (`HEAT_STOPS` v `src/games/mystery/logic.ts` + přechod v `mystery.css`, musí zůstat stejné; studené body ztmavené kvůli světlému moři), barvy tipů v `RouteGame.tsx` (`KIND_COLOR`), `NeighborsGame.tsx` (`COLORS`), vymyšlené vlajky her v `src/shared/components/Emblem.tsx`.
 4. **Kde co je:**
@@ -264,11 +278,13 @@ src/
     text.ts                     plural (české skloňování podle počtu)
     format.ts                   formatPopulation, formatArea, formatTemperature, formatUsd, formatRounded
     easterEgg.ts                easter egg Československo: rozpoznání slova, melodie (Web Audio)
+    secrets.ts, toast.ts        další easter eggy: tajná slova, výklad signálních vlajek, svátky, Konami kód; zprávy dole (showToast)
+    theme.ts                    tmavý režim (useTheme, setTheme, initTheme)
     storage.ts                  loadJson / saveJson (bezpečný localStorage)
     stats.ts                    statistiky (applyResult, recordResult), denní stav, album
     world.ts, useWorld.ts       líné načtení mapy a příprava SVG tvarů
     router.ts                   useRoute (část adresy za #)
-    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg
+    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg, Toast, FlagRain, ThemeToggle, SignalFlags, CompassRose, CompassButton
     *.test.ts                   testy sdílené logiky
   games/
     registry.ts                 seznam všech her (názvy, adresy, popisy, komponenty)
@@ -345,6 +361,8 @@ flag { colors ["red","white","blue"], shares { red: 36, white: 36, blue: 28 } (p
 | 8 | Silueta* | **hotovo** | logika + 7 testů + UI + nápověda + sdílení |
 | 9 | Víc, nebo míň?* | **hotovo** | 6 témat; logika + 15 testů + UI + nápověda + sdílení |
 | – | Easter egg Československo | **hotovo** | funguje v každém políčku pro zadání země |
+| – | Tmavý režim | **hotovo** | tlačítko, pamatuje si volbu |
+| – | Další easter eggy | **hotovo** | viz „Katalog easter eggů“ |
 | 10 | Vlajkový kvíz* | nezačato | jen nápad, autor ho zatím nechtěl |
 | 11 | Flagle* | nezačato | jen nápad |
 | 12 | Klikni na mapu* | nezačato | jen nápad |
@@ -424,3 +442,4 @@ Nic rozdělaného. Fáze 0–5 jsou hotové a commitnuté: devět her a easter e
 - 2026-11-16: Redesign kroky 6–9: dílkovaný rám (`.map`, `.border__canvas`, `.silhouette__canvas`, pravidlo je jedno ve `components.css`), tlačítka zoomu posunutá do rámu, seznam tipů s čárkovanými linkami a tučným nejnovějším, purpurové zvýraznění (našeptávač, GeoGrid, Tajemná vlajka), barvy vymyšlených vlajek v `Emblem.tsx`, tmavší studená část `HEAT_STOPS` v Tajemné zemi (jediná změna logiky, test a CSS upraveny). 168 testů prochází.
 - 2026-11-16: Redesign „Námořní mapa“ dokončen (krok 10): proklikány všechny hry (nápověda, rozehraná, dohraná, statistiky, úzké okno), HANDOFF přepsán. Easter egg přepracován: smuteční obrazovka s vlajkou na půl žerdi a melodie „Kde domov můj“ (česká část hymny) podle notového zápisu místo vlastní fráze; 170 testů prochází.
 - 2026-11-16: Fáze 6: `.github/workflows/deploy.yml` (GitHub Pages přes Actions), `NASAZENI.md` (návod pro začátečníka), na domovské stránce odstavec „Zdroje dat“ (licence CC BY, ODbL a CC BY-SA vyžadují uvedení zdroje). Build ověřen v podsložce `/moje-hry/` (dlaždice, mapa, vlajky, obnovení stránky). 170 testů prochází.
+- 2026-11-16: Tmavý režim „noční mapa“ s tlačítkem (proměnné `:root[data-theme='dark']`, `theme.ts`, test) a sada dalších easter eggů (tajná slova, Konami kód, klikací vlajky a kompas, svátky, titulek karty, pozdrav v konzoli; komponenty `Toast`, `FlagRain`, `CompassButton`). Vitest nově spouští i `*.test.tsx`. 183 testů prochází, tmavý režim prohlédnut ve všech hrách.

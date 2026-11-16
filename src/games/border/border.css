@@ -29,7 +29,7 @@
 
 .border__land {
   fill: var(--land);
-  stroke: #6f7f8c;
+  stroke: var(--land-stroke);
   stroke-width: 1;
   stroke-linejoin: round;
 }

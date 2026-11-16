@@ -1,6 +1,8 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { isCzechoslovakia, triggerEasterEgg } from '../easterEgg'
 import { searchCountries } from '../normalize'
+import { findSecretWord } from '../secrets'
+import { showToast } from '../toast'
 import type { Country } from '../types'
 import { Flag } from './Flag'
 
@@ -52,6 +54,14 @@ export function CountryInput({ onSelect, exclude, placeholder = 'Napiš zemi…'
       // easter egg: celé slovo "Československo" otevře pamětní obrazovku a nepočítá se jako tip
       if (isCzechoslovakia(text)) {
         triggerEasterEgg()
+        setText('')
+        setOpen(false)
+        return
+      }
+      // tajná slova (fiktivní a zaniklé země) ukážou hlášku a nepočítají se jako tip
+      const secret = findSecretWord(text)
+      if (secret) {
+        showToast({ title: secret.title, lines: secret.lines })
         setText('')
         setOpen(false)
         return

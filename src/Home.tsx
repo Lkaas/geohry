@@ -1,8 +1,10 @@
 import { GAMES, type GameInfo } from './games/registry'
-import { CompassRose } from './shared/components/CompassRose'
+import { CompassButton } from './shared/components/CompassButton'
 import { Emblem } from './shared/components/Emblem'
 import { SignalFlags } from './shared/components/SignalFlags'
+import { ThemeToggle } from './shared/components/ThemeToggle'
 import { dateKey, formatDateKey } from './shared/random'
+import { specialDayNote } from './shared/secrets'
 import { collectedCountries, dailyStatus, loadStats } from './shared/stats'
 import { COUNTRIES } from './shared/data'
 
@@ -19,20 +21,25 @@ export function Home() {
   // dlaždice: hlavní hry a všechny už naprogramované; ostatní jsou jen v seznamu "v plánu"
   const mainGames = GAMES.filter((g) => !g.extra || g.component)
   const extraGames = GAMES.filter((g) => g.extra && !g.component)
+  const dayNote = specialDayNote(new Date())
   const collected = Object.keys(collectedCountries()).length
 
   return (
     <div className="home">
+      <div className="home__toolbar">
+        <ThemeToggle />
+      </div>
       <header className="home__header">
         <div>
-          <SignalFlags />
+          <SignalFlags interactive />
           <h1 className="wordmark">GeoHry</h1>
           <p className="home__lead">Hry o mapách a vlajkách. Každý den čeká u každé hry nová výzva, stejná pro všechny.</p>
           <p className="home__meta">
             Dnes je {formatDateKey(today)}. Ve sbírce máš {collected} z {COUNTRIES.length} zemí.
           </p>
+          {dayNote && <p className="home__day">{dayNote}</p>}
         </div>
-        <CompassRose />
+        <CompassButton />
       </header>
 
       <ul className="tiles">

@@ -6,6 +6,12 @@
     <title>GeoHry</title>
     <meta name="description" content="Zeměpisné minihry: mapy, vlajky a dedukce." />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 30'%3E%3Crect width='40' height='30' fill='%232F7FB8'/%3E%3Ccircle cx='20' cy='15' r='12' fill='%23FFCB05'/%3E%3Ccircle cx='20' cy='15' r='8' fill='%23F28C28'/%3E%3Ccircle cx='20' cy='15' r='4' fill='%23E03A3E'/%3E%3C/svg%3E" />
+    <script>
+      // tmavý režim nastavit hned, ať stránka při načtení nezablikne světlá
+      try {
+        if (JSON.parse(localStorage.getItem('geohry:theme')) === 'dark') document.documentElement.dataset.theme = 'dark'
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>

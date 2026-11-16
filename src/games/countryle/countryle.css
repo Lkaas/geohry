@@ -87,11 +87,11 @@
 
 .cell--medium {
   background: var(--yellow);
-  color: var(--ink);
+  color: var(--on-yellow);
 }
 
 .cell--miss {
-  background: #c9ccc9;
+  background: var(--miss);
   color: var(--ink);
 }
 

@@ -9,17 +9,73 @@
   --land-other: #ebe5cc; /* nehratelná území */
   --paper: #fdfdf9; /* list mapy: panely */
   --paper-dim: #eef1ee;
+  --paper-hover: #ffffff; /* panel pod myší */
+  --field: #ffffff; /* pozadí vstupních políček */
   --red: #d62828;
   --yellow: #ffd23f;
   --green: #1f8a4c;
+  --green-soft: #dff3e6;
+  --red-soft: #fbe1e1;
   --magenta: #b5127a; /* purpurová: vše důležité a klikací */
   --magenta-soft: #f7dcec;
-  --on-sea: #14171c; /* text přímo na pozadí stránky (tmavý na světlém) */
+  --magenta-fill: #b5127a; /* výplň hlavního tlačítka (bílý text) */
+  --magenta-fill-hover: #8f0e60;
+  --on-sea: #14171c; /* text přímo na pozadí stránky */
   --on-sea-dim: #56616c;
+  --on-ink: #fdfdf9; /* text na ploše barvy --ink (popisek mapy, sloupce statistik) */
+  --on-yellow: #14171c; /* text na žluté ploše */
+
+  /* drobnosti, které se v tmavém režimu mění */
+  --land-stroke: #7a6f4a; /* hranice zemí na mapě */
+  --territory-stroke: #b9b08c;
+  --ghost-fill: rgb(20 23 28 / 0.06); /* čárkovaný obrys nápovědy */
+  --dash: #b6c0c8; /* čárkované linky mezi řádky */
+  --hover-tint: rgb(20 23 28 / 0.08);
+  --flag-border: rgb(20 23 28 / 0.25);
+  --miss: #c9ccc9; /* nesedí (Countryle) */
+  --hot-text: #c0271f; /* přihořívá */
+  --cold-text: #2c62a8; /* chladne */
 
   --line: 1.5px; /* tloušťka linek */
   --radius: 2px;
   --font: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Tmavý režim = noční paleta námořní mapy. Zapíná se tlačítkem v hlavičce (viz src/shared/theme.ts). */
+:root[data-theme='dark'] {
+  --ink: #e7eef2;
+  --ink-dim: #9aa9b4;
+  --sea-deep: #0b1117;
+  --sea: #12303f;
+  --sea-line: #1f4a5e;
+  --land: #4a452e;
+  --land-other: #38352a;
+  --paper: #18212a;
+  --paper-dim: #202b35;
+  --paper-hover: #1f2a35;
+  --field: #0f161c;
+  --red: #ef5350;
+  --green-soft: #17352a;
+  --red-soft: #3a1c20;
+  --magenta: #ec6fc0;
+  --magenta-soft: #3b1a30;
+  --magenta-fill: #c2188a;
+  --magenta-fill-hover: #d9309f;
+  --on-sea: #e7eef2;
+  --on-sea-dim: #9aa9b4;
+  --on-ink: #0b1117;
+
+  --land-stroke: #8f845c;
+  --territory-stroke: #5b5740;
+  --ghost-fill: rgb(255 255 255 / 0.08);
+  --dash: #3a4753;
+  --hover-tint: rgb(255 255 255 / 0.1);
+  --flag-border: rgb(255 255 255 / 0.35);
+  --miss: #3b4650;
+  --hot-text: #ff8a80;
+  --cold-text: #8fb6f2;
+
+  color-scheme: dark;
 }
 
 * {
@@ -28,6 +84,10 @@
 
 html {
   color-scheme: light;
+}
+
+:root[data-theme='dark'] body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='300'%3E%3Cg fill='%231f3846' font-family='Georgia,serif' font-style='italic' font-size='12'%3E%3Ctext x='24' y='40'%3E18%3C/text%3E%3Ctext x='118' y='22'%3E27%3C/text%3E%3Ctext x='214' y='64'%3E9%3C/text%3E%3Ctext x='306' y='34'%3E34%3C/text%3E%3Ctext x='66' y='118'%3E12%3C/text%3E%3Ctext x='168' y='132'%3E41%3C/text%3E%3Ctext x='272' y='148'%3E22%3C/text%3E%3Ctext x='20' y='206'%3E56%3C/text%3E%3Ctext x='124' y='228'%3E7%3C/text%3E%3Ctext x='232' y='236'%3E15%3C/text%3E%3Ctext x='318' y='262'%3E63%3C/text%3E%3Ctext x='78' y='284'%3E31%3C/text%3E%3C/g%3E%3C/svg%3E");
 }
 
 body {
@@ -135,14 +195,14 @@ textarea {
 }
 
 .button--primary {
-  border-color: var(--magenta);
-  background: var(--magenta);
+  border-color: var(--magenta-fill);
+  background: var(--magenta-fill);
   color: #fff;
 }
 
 .button--primary:hover {
-  border-color: #8f0e60;
-  background: #8f0e60;
+  border-color: var(--magenta-fill-hover);
+  background: var(--magenta-fill-hover);
 }
 
 .button--danger {
@@ -167,7 +227,7 @@ textarea {
 }
 
 .button--ghost:hover {
-  background: rgb(20 23 28 / 0.08);
+  background: var(--hover-tint);
 }
 
 /* nenápadné tlačítko na světlém panelu */
@@ -196,7 +256,7 @@ textarea {
 .flag {
   display: inline-block;
   aspect-ratio: 4 / 3;
-  border: 1px solid rgb(20 23 28 / 0.25);
+  border: 1px solid var(--flag-border);
   border-radius: 2px;
   object-fit: cover;
   background: #fff;
@@ -237,6 +297,12 @@ textarea {
   padding: clamp(1.5rem, 5vw, 4rem) 1.25rem 4rem;
 }
 
+.home__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: -1rem 0 0.75rem;
+}
+
 .home__header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -252,7 +318,7 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .home__header .rose {
+  .home__header .rose-button {
     display: none;
   }
 }
@@ -322,7 +388,7 @@ textarea {
 
 /* jediná animace v návrhu: vlajka se "pohne ve větru" */
 a.tile:hover {
-  background: #fff;
+  background: var(--paper-hover);
 }
 
 a.tile:hover .emblem {
@@ -354,7 +420,7 @@ a.tile:hover .emblem {
   align-items: center;
   gap: 0.5rem;
   padding-top: 0.6rem;
-  border-top: 1px dashed #9aa7b1;
+  border-top: 1px dashed var(--dash);
   font-size: 0.95rem;
   font-weight: 600;
 }
