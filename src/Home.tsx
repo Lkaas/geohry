@@ -1,0 +1,94 @@
+import { GAMES, type GameInfo } from './games/registry'
+import { CompassRose } from './shared/components/CompassRose'
+import { Emblem } from './shared/components/Emblem'
+import { SignalFlags } from './shared/components/SignalFlags'
+import { dateKey, formatDateKey } from './shared/random'
+import { collectedCountries, dailyStatus, loadStats } from './shared/stats'
+import { COUNTRIES } from './shared/data'
+
+const STATUS_TEXT = {
+  none: 'Dnešní výzva čeká',
+  playing: 'Dnešní výzva rozehraná',
+  won: 'Dnešní výzva splněna',
+  lost: 'Dnes to nevyšlo',
+} as const
+
+/** Domovská obrazovka: rozcestník her. */
+export function Home() {
+  const today = dateKey()
+  // dlaždice: hlavní hry a všechny už naprogramované; ostatní jsou jen v seznamu "v plánu"
+  const mainGames = GAMES.filter((g) => !g.extra || g.component)
+  const extraGames = GAMES.filter((g) => g.extra && !g.component)
+  const collected = Object.keys(collectedCountries()).length
+
+  return (
+    <div className="home">
+      <header className="home__header">
+        <div>
+          <SignalFlags />
+          <h1 className="wordmark">GeoHry</h1>
+          <p className="home__lead">Hry o mapách a vlajkách. Každý den čeká u každé hry nová výzva, stejná pro všechny.</p>
+          <p className="home__meta">
+            Dnes je {formatDateKey(today)}. Ve sbírce máš {collected} z {COUNTRIES.length} zemí.
+          </p>
+        </div>
+        <CompassRose />
+      </header>
+
+      <ul className="tiles">
+        {mainGames.map((game, index) => (
+          <li key={game.id}>
+            <GameTile game={game} today={today} number={index + 1} />
+          </li>
+        ))}
+      </ul>
+
+      <section className="home__extra">
+        <h2>Další hry v plánu</h2>
+        <ul>
+          {extraGames.map((g) => (
+            <li key={g.id}>
+              <strong>{g.title}</strong>
+              <span>{g.description}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <footer className="home__sources">
+        <h2>Zdroje dat</h2>
+        <p>
+          Hranice zemí: Natural Earth (volné dílo). Údaje o zemích a české názvy: mledoze/countries (ODbL). Populace a HDP: Světová banka (CC BY 4.0).
+          Průměrné teploty: Světová banka / CRU podle Wikipedie (CC BY-SA 4.0). Vlajky: flag-icons (MIT). Písmo: Bricolage Grotesque (OFL).
+        </p>
+      </footer>
+    </div>
+  )
+}
+
+function GameTile({ game, today, number }: { game: GameInfo; today: string; number: number }) {
+  if (!game.component) {
+    return (
+      <div className="tile tile--soon">
+        <Emblem kind={game.emblem} />
+        <h2>{game.title}</h2>
+        <p>{game.description}</p>
+        <span className="tile__status">Připravuje se</span>
+      </div>
+    )
+  }
+  const status = dailyStatus(game.id, today)
+  const streak = loadStats(game.id, 'daily').currentStreak
+  return (
+    <a className="tile" href={`#${game.route}`}>
+      <Emblem kind={game.emblem} />
+      <span className="tile__no">list {number}</span>
+      <h2>{game.title}</h2>
+      <p>{game.description}</p>
+      <span className={`tile__status tile__status--${status}`}>
+        {STATUS_TEXT[status]}
+        {streak > 1 ? `, série ${streak} dní` : ''}
+      </span>
+    </a>
+  )
+}

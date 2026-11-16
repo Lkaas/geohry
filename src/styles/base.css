@@ -1,0 +1,479 @@
+/* Základ vzhledu „Námořní mapa“: barvy tištěné námořní mapy, purpurová pro vše důležité. Barvy se mění jen v :root. */
+:root {
+  --ink: #14171c; /* tisková čerň: text a linky */
+  --ink-dim: #56616c; /* druhotný text */
+  --sea-deep: #f3f8fa; /* hluboká voda, skoro bílá: pozadí stránky */
+  --sea: #cde6f0; /* mělčina: moře na mapách */
+  --sea-line: #8fbdd3; /* poledníky a rovnoběžky */
+  --land: #f3e3b0; /* pevnina, béžová jako na námořních mapách */
+  --land-other: #ebe5cc; /* nehratelná území */
+  --paper: #fdfdf9; /* list mapy: panely */
+  --paper-dim: #eef1ee;
+  --red: #d62828;
+  --yellow: #ffd23f;
+  --green: #1f8a4c;
+  --magenta: #b5127a; /* purpurová: vše důležité a klikací */
+  --magenta-soft: #f7dcec;
+  --on-sea: #14171c; /* text přímo na pozadí stránky (tmavý na světlém) */
+  --on-sea-dim: #56616c;
+
+  --line: 1.5px; /* tloušťka linek */
+  --radius: 2px;
+  --font: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--sea-deep);
+  /* hloubkové údaje (sondy) rozeseté po moři jako na námořní mapě */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='300'%3E%3Cg fill='%23bdd2dd' font-family='Georgia,serif' font-style='italic' font-size='12'%3E%3Ctext x='24' y='40'%3E18%3C/text%3E%3Ctext x='118' y='22'%3E27%3C/text%3E%3Ctext x='214' y='64'%3E9%3C/text%3E%3Ctext x='306' y='34'%3E34%3C/text%3E%3Ctext x='66' y='118'%3E12%3C/text%3E%3Ctext x='168' y='132'%3E41%3C/text%3E%3Ctext x='272' y='148'%3E22%3C/text%3E%3Ctext x='20' y='206'%3E56%3C/text%3E%3Ctext x='124' y='228'%3E7%3C/text%3E%3Ctext x='232' y='236'%3E15%3C/text%3E%3Ctext x='318' y='262'%3E63%3C/text%3E%3Ctext x='78' y='284'%3E31%3C/text%3E%3C/g%3E%3C/svg%3E");
+  color: var(--on-sea);
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-stretch: 80%;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--magenta);
+  outline-offset: 2px;
+}
+
+.muted {
+  color: var(--ink-dim);
+  font-size: 0.92rem;
+}
+
+.loading {
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Nápis GeoHry: nahoře šest vlajek námořní signální abecedy (G, E, O, H, R, Y), pod nimi slovo */
+.signal {
+  display: flex;
+  gap: 8px;
+}
+
+.signal svg {
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: var(--line) solid var(--ink);
+}
+
+.signal--small {
+  gap: 3px;
+}
+
+.signal--small svg {
+  width: 20px;
+  height: 20px;
+  border-width: 1px;
+}
+
+.wordmark {
+  margin-top: 0.5rem;
+  font-size: clamp(3.4rem, 9vw, 6.2rem);
+  font-weight: 800;
+  font-stretch: 75%;
+  letter-spacing: -0.02em;
+  line-height: 0.92;
+  color: var(--ink);
+}
+
+/* kompasová růžice: na námořních mapách se tiskne purpurově */
+.rose {
+  width: 190px;
+  height: 190px;
+  color: var(--magenta);
+}
+
+/* Tlačítka */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--paper-dim);
+}
+
+.button--primary {
+  border-color: var(--magenta);
+  background: var(--magenta);
+  color: #fff;
+}
+
+.button--primary:hover {
+  border-color: #8f0e60;
+  background: #8f0e60;
+}
+
+.button--danger {
+  background: var(--red);
+  color: #fff;
+}
+
+.button--danger:hover {
+  background: #c92f33;
+}
+
+/* odkaz v hlavičce: text s purpurovým podtržením */
+.button--ghost {
+  padding: 0.3rem 0.5rem;
+  border-color: transparent;
+  background: transparent;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--magenta);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.button--ghost:hover {
+  background: rgb(20 23 28 / 0.08);
+}
+
+/* nenápadné tlačítko na světlém panelu */
+.button--ghost-dark {
+  border-color: transparent;
+  background: transparent;
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+
+.icon-button {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+
+.icon-button:hover {
+  background: var(--paper-dim);
+}
+
+/* Vlajky */
+.flag {
+  display: inline-block;
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgb(20 23 28 / 0.25);
+  border-radius: 2px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.flag--small {
+  width: 1.6rem;
+}
+
+.flag--medium {
+  width: 4.2rem;
+  border-color: var(--ink);
+}
+
+.flag--large {
+  width: 9rem;
+  border-width: 2px;
+  border-color: var(--ink);
+}
+
+.emblem {
+  display: block;
+  width: 5.5rem;
+  aspect-ratio: 4 / 3;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+}
+
+.emblem--small {
+  width: 2.2rem;
+  border-color: var(--ink);
+}
+
+/* Domovská obrazovka */
+.home {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 5vw, 4rem) 1.25rem 4rem;
+}
+
+.home__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: var(--line) solid var(--ink);
+}
+
+@media (max-width: 700px) {
+  .home__header {
+    grid-template-columns: 1fr;
+  }
+
+  .home__header .rose {
+    display: none;
+  }
+}
+
+.home__lead {
+  max-width: 36rem;
+  margin-top: 1.1rem;
+  font-size: 1.2rem;
+}
+
+.home__meta {
+  margin-top: 0.5rem;
+  color: var(--on-sea-dim);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.1rem 1.1rem 1rem 2.6rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* stožár a jeho hlavice: dlaždice je vlajka na stožáru */
+.tile::before {
+  content: '';
+  position: absolute;
+  top: 0.7rem;
+  bottom: 0.7rem;
+  left: 1.15rem;
+  width: 3px;
+  background: var(--ink);
+}
+
+.tile::after {
+  content: '';
+  position: absolute;
+  top: 0.45rem;
+  left: calc(1.15rem - 3px);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ink);
+}
+
+.tile .emblem {
+  width: 5.2rem;
+  margin-left: -1.3rem;
+  transform-origin: left center;
+  transition: transform 160ms ease;
+}
+
+/* jediná animace v návrhu: vlajka se "pohne ve větru" */
+a.tile:hover {
+  background: #fff;
+}
+
+a.tile:hover .emblem {
+  transform: skewY(-4deg);
+}
+
+.tile__no {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  color: var(--magenta);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.tile h2 {
+  margin-top: 0.35rem;
+  font-size: 1.75rem;
+  font-weight: 760;
+}
+
+.tile p {
+  flex: 1;
+  color: var(--ink-dim);
+}
+
+.tile__status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed #9aa7b1;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.tile__status::before {
+  content: '';
+  flex: none;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: var(--line) solid var(--ink);
+  border-radius: 50%;
+  background: var(--paper);
+}
+
+.tile__status--none::before,
+.tile__status--playing::before {
+  background: var(--yellow);
+}
+
+.tile__status--won::before {
+  background: var(--green);
+}
+
+.tile__status--lost::before {
+  background: var(--ink);
+}
+
+.tile--soon {
+  background: transparent;
+  border-color: var(--ink-dim);
+  border-style: dashed;
+  color: var(--ink);
+}
+
+.tile--soon p {
+  color: var(--on-sea-dim);
+}
+
+.tile--soon .emblem {
+  opacity: 0.6;
+  border-color: var(--ink-dim);
+}
+
+.tile--soon .tile__status::before {
+  display: none;
+}
+
+.home__extra {
+  margin-top: 3rem;
+  color: var(--on-sea-dim);
+}
+
+.home__extra h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  color: var(--on-sea);
+}
+
+.home__extra ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.5rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home__extra li {
+  display: flex;
+  flex-direction: column;
+}
+
+.home__extra strong {
+  color: var(--on-sea);
+}
+
+/* Zdroje dat dole na domovské stránce (licence CC BY a ODbL vyžadují uvedení zdroje) */
+.home__sources {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: var(--line) solid var(--ink);
+  color: var(--ink-dim);
+  font-size: 0.88rem;
+}
+
+.home__sources h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
+.home__sources p {
+  max-width: 52rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Přepínací štítek (výběr z několika možností na tmavém pozadí) */
+.chip {
+  padding: 0.35rem 0.9rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--magenta);
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}

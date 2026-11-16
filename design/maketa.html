@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<title>GeoHry: maketa nového vzhledu „Námořní mapa“</title>
+<!-- Maketa slouží jen jako vzor vzhledu. Není součástí aplikace a nic ji nenačítá. Otevři ji v prohlížeči přes `npm run dev` na adrese /design/maketa.html, nebo přímo ze souboru (pak se použije náhradní písmo). -->
+<style>
+@font-face { font-family: 'Bricolage Grotesque Variable'; font-weight: 200 800; font-stretch: 75% 100%; src: url('../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-standard-normal.woff2') format('woff2-variations'); unicode-range: U+0000-00FF; }
+@font-face { font-family: 'Bricolage Grotesque Variable'; font-weight: 200 800; font-stretch: 75% 100%; src: url('../node_modules/@fontsource-variable/bricolage-grotesque/files/bricolage-grotesque-latin-ext-standard-normal.woff2') format('woff2-variations'); unicode-range: U+0100-02FF; }
+
+:root {
+  /* ---- barvy námořní mapy ---- */
+  --ink: #14171c;          /* tisková čerň: text a linky */
+  --ink-dim: #56616c;      /* druhotný text */
+  --deep: #f3f8fa;         /* hluboká voda = skoro bílá: pozadí stránky */
+  --shallow: #cde6f0;      /* mělčina: moře na mapách, pruhy */
+  --shallow-strong: #9fcde2;
+  --land: #f3e3b0;         /* pevnina (béžová jako na námořních mapách) */
+  --land-other: #ebe5cc;   /* nehratelná území */
+  --paper: #fdfdf9;        /* list mapy: panely */
+  --paper-dim: #eef1ee;
+  --magenta: #b5127a;      /* purpurová: na námořních mapách značí vše, čeho si má navigátor všimnout */
+  --magenta-soft: #f7dcec;
+  --green: #1f8a4c;
+  --green-soft: #dcefe2;
+  --red: #d62828;
+  --red-soft: #f8dcdc;
+  --yellow: #ffd23f;
+  --line: 1.5px;
+  --radius: 2px;
+  --font: 'Bricolage Grotesque Variable', 'Segoe UI', system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); font-family: var(--font); font-size: 17px; line-height: 1.45;
+  background-color: var(--deep);
+  /* hloubkové údaje (sondy) rozeseté po moři jako na skutečné námořní mapě */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='300'%3E%3Cg fill='%23bdd2dd' font-family='Georgia,serif' font-style='italic' font-size='12'%3E%3Ctext x='24' y='40'%3E18%3C/text%3E%3Ctext x='118' y='22'%3E27%3C/text%3E%3Ctext x='214' y='64'%3E9%3C/text%3E%3Ctext x='306' y='34'%3E34%3C/text%3E%3Ctext x='66' y='118'%3E12%3C/text%3E%3Ctext x='168' y='132'%3E41%3C/text%3E%3Ctext x='272' y='148'%3E22%3C/text%3E%3Ctext x='20' y='206'%3E56%3C/text%3E%3Ctext x='124' y='228'%3E7%3C/text%3E%3Ctext x='232' y='236'%3E15%3C/text%3E%3Ctext x='318' y='262'%3E63%3C/text%3E%3Ctext x='78' y='284'%3E31%3C/text%3E%3C/g%3E%3C/svg%3E");
+}
+h1, h2, h3 { margin: 0; font-stretch: 80%; line-height: 1.05; }
+p { margin: 0; }
+.page { max-width: 1180px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+/* ---- nápis GeoHry: nahoře šest vlajek námořní signální abecedy (G, E, O, H, R, Y), pod nimi slovo ---- */
+.signal { display: flex; gap: 8px; }
+.signal svg { width: 54px; height: 54px; border: var(--line) solid var(--ink); display: block; }
+.signal--small { gap: 3px; }
+.signal--small svg { width: 20px; height: 20px; border-width: 1px; }
+.wordmark { margin-top: 0.5rem; font-size: clamp(3.4rem, 9vw, 6.2rem); font-weight: 800; font-stretch: 75%; letter-spacing: -0.02em; line-height: 0.92; }
+/* ---- hlavička domovské stránky ---- */
+.head { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: end; padding-bottom: 1.5rem; border-bottom: var(--line) solid var(--ink); }
+.head p { max-width: 36rem; margin-top: 1.1rem; font-size: 1.2rem; }
+.head .meta { margin-top: 0.4rem; color: var(--ink-dim); font-size: 1rem; }
+.rose { width: 190px; height: 190px; color: var(--magenta); }
+
+/* ---- dlaždice her: vlajka na stožáru ---- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.1rem; margin: 2rem 0 0; padding: 0; list-style: none; }
+.tile { position: relative; display: flex; flex-direction: column; gap: 0.5rem; height: 100%; padding: 1.1rem 1.1rem 1rem 2.6rem;
+  background: var(--paper); border: var(--line) solid var(--ink); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
+.tile::before { content: ''; position: absolute; left: 1.15rem; top: 0.7rem; bottom: 0.7rem; width: 3px; background: var(--ink); }      /* stožár */
+.tile::after { content: ''; position: absolute; left: calc(1.15rem - 3px); top: 0.45rem; width: 9px; height: 9px; border-radius: 50%; background: var(--ink); } /* hlavice stožáru */
+.tile .emblem { width: 5.2rem; aspect-ratio: 4/3; margin-left: -1.3rem; border: var(--line) solid var(--ink); display: block; transform-origin: left center; transition: transform 160ms ease; }
+.tile:hover { background: #fff; }
+.tile:hover .emblem { transform: skewY(-4deg); }   /* vlajka se "pohne ve větru" */
+.tile .no { position: absolute; top: 0.9rem; right: 1rem; color: var(--magenta); font-size: 0.9rem; font-weight: 650; }
+.tile h2 { margin-top: 0.35rem; font-size: 1.75rem; font-weight: 760; }
+.tile p { flex: 1; color: var(--ink-dim); }
+.status { display: flex; align-items: center; gap: 0.5rem; padding-top: 0.6rem; border-top: 1px dashed #9aa7b1; font-size: 0.95rem; font-weight: 600; }
+.status i { width: 0.8rem; height: 0.8rem; border-radius: 50%; border: var(--line) solid var(--ink); background: var(--paper); }
+.status--todo i { background: var(--yellow); }
+.status--won i { background: var(--green); }
+.status--lost i { background: var(--ink); }
+
+/* ---- rám mapy: černobílé dílky jako stupnice na okraji mapy ---- */
+.chart-frame {
+  padding: 8px; outline: var(--line) solid var(--ink);
+  background:
+    repeating-linear-gradient(90deg, var(--ink) 0 32px, var(--paper) 32px 64px) top / 100% 8px no-repeat,
+    repeating-linear-gradient(90deg, var(--paper) 0 32px, var(--ink) 32px 64px) bottom / 100% 8px no-repeat,
+    repeating-linear-gradient(0deg, var(--ink) 0 32px, var(--paper) 32px 64px) left / 8px 100% no-repeat,
+    repeating-linear-gradient(0deg, var(--paper) 0 32px, var(--ink) 32px 64px) right / 8px 100% no-repeat,
+    var(--paper);
+}
+.chart-frame > .inner { border: var(--line) solid var(--ink); background: var(--shallow); height: 100%; }
+
+/* ---- obrazovka hry ---- */
+.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 1.4rem; margin-top: 3.5rem; padding: 0.6rem 1rem; background: var(--paper); border: var(--line) solid var(--ink); }
+.bar h1 { font-size: 1.5rem; font-weight: 720; margin-right: auto; }
+.tabs { display: inline-flex; border: var(--line) solid var(--ink); }
+.tabs button { padding: 0.3rem 0.9rem; border: 0; background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; }
+.tabs button + button { border-left: var(--line) solid var(--ink); }
+.tabs button[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
+.link { background: none; border: 0; font: inherit; font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--magenta); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.game { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 1rem; margin-top: 1rem; align-items: start; }
+.map { aspect-ratio: 2000 / 1010; }
+.map svg { display: block; width: 100%; height: 100%; }
+.panel { display: flex; flex-direction: column; gap: 0.85rem; padding: 1rem; background: var(--paper); border: var(--line) solid var(--ink); border-radius: var(--radius); }
+.field { width: 100%; padding: 0.7rem 0.85rem; border: 2px solid var(--ink); border-radius: var(--radius); background: #fff; font: inherit; font-size: 1.1rem; }
+.field:focus { outline: 3px solid var(--magenta); outline-offset: 2px; }
+.feedback { padding: 0.65rem 0.8rem; border-left: 8px solid var(--red); background: var(--paper-dim); }
+.feedback b.hot { color: var(--red); }
+.btn { display: inline-flex; padding: 0.55rem 1rem; border: var(--line) solid var(--ink); border-radius: var(--radius); background: var(--paper); color: var(--ink); font: inherit; font-weight: 650; }
+.btn--primary { background: var(--magenta); border-color: var(--magenta); color: #fff; }
+.guess { display: grid; grid-template-columns: auto 1fr auto 2rem; gap: 0.55rem; align-items: center; padding: 0.3rem 0.2rem; border-bottom: 1px dashed #b6c0c8; }
+.guess i { width: 0.95rem; height: 0.95rem; border-radius: 50%; border: var(--line) solid var(--ink); }
+.guess span:last-child { color: var(--ink-dim); font-size: 0.85rem; text-align: right; }
+.note { margin-top: 2.5rem; color: var(--ink-dim); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="head">
+    <div>
+      <!-- G E O H R Y vlajkami mezinárodní signální abecedy -->
+      <div class="signal" role="img" aria-label="GeoHry vlajkami signální abecedy">
+        <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#ffd23f"/><rect x="10" width="10" height="60" fill="#0b3d91"/><rect x="30" width="10" height="60" fill="#0b3d91"/><rect x="50" width="10" height="60" fill="#0b3d91"/></svg>
+        <svg viewBox="0 0 60 60"><rect width="60" height="30" fill="#0b3d91"/><rect y="30" width="60" height="30" fill="#d62828"/></svg>
+        <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#d62828"/><path d="M0 0 L60 60 L0 60 Z" fill="#ffd23f"/></svg>
+        <svg viewBox="0 0 60 60"><rect width="30" height="60" fill="#ffffff"/><rect x="30" width="30" height="60" fill="#d62828"/></svg>
+        <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#d62828"/><rect x="24" width="12" height="60" fill="#ffd23f"/><rect y="24" width="60" height="12" fill="#ffd23f"/></svg>
+        <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#ffd23f"/><g transform="rotate(-45 30 30)" fill="#d62828"><rect x="-30" y="-3.94" width="120" height="8.485"/><rect x="-30" y="13.03" width="120" height="8.485"/><rect x="-30" y="30" width="120" height="8.485"/><rect x="-30" y="46.97" width="120" height="8.485"/><rect x="-30" y="63.94" width="120" height="8.485"/></g></svg>
+      </div>
+      <h1 class="wordmark">GeoHry</h1>
+      <p>Hry o mapách a vlajkách. Každý den čeká u každé hry nová výzva, stejná pro všechny.</p>
+      <p class="meta">Dnes je 16. 11. 2026. Ve sbírce máš 12 ze 197 zemí.</p>
+    </div>
+    <!-- kompasová růžice: na námořních mapách se tiskne purpurově -->
+    <svg class="rose" viewBox="-100 -100 200 200" fill="none" stroke="currentColor" aria-hidden="true">
+      <circle r="92" stroke-width="1.2"/><circle r="80" stroke-width="0.8"/><circle r="52" stroke-width="0.8"/>
+      <g stroke-width="0.8"><path d="M0-92V-80M0 80V92M-92 0H-80M80 0H92"/><path d="M65-65 56.6-56.6M-65-65-56.6-56.6M65 65 56.6 56.6M-65 65-56.6 56.6"/></g>
+      <g id="ticks" stroke-width="0.7"></g>
+      <path d="M0-78 9-9 78 0 9 9 0 78-9 9-78 0-9-9Z" stroke-width="1.2"/>
+      <path d="M0-78 0 0 9-9ZM78 0 0 0 9 9ZM0 78 0 0-9 9ZM-78 0 0 0-9-9Z" fill="currentColor" stroke="none"/>
+      <path d="M36-36 12 0 36 36 0 12-36 36-12 0-36-36 0-12Z" stroke-width="0.9"/>
+      <text y="-58" text-anchor="middle" fill="currentColor" stroke="none" font-family="Georgia,serif" font-size="15" font-style="italic">S</text>
+    </svg>
+  </header>
+
+  <ul class="tiles">
+    <li><a class="tile" href="#">
+      <svg class="emblem" viewBox="0 0 40 30"><rect width="40" height="30" fill="#2F7FB8"/><circle cx="20" cy="15" r="12" fill="#FFCB05"/><circle cx="20" cy="15" r="8" fill="#F28C28"/><circle cx="20" cy="15" r="4" fill="#E03A3E"/></svg>
+      <span class="no">list 1</span><h2>Tajemná země</h2><p>Tipuj země a sleduj, jestli přihořívá. Čím teplejší barva, tím blíž jsi.</p>
+      <span class="status status--won"><i></i>Dnešní výzva splněna, série 4 dny</span></a></li>
+    <li><a class="tile" href="#">
+      <svg class="emblem" viewBox="0 0 40 30"><rect width="40" height="30" fill="#0D2238"/><path d="M0 30 L0 22 L30 0 L40 0 L40 8 L10 30 Z" fill="#FDFCF7"/><path d="M0 30 L0 25 L33.5 0 L40 0 L40 5 L6.5 30 Z" fill="#FFCB05"/></svg>
+      <span class="no">list 2</span><h2>Cesta mezi zeměmi</h2><p>Dojdi po souši z jedné země do druhé. Vyjmenuj státy, přes které cesta vede.</p>
+      <span class="status status--todo"><i></i>Dnešní výzva čeká</span></a></li>
+    <li><a class="tile" href="#">
+      <svg class="emblem" viewBox="0 0 40 30"><rect width="40" height="30" fill="#FDFCF7"/><rect x="0" y="0" width="13.3" height="10" fill="#E03A3E"/><rect x="26.6" y="0" width="13.4" height="10" fill="#E03A3E"/><rect x="13.3" y="10" width="13.3" height="10" fill="#E03A3E"/><rect x="0" y="20" width="13.3" height="10" fill="#E03A3E"/><rect x="26.6" y="20" width="13.4" height="10" fill="#E03A3E"/></svg>
+      <span class="no">list 4</span><h2>GeoGrid</h2><p>Vyplň mřížku 3×3 zeměmi, které splní podmínku řádku i sloupce.</p>
+      <span class="status status--lost"><i></i>Dnes to nevyšlo</span></a></li>
+  </ul>
+
+  <!-- ukázka obrazovky hry -->
+  <div class="bar">
+    <div class="signal signal--small" aria-hidden="true">
+      <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#ffd23f"/><rect x="10" width="10" height="60" fill="#0b3d91"/><rect x="30" width="10" height="60" fill="#0b3d91"/><rect x="50" width="10" height="60" fill="#0b3d91"/></svg>
+      <svg viewBox="0 0 60 60"><rect width="60" height="30" fill="#0b3d91"/><rect y="30" width="60" height="30" fill="#d62828"/></svg>
+      <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#d62828"/><path d="M0 0 L60 60 L0 60 Z" fill="#ffd23f"/></svg>
+      <svg viewBox="0 0 60 60"><rect width="30" height="60" fill="#fff"/><rect x="30" width="30" height="60" fill="#d62828"/></svg>
+      <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#d62828"/><rect x="24" width="12" height="60" fill="#ffd23f"/><rect y="24" width="60" height="12" fill="#ffd23f"/></svg>
+      <svg viewBox="0 0 60 60"><rect width="60" height="60" fill="#ffd23f"/><g transform="rotate(-45 30 30)" fill="#d62828"><rect x="-30" y="-3.94" width="120" height="8.485"/><rect x="-30" y="13.03" width="120" height="8.485"/><rect x="-30" y="30" width="120" height="8.485"/><rect x="-30" y="46.97" width="120" height="8.485"/><rect x="-30" y="63.94" width="120" height="8.485"/></g></svg>
+    </div>
+    <h1>Tajemná země</h1>
+    <div class="tabs"><button aria-pressed="true">Denní výzva</button><button aria-pressed="false">Volná hra</button></div>
+    <button class="link">Statistiky</button><button class="link">Jak hrát</button>
+  </div>
+  <div class="game">
+    <div class="chart-frame map"><div class="inner">
+      <svg viewBox="0 0 800 400" preserveAspectRatio="xMidYMid slice">
+        <g fill="none" stroke="#8fbdd3" stroke-width="0.8"><path d="M0 100H800M0 200H800M0 300H800M160 0V400M320 0V400M480 0V400M640 0V400"/></g>
+        <g stroke="#7a6f4a" stroke-width="1" stroke-linejoin="round">
+          <path fill="#f3e3b0" d="M60 90 170 60 300 80 330 150 260 230 200 330 150 300 120 200 70 160Z"/>
+          <path fill="#f3e3b0" d="M380 70 520 50 700 80 760 160 690 230 600 210 540 290 470 240 420 170 370 130Z"/>
+          <path fill="#d62828" d="M420 170 470 150 500 190 470 240Z"/>
+          <path fill="#f7a63a" d="M470 150 540 140 560 200 500 190Z"/>
+          <path fill="#9fbfe6" d="M150 300 200 330 215 290 180 262Z"/>
+          <path fill="#f3e3b0" d="M610 300 690 290 720 340 650 360Z"/>
+        </g>
+        <g fill="#56616c" font-family="Georgia,serif" font-style="italic" font-size="11"><text x="340" y="330">48</text><text x="560" y="350">112</text><text x="30" y="260">75</text><text x="740" y="270">36</text></g>
+      </svg>
+    </div></div>
+    <aside class="panel">
+      <input class="field" placeholder="Napiš zemi a potvrď Enterem">
+      <div class="feedback"><b>Rakousko</b> je od hranic hledané země <b>234 km</b>.<br><b class="hot">Přihořívá.</b></div>
+      <div>
+        <div class="guess"><i style="background:#d62828"></i><b>Rakousko</b><span>234 km</span><span>3.</span></div>
+        <div class="guess"><i style="background:#f7a63a"></i><b>Itálie</b><span>1 120 km</span><span>2.</span></div>
+        <div class="guess"><i style="background:#9fbfe6"></i><b>Brazílie</b><span>9 400 km</span><span>1.</span></div>
+      </div>
+      <div style="display:flex;gap:.5rem"><button class="btn btn--primary">Zkopírovat výsledek</button><button class="btn">Vzdát to</button></div>
+    </aside>
+  </div>
+  <p class="note">Maketa vzhledu „Námořní mapa“. Skutečná aplikace je ve složce src/.</p>
+</div>
+<script>
+// dílky po obvodu růžice (jen ozdoba)
+const g = document.getElementById('ticks'); let d = ''
+for (let a = 0; a < 360; a += 5) { const r = a * Math.PI / 180, r1 = a % 15 === 0 ? 84 : 87; d += `M${(Math.sin(r) * r1).toFixed(1)} ${(-Math.cos(r) * r1).toFixed(1)}L${(Math.sin(r) * 92).toFixed(1)} ${(-Math.cos(r) * 92).toFixed(1)}` }
+g.innerHTML = `<path d="${d}"/>`
+</script>
+</body>
+</html>

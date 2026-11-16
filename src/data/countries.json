@@ -1,0 +1,10757 @@
+[
+ {
+  "id": "AFG",
+  "iso2": "af",
+  "name": "Afghánistán",
+  "aliases": [
+   "Afghánská islámská republika"
+  ],
+  "capital": "Kábul",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 43844111,
+  "populationYear": 2025,
+  "avgTemp": 13.37,
+  "gdp": 14502158192,
+  "gdpYear": 2022,
+  "area": 652230,
+  "lat": 33,
+  "lon": 65,
+  "centroid": [
+   65.926,
+   33.819
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "IRN",
+   "PAK",
+   "TJK",
+   "TKM",
+   "UZB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 29,
+    "white": 4,
+    "green": 34,
+    "black": 34
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "AGO",
+  "iso2": "ao",
+  "name": "Angola",
+  "aliases": [
+   "Angolská republika"
+  ],
+  "capital": "Luanda",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 39040039,
+  "populationYear": 2025,
+  "avgTemp": 21.77,
+  "gdp": 84722957642,
+  "gdpYear": 2023,
+  "area": 1246700,
+  "lat": -12.5,
+  "lon": 18.5,
+  "centroid": [
+   17.532,
+   -12.271
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "COD",
+   "COG",
+   "NAM",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 48,
+    "yellow": 5,
+    "black": 48
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ALB",
+  "iso2": "al",
+  "name": "Albánie",
+  "aliases": [
+   "Albánská republika"
+  ],
+  "capital": "Tirana",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 2349580,
+  "populationYear": 2025,
+  "avgTemp": 12.44,
+  "gdp": 22977677861,
+  "gdpYear": 2023,
+  "area": 28748,
+  "lat": 41,
+  "lon": 20,
+  "centroid": [
+   20.052,
+   41.135
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GRC",
+   "MKD",
+   "MNE",
+   "UNK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "black"
+   ],
+   "shares": {
+    "red": 87,
+    "black": 13
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "AND",
+  "iso2": "ad",
+  "name": "Andorra",
+  "aliases": [
+   "Andorrské knížectví"
+  ],
+  "capital": "Andorra la Vella",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 82904,
+  "populationYear": 2025,
+  "avgTemp": 8.27,
+  "gdp": 3727673593,
+  "gdpYear": 2023,
+  "area": 468,
+  "lat": 42.5,
+  "lon": 1.5,
+  "centroid": [
+   1.561,
+   42.542
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "ESP",
+   "FRA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 34,
+    "blue": 33,
+    "yellow": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ARE",
+  "iso2": "ae",
+  "name": "Spojené arabské emiráty",
+  "aliases": [
+   "SAE",
+   "Emiráty",
+   "Arabské emiráty"
+  ],
+  "capital": "Abú Zabí",
+  "capitalAlt": [
+   "Abu Dhabi"
+  ],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 11513149,
+  "populationYear": 2025,
+  "avgTemp": 28.17,
+  "gdp": 504173451327,
+  "gdpYear": 2023,
+  "area": 83600,
+  "lat": 24,
+  "lon": 54,
+  "centroid": [
+   54.293,
+   23.905
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "OMN",
+   "SAU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 34,
+    "white": 22,
+    "green": 22,
+    "black": 22
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ARG",
+  "iso2": "ar",
+  "name": "Argentina",
+  "aliases": [
+   "Argentinská republika"
+  ],
+  "capital": "Buenos Aires",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 45851378,
+  "populationYear": 2025,
+  "avgTemp": 15.11,
+  "gdp": 640591410664,
+  "gdpYear": 2023,
+  "area": 2780400,
+  "lat": -34,
+  "lon": -64,
+  "centroid": [
+   -64.763,
+   -34.684
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BOL",
+   "BRA",
+   "CHL",
+   "PRY",
+   "URY"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "white": 31,
+    "blue": 67,
+    "yellow": 1
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ARM",
+  "iso2": "am",
+  "name": "Arménie",
+  "aliases": [
+   "Arménská republika"
+  ],
+  "capital": "Jerevan",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 3086700,
+  "populationYear": 2025,
+  "avgTemp": 7.82,
+  "gdp": 24212134631,
+  "gdpYear": 2023,
+  "area": 29743,
+  "lat": 40,
+  "lon": 45,
+  "centroid": [
+   44.938,
+   40.288
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AZE",
+   "GEO",
+   "IRN",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "orange"
+   ],
+   "shares": {
+    "red": 50,
+    "blue": 50,
+    "orange": 1
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ATG",
+  "iso2": "ag",
+  "name": "Antigua a Barbuda",
+  "aliases": [],
+  "capital": "Saint John's",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 94209,
+  "populationYear": 2025,
+  "avgTemp": 27.2,
+  "gdp": 2033085185,
+  "gdpYear": 2023,
+  "area": 442,
+  "lat": 17.05,
+  "lon": -61.8,
+  "centroid": [
+   -61.794,
+   17.276
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 7,
+    "blue": 11,
+    "yellow": 8,
+    "black": 24
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "AUS",
+  "iso2": "au",
+  "name": "Austrálie",
+  "aliases": [
+   "Australské společenství"
+  ],
+  "capital": "Canberra",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Australia and New Zealand",
+  "population": 27614411,
+  "populationYear": 2025,
+  "avgTemp": 22.05,
+  "gdp": 1723827215335,
+  "gdpYear": 2023,
+  "area": 7692024,
+  "lat": -27,
+  "lon": 133,
+  "centroid": [
+   134.304,
+   -25.764
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 11,
+    "white": 14,
+    "blue": 75
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "AUT",
+  "iso2": "at",
+  "name": "Rakousko",
+  "aliases": [
+   "Rakouská republika"
+  ],
+  "capital": "Vídeň",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 9208163,
+  "populationYear": 2025,
+  "avgTemp": 7.44,
+  "gdp": 516034144116,
+  "gdpYear": 2023,
+  "area": 83871,
+  "lat": 47.33333333,
+  "lon": 13.33333333,
+  "centroid": [
+   14.11,
+   47.592
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHE",
+   "CZE",
+   "DEU",
+   "HUN",
+   "ITA",
+   "LIE",
+   "SVK",
+   "SVN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 67,
+    "white": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "AZE",
+  "iso2": "az",
+  "name": "Ázerbájdžán",
+  "aliases": [
+   "Ázerbájdžánská republika"
+  ],
+  "capital": "Baku",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 10246996,
+  "populationYear": 2025,
+  "avgTemp": 12.96,
+  "gdp": 72356176471,
+  "gdpYear": 2023,
+  "area": 86600,
+  "lat": 40.5,
+  "lon": 47.5,
+  "centroid": [
+   47.548,
+   40.287
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARM",
+   "GEO",
+   "IRN",
+   "RUS",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "red": 31,
+    "white": 3,
+    "blue": 33,
+    "green": 33
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BDI",
+  "iso2": "bi",
+  "name": "Burundi",
+  "aliases": [
+   "Burundská republika"
+  ],
+  "capital": "Gitega",
+  "capitalAlt": [
+   "Bujumbura"
+  ],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 14390003,
+  "populationYear": 2025,
+  "avgTemp": 20.51,
+  "gdp": 2642161669,
+  "gdpYear": 2023,
+  "area": 27834,
+  "lat": -3.5,
+  "lon": 30,
+  "centroid": [
+   29.875,
+   -3.359
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "COD",
+   "RWA",
+   "TZA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 41,
+    "green": 23
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BEL",
+  "iso2": "be",
+  "name": "Belgie",
+  "aliases": [
+   "Belgické království"
+  ],
+  "capital": "Brusel",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 11941781,
+  "populationYear": 2025,
+  "avgTemp": 10.67,
+  "gdp": 632216577075,
+  "gdpYear": 2023,
+  "area": 30528,
+  "lat": 50.83333333,
+  "lon": 4,
+  "centroid": [
+   4.646,
+   50.639
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DEU",
+   "FRA",
+   "LUX",
+   "NLD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "yellow": 33,
+    "black": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BEN",
+  "iso2": "bj",
+  "name": "Benin",
+  "aliases": [
+   "Beninská republika"
+  ],
+  "capital": "Porto-Novo",
+  "capitalAlt": [
+   "Cotonou"
+  ],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 14814460,
+  "populationYear": 2025,
+  "avgTemp": 28.02,
+  "gdp": 19673284686,
+  "gdpYear": 2023,
+  "area": 112622,
+  "lat": 9.5,
+  "lon": 2.25,
+  "centroid": [
+   2.327,
+   9.636
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BFA",
+   "NER",
+   "NGA",
+   "TGO"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 30,
+    "green": 40,
+    "yellow": 30
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BFA",
+  "iso2": "bf",
+  "name": "Burkina Faso",
+  "aliases": [],
+  "capital": "Ouagadougou",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 24074580,
+  "populationYear": 2025,
+  "avgTemp": 30.4,
+  "gdp": 20324617839,
+  "gdpYear": 2023,
+  "area": 272967,
+  "lat": 13,
+  "lon": -2,
+  "centroid": [
+   -1.761,
+   12.271
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BEN",
+   "CIV",
+   "GHA",
+   "MLI",
+   "NER",
+   "TGO"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 49,
+    "green": 49,
+    "yellow": 2
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BGD",
+  "iso2": "bd",
+  "name": "Bangladéš",
+  "aliases": [
+   "Bangladéšská lidová republika"
+  ],
+  "capital": "Dháka",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 175686899,
+  "populationYear": 2025,
+  "avgTemp": 25.71,
+  "gdp": 437415331041,
+  "gdpYear": 2023,
+  "area": 147570,
+  "lat": 24,
+  "lon": 90,
+  "centroid": [
+   90.247,
+   23.861
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IND",
+   "MMR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green"
+   ],
+   "shares": {
+    "red": 26,
+    "green": 74
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BGR",
+  "iso2": "bg",
+  "name": "Bulharsko",
+  "aliases": [
+   "Bulharská republika"
+  ],
+  "capital": "Sofie",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 6433302,
+  "populationYear": 2025,
+  "avgTemp": 11.35,
+  "gdp": 101584384673,
+  "gdpYear": 2023,
+  "area": 110879,
+  "lat": 43,
+  "lon": 25,
+  "centroid": [
+   25.209,
+   42.771
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GRC",
+   "MKD",
+   "ROU",
+   "SRB",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "green": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BHR",
+  "iso2": "bh",
+  "name": "Bahrajn",
+  "aliases": [
+   "Království Bahrajn"
+  ],
+  "capital": "Manáma",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 1600366,
+  "populationYear": 2025,
+  "avgTemp": 27.69,
+  "gdp": 43205000000,
+  "gdpYear": 2023,
+  "area": 765,
+  "lat": 26,
+  "lon": 50.55,
+  "centroid": [
+   50.542,
+   26.042
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 76,
+    "white": 24
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BHS",
+  "iso2": "bs",
+  "name": "Bahamy",
+  "aliases": [
+   "Bahamské společenství"
+  ],
+  "capital": "Nassau",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 403033,
+  "populationYear": 2025,
+  "avgTemp": 25.58,
+  "gdp": 14338500000,
+  "gdpYear": 2023,
+  "area": 13943,
+  "lat": 24.25,
+  "lon": -76,
+  "centroid": [
+   -76.591,
+   24.279
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "blue": 53,
+    "yellow": 16,
+    "black": 31
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "BIH",
+  "iso2": "ba",
+  "name": "Bosna a Hercegovina",
+  "aliases": [
+   "Bosna",
+   "BiH"
+  ],
+  "capital": "Sarajevo",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 3140095,
+  "populationYear": 2025,
+  "avgTemp": 10.35,
+  "gdp": 27054889363,
+  "gdpYear": 2023,
+  "area": 51209,
+  "lat": 44,
+  "lon": 18,
+  "centroid": [
+   17.775,
+   44.171
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "HRV",
+   "MNE",
+   "SRB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "white": 6,
+    "blue": 57,
+    "yellow": 37
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BLR",
+  "iso2": "by",
+  "name": "Bělorusko",
+  "aliases": [
+   "Běloruská republika",
+   "Bílá Rus"
+  ],
+  "capital": "Minsk",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Eastern Europe",
+  "population": 9085991,
+  "populationYear": 2025,
+  "avgTemp": 7.45,
+  "gdp": 71857382746,
+  "gdpYear": 2023,
+  "area": 207600,
+  "lat": 53,
+  "lon": 28,
+  "centroid": [
+   28.016,
+   53.519
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "LTU",
+   "LVA",
+   "POL",
+   "RUS",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 65,
+    "white": 7,
+    "green": 28
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BLZ",
+  "iso2": "bz",
+  "name": "Belize",
+  "aliases": [],
+  "capital": "Belmopan",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 422924,
+  "populationYear": 2025,
+  "avgTemp": 25.7,
+  "gdp": 3281500000,
+  "gdpYear": 2023,
+  "area": 22966,
+  "lat": 17.25,
+  "lon": -88.75,
+  "centroid": [
+   -88.711,
+   17.199
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GTM",
+   "MEX"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 18,
+    "white": 27,
+    "blue": 56
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BOL",
+  "iso2": "bo",
+  "name": "Bolívie",
+  "aliases": [
+   "Mnohonárodnostní stát Bolívie"
+  ],
+  "capital": "Sucre",
+  "capitalAlt": [
+   "La Paz"
+  ],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 12581843,
+  "populationYear": 2025,
+  "avgTemp": 20.76,
+  "gdp": 45849832906,
+  "gdpYear": 2023,
+  "area": 1098581,
+  "lat": -17,
+  "lon": -65,
+  "centroid": [
+   -64.698,
+   -16.682
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARG",
+   "BRA",
+   "CHL",
+   "PER",
+   "PRY"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 35,
+    "green": 34,
+    "yellow": 31
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BRA",
+  "iso2": "br",
+  "name": "Brazílie",
+  "aliases": [
+   "Brazilská federativní republika"
+  ],
+  "capital": "Brasília",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 212812405,
+  "populationYear": 2025,
+  "avgTemp": 25.44,
+  "gdp": 2173665655937,
+  "gdpYear": 2023,
+  "area": 8515767,
+  "lat": -10,
+  "lon": -55,
+  "centroid": [
+   -53.216,
+   -10.639
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARG",
+   "BOL",
+   "COL",
+   "GUY",
+   "PER",
+   "PRY",
+   "SUR",
+   "URY",
+   "VEN"
+  ],
+  "overseasNeighbors": [
+   "FRA"
+  ],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "white": 2,
+    "blue": 14,
+    "green": 62,
+    "yellow": 22
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BRB",
+  "iso2": "bb",
+  "name": "Barbados",
+  "aliases": [],
+  "capital": "Bridgetown",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 282623,
+  "populationYear": 2025,
+  "avgTemp": 26.61,
+  "gdp": 6393564190,
+  "gdpYear": 2023,
+  "area": 430,
+  "lat": 13.16666666,
+  "lon": -59.53333333,
+  "centroid": [
+   -59.56,
+   13.181
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "blue": 67,
+    "yellow": 30,
+    "black": 3
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BRN",
+  "iso2": "bn",
+  "name": "Brunej",
+  "aliases": [
+   "Sultanát Brunej"
+  ],
+  "capital": "Bandar Seri Begawan",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 466330,
+  "populationYear": 2025,
+  "avgTemp": 26.95,
+  "gdp": 15128292954,
+  "gdpYear": 2023,
+  "area": 5765,
+  "lat": 4.5,
+  "lon": 114.66666666,
+  "centroid": [
+   114.722,
+   4.52
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "MYS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 9,
+    "white": 21,
+    "yellow": 54,
+    "black": 17
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BTN",
+  "iso2": "bt",
+  "name": "Bhútán",
+  "aliases": [
+   "Bhútánské království"
+  ],
+  "capital": "Thimphu",
+  "capitalAlt": [
+   "Thimbu"
+  ],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 796682,
+  "populationYear": 2025,
+  "avgTemp": 10.38,
+  "gdp": 2898227713,
+  "gdpYear": 2022,
+  "area": 38394,
+  "lat": 27.5,
+  "lon": 90.5,
+  "centroid": [
+   90.402,
+   27.412
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "IND"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "yellow",
+    "orange"
+   ],
+   "shares": {
+    "white": 16,
+    "yellow": 44,
+    "orange": 41
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "BWA",
+  "iso2": "bw",
+  "name": "Botswana",
+  "aliases": [
+   "Botswanská republika"
+  ],
+  "capital": "Gaborone",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Southern Africa",
+  "population": 2562122,
+  "populationYear": 2025,
+  "avgTemp": 22.09,
+  "gdp": 19395765126,
+  "gdpYear": 2023,
+  "area": 582000,
+  "lat": -22,
+  "lon": 24,
+  "centroid": [
+   23.809,
+   -22.166
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "NAM",
+   "ZAF",
+   "ZMB",
+   "ZWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "black"
+   ],
+   "shares": {
+    "white": 11,
+    "blue": 67,
+    "black": 23
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CAF",
+  "iso2": "cf",
+  "name": "Středoafrická republika",
+  "aliases": [
+   "SAR"
+  ],
+  "capital": "Bangui",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 5513282,
+  "populationYear": 2025,
+  "avgTemp": 25.47,
+  "gdp": 2555492085,
+  "gdpYear": 2023,
+  "area": 622984,
+  "lat": 7,
+  "lon": 21,
+  "centroid": [
+   20.462,
+   6.572
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CMR",
+   "COD",
+   "COG",
+   "SDN",
+   "SSD",
+   "TCD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 19,
+    "white": 20,
+    "blue": 19,
+    "green": 21,
+    "yellow": 21
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CAN",
+  "iso2": "ca",
+  "name": "Kanada",
+  "aliases": [],
+  "capital": "Ottawa",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "North America",
+  "population": 41651653,
+  "populationYear": 2025,
+  "avgTemp": -4.03,
+  "gdp": 2140085567791,
+  "gdpYear": 2023,
+  "area": 9984670,
+  "lat": 60,
+  "lon": -95,
+  "centroid": [
+   -96.549,
+   60.417
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "USA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 57,
+    "white": 43
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CHE",
+  "iso2": "ch",
+  "name": "Švýcarsko",
+  "aliases": [
+   "Švýcarská konfederace"
+  ],
+  "capital": "Bern",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 9092436,
+  "populationYear": 2025,
+  "avgTemp": 6.47,
+  "gdp": 884940402230,
+  "gdpYear": 2023,
+  "area": 41284,
+  "lat": 47,
+  "lon": 8,
+  "centroid": [
+   8.206,
+   46.799
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "DEU",
+   "FRA",
+   "ITA",
+   "LIE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 85,
+    "white": 15
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CHL",
+  "iso2": "cl",
+  "name": "Chile",
+  "aliases": [
+   "Chilská republika"
+  ],
+  "capital": "Santiago de Chile",
+  "capitalAlt": [
+   "Santiago"
+  ],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 19859921,
+  "populationYear": 2025,
+  "avgTemp": 9.39,
+  "gdp": 335533331669,
+  "gdpYear": 2023,
+  "area": 756102,
+  "lat": -30,
+  "lon": -71,
+  "centroid": [
+   -71.056,
+   -36.075
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARG",
+   "BOL",
+   "PER"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 33,
+    "blue": 17
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CHN",
+  "iso2": "cn",
+  "name": "Čína",
+  "aliases": [
+   "Čínská lidová republika",
+   "ČLR"
+  ],
+  "capital": "Peking",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 1406585000,
+  "populationYear": 2025,
+  "avgTemp": 7.59,
+  "gdp": 17794781986104,
+  "gdpYear": 2023,
+  "area": 9706961,
+  "lat": 35,
+  "lon": 105,
+  "centroid": [
+   103.378,
+   36.691
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "BTN",
+   "IND",
+   "KAZ",
+   "KGZ",
+   "LAO",
+   "MMR",
+   "MNG",
+   "NPL",
+   "PAK",
+   "PRK",
+   "RUS",
+   "TJK",
+   "VNM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 97,
+    "yellow": 3
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CIV",
+  "iso2": "ci",
+  "name": "Pobřeží slonoviny",
+  "aliases": [
+   "Republika Pobřeží slonoviny",
+   "Côte d'Ivoire"
+  ],
+  "capital": "Yamoussoukro",
+  "capitalAlt": [
+   "Abidžan"
+  ],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 32711547,
+  "populationYear": 2025,
+  "avgTemp": 26.8,
+  "gdp": 78788828907,
+  "gdpYear": 2023,
+  "area": 322463,
+  "lat": 8,
+  "lon": -5,
+  "centroid": [
+   -5.569,
+   7.626
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BFA",
+   "GHA",
+   "GIN",
+   "LBR",
+   "MLI"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "white": 33,
+    "green": 33,
+    "orange": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CMR",
+  "iso2": "cm",
+  "name": "Kamerun",
+  "aliases": [
+   "Kamerunská republika"
+  ],
+  "capital": "Yaoundé",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 29879337,
+  "populationYear": 2025,
+  "avgTemp": 24.8,
+  "gdp": 47945510090,
+  "gdpYear": 2023,
+  "area": 475442,
+  "lat": 6,
+  "lon": 12,
+  "centroid": [
+   12.734,
+   5.681
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CAF",
+   "COG",
+   "GAB",
+   "GNQ",
+   "NGA",
+   "TCD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 32,
+    "green": 33,
+    "yellow": 35
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "COD",
+  "iso2": "cd",
+  "name": "DR Kongo",
+  "aliases": [
+   "Demokratická republika Kongo",
+   "DRK",
+   "Kongo Kinshasa",
+   "Zair"
+  ],
+  "capital": "Kinshasa",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 112832473,
+  "populationYear": 2025,
+  "avgTemp": 24.35,
+  "gdp": 66383287003,
+  "gdpYear": 2023,
+  "area": 2344858,
+  "lat": 0,
+  "lon": 25,
+  "centroid": [
+   23.638,
+   -2.865
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AGO",
+   "BDI",
+   "CAF",
+   "COG",
+   "RWA",
+   "SSD",
+   "TZA",
+   "UGA",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 20,
+    "blue": 67,
+    "yellow": 13
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "COG",
+  "iso2": "cg",
+  "name": "Kongo",
+  "aliases": [
+   "Konžská republika",
+   "Republika Kongo",
+   "Kongo Brazzaville"
+  ],
+  "capital": "Brazzaville",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 6484437,
+  "populationYear": 2025,
+  "avgTemp": 24.74,
+  "gdp": 15321055818,
+  "gdpYear": 2023,
+  "area": 342000,
+  "lat": -1,
+  "lon": 15,
+  "centroid": [
+   15.221,
+   -0.837
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AGO",
+   "CAF",
+   "CMR",
+   "COD",
+   "GAB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 31,
+    "green": 32,
+    "yellow": 37
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "COL",
+  "iso2": "co",
+  "name": "Kolumbie",
+  "aliases": [
+   "Kolumbijská republika"
+  ],
+  "capital": "Bogotá",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 53425635,
+  "populationYear": 2025,
+  "avgTemp": 25,
+  "gdp": 363540156235,
+  "gdpYear": 2023,
+  "area": 1141748,
+  "lat": 4,
+  "lon": -72,
+  "centroid": [
+   -73.077,
+   3.903
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BRA",
+   "ECU",
+   "PAN",
+   "PER",
+   "VEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 25,
+    "blue": 25,
+    "yellow": 50
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "COM",
+  "iso2": "km",
+  "name": "Komory",
+  "aliases": [
+   "Komorský svaz"
+  ],
+  "capital": "Moroni",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 882847,
+  "populationYear": 2025,
+  "avgTemp": 23.73,
+  "gdp": 1352380972,
+  "gdpYear": 2023,
+  "area": 1862,
+  "lat": -12.16666666,
+  "lon": 44.25,
+  "centroid": [
+   43.684,
+   -11.879
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 14,
+    "white": 18,
+    "blue": 22,
+    "green": 24,
+    "yellow": 22
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "CPV",
+  "iso2": "cv",
+  "name": "Kapverdy",
+  "aliases": [
+   "Kapverdská republika",
+   "Kapverdské ostrovy",
+   "Cabo Verde"
+  ],
+  "capital": "Praia",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 527326,
+  "populationYear": 2025,
+  "avgTemp": 22.53,
+  "gdp": 2587252076,
+  "gdpYear": 2023,
+  "area": 4033,
+  "lat": 16,
+  "lon": -24,
+  "centroid": [
+   -23.958,
+   15.955
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 8,
+    "white": 16,
+    "blue": 73,
+    "yellow": 3
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CRI",
+  "iso2": "cr",
+  "name": "Kostarika",
+  "aliases": [
+   "Kostarická republika"
+  ],
+  "capital": "San José",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 5152950,
+  "populationYear": 2025,
+  "avgTemp": 24.83,
+  "gdp": 86497941439,
+  "gdpYear": 2023,
+  "area": 51100,
+  "lat": 10,
+  "lon": -84,
+  "centroid": [
+   -84.19,
+   9.976
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "NIC",
+   "PAN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 34,
+    "blue": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CUB",
+  "iso2": "cu",
+  "name": "Kuba",
+  "aliases": [
+   "Kubánská republika"
+  ],
+  "capital": "Havana",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 10937203,
+  "populationYear": 2025,
+  "avgTemp": 25.81,
+  "gdp": 107351800000,
+  "gdpYear": 2020,
+  "area": 109884,
+  "lat": 21.5,
+  "lon": -80,
+  "centroid": [
+   -78.987,
+   21.638
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 30,
+    "white": 27,
+    "blue": 43
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "CYP",
+  "iso2": "cy",
+  "name": "Kypr",
+  "aliases": [
+   "Kyperská republika"
+  ],
+  "capital": "Nikósie",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 1370754,
+  "populationYear": 2025,
+  "avgTemp": 18.95,
+  "gdp": 32229622669,
+  "gdpYear": 2023,
+  "area": 9251,
+  "lat": 35,
+  "lon": 33,
+  "centroid": [
+   33.218,
+   35.048
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "white": 89,
+    "green": 2,
+    "orange": 10
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "CZE",
+  "iso2": "cz",
+  "name": "Česko",
+  "aliases": [
+   "Česká republika",
+   "ČR",
+   "Čechy"
+  ],
+  "capital": "Praha",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 10886878,
+  "populationYear": 2025,
+  "avgTemp": 8.6,
+  "gdp": 330858339872,
+  "gdpYear": 2023,
+  "area": 78865,
+  "lat": 49.75,
+  "lon": 15.5,
+  "centroid": [
+   15.319,
+   49.738
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "DEU",
+   "POL",
+   "SVK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 36,
+    "blue": 28
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "DEU",
+  "iso2": "de",
+  "name": "Německo",
+  "aliases": [
+   "Spolková republika Německo",
+   "SRN"
+  ],
+  "capital": "Berlín",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 83491249,
+  "populationYear": 2025,
+  "avgTemp": 9.59,
+  "gdp": 4456081016706,
+  "gdpYear": 2023,
+  "area": 357114,
+  "lat": 51,
+  "lon": 9,
+  "centroid": [
+   10.364,
+   51.051
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "BEL",
+   "CHE",
+   "CZE",
+   "DNK",
+   "FRA",
+   "LUX",
+   "NLD",
+   "POL"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "yellow": 33,
+    "black": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "DJI",
+  "iso2": "dj",
+  "name": "Džibutsko",
+  "aliases": [
+   "Džibutská republika"
+  ],
+  "capital": "Džibuti",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 1184076,
+  "populationYear": 2025,
+  "avgTemp": 28.49,
+  "gdp": 4098530514,
+  "gdpYear": 2023,
+  "area": 23200,
+  "lat": 11.5,
+  "lon": 43,
+  "centroid": [
+   42.56,
+   11.749
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ERI",
+   "ETH",
+   "SOM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "red": 1,
+    "white": 27,
+    "blue": 36,
+    "green": 36
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "DMA",
+  "iso2": "dm",
+  "name": "Dominika",
+  "aliases": [
+   "Dominikánské společenství"
+  ],
+  "capital": "Roseau",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 65871,
+  "populationYear": 2025,
+  "avgTemp": 26.83,
+  "gdp": 653992593,
+  "gdpYear": 2023,
+  "area": 751,
+  "lat": 15.41666666,
+  "lon": -61.33333333,
+  "centroid": [
+   -61.358,
+   15.439
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 14,
+    "white": 10,
+    "green": 56,
+    "yellow": 10,
+    "black": 10
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "DNK",
+  "iso2": "dk",
+  "name": "Dánsko",
+  "aliases": [
+   "Dánské království"
+  ],
+  "capital": "Kodaň",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 6009169,
+  "populationYear": 2025,
+  "avgTemp": 8.9,
+  "gdp": 404198757538,
+  "gdpYear": 2023,
+  "area": 43094,
+  "lat": 56,
+  "lon": 10,
+  "centroid": [
+   10.042,
+   55.975
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [
+   "DEU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 76,
+    "white": 24
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "DOM",
+  "iso2": "do",
+  "name": "Dominikánská republika",
+  "aliases": [
+   "Dominikána"
+  ],
+  "capital": "Santo Domingo",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 11520487,
+  "populationYear": 2025,
+  "avgTemp": 24.55,
+  "gdp": 121444279314,
+  "gdpYear": 2023,
+  "area": 48671,
+  "lat": 19,
+  "lon": -70.66666666,
+  "centroid": [
+   -70.505,
+   18.895
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "HTI"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 35,
+    "white": 31,
+    "blue": 35
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "DZA",
+  "iso2": "dz",
+  "name": "Alžírsko",
+  "aliases": [
+   "Alžírská demokratická a lidová republika"
+  ],
+  "capital": "Alžír",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 47435312,
+  "populationYear": 2025,
+  "avgTemp": 23.6,
+  "gdp": 239899491128,
+  "gdpYear": 2023,
+  "area": 2381741,
+  "lat": 28,
+  "lon": 3,
+  "centroid": [
+   2.631,
+   28.056
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "LBY",
+   "MAR",
+   "MLI",
+   "MRT",
+   "NER",
+   "TUN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 7,
+    "white": 48,
+    "green": 46
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ECU",
+  "iso2": "ec",
+  "name": "Ekvádor",
+  "aliases": [
+   "Ekvádorská republika"
+  ],
+  "capital": "Quito",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 18289896,
+  "populationYear": 2025,
+  "avgTemp": 21.43,
+  "gdp": 118844826000,
+  "gdpYear": 2023,
+  "area": 276841,
+  "lat": -2,
+  "lon": -77.5,
+  "centroid": [
+   -78.749,
+   -1.424
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "COL",
+   "PER"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 29,
+    "blue": 23,
+    "yellow": 48
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "EGY",
+  "iso2": "eg",
+  "name": "Egypt",
+  "aliases": [
+   "Egyptská arabská republika"
+  ],
+  "capital": "Káhira",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 118365995,
+  "populationYear": 2025,
+  "avgTemp": 23.14,
+  "gdp": 395926075163,
+  "gdpYear": 2023,
+  "area": 1002450,
+  "lat": 27,
+  "lon": 30,
+  "centroid": [
+   29.878,
+   26.46
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ISR",
+   "LBY",
+   "PSE",
+   "SDN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 31,
+    "yellow": 2,
+    "black": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ERI",
+  "iso2": "er",
+  "name": "Eritrea",
+  "aliases": [
+   "Stát Eritrea"
+  ],
+  "capital": "Asmara",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 3607003,
+  "populationYear": 2025,
+  "avgTemp": 26.63,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 117600,
+  "lat": 15,
+  "lon": 39,
+  "centroid": [
+   38.857,
+   15.361
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DJI",
+   "ETH",
+   "SDN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 40,
+    "blue": 25,
+    "green": 25,
+    "yellow": 10
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "ESP",
+  "iso2": "es",
+  "name": "Španělsko",
+  "aliases": [
+   "Španělské království"
+  ],
+  "capital": "Madrid",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 49355143,
+  "populationYear": 2025,
+  "avgTemp": 14.07,
+  "gdp": 1580694712516,
+  "gdpYear": 2023,
+  "area": 505992,
+  "lat": 40,
+  "lon": -4,
+  "centroid": [
+   -3.704,
+   40.207
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AND",
+   "FRA",
+   "MAR",
+   "PRT"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 54,
+    "yellow": 46
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "EST",
+  "iso2": "ee",
+  "name": "Estonsko",
+  "aliases": [
+   "Estonská republika"
+  ],
+  "capital": "Tallinn",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 1366475,
+  "populationYear": 2025,
+  "avgTemp": 6.34,
+  "gdp": 40744848828,
+  "gdpYear": 2023,
+  "area": 45227,
+  "lat": 59,
+  "lon": 26,
+  "centroid": [
+   25.545,
+   58.673
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "LVA",
+   "RUS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "black"
+   ],
+   "shares": {
+    "white": 33,
+    "blue": 33,
+    "black": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ETH",
+  "iso2": "et",
+  "name": "Etiopie",
+  "aliases": [
+   "Etiopská federativní demokratická republika"
+  ],
+  "capital": "Addis Abeba",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 135472051,
+  "populationYear": 2025,
+  "avgTemp": 23.37,
+  "gdp": 163697927594,
+  "gdpYear": 2023,
+  "area": 1104300,
+  "lat": 8,
+  "lon": 38,
+  "centroid": [
+   39.61,
+   8.614
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DJI",
+   "ERI",
+   "KEN",
+   "SDN",
+   "SOM",
+   "SSD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "blue": 8,
+    "green": 33,
+    "yellow": 26
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "FIN",
+  "iso2": "fi",
+  "name": "Finsko",
+  "aliases": [
+   "Finská republika"
+  ],
+  "capital": "Helsinky",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 5646436,
+  "populationYear": 2025,
+  "avgTemp": 2.46,
+  "gdp": 300187202696,
+  "gdpYear": 2023,
+  "area": 338424,
+  "lat": 64,
+  "lon": 26,
+  "centroid": [
+   26.195,
+   64.255
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "NOR",
+   "RUS",
+   "SWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 58,
+    "blue": 42
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "FJI",
+  "iso2": "fj",
+  "name": "Fidži",
+  "aliases": [
+   "Republika Fidžijských ostrovů"
+  ],
+  "capital": "Suva",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Melanesia",
+  "population": 933154,
+  "populationYear": 2025,
+  "avgTemp": 24.68,
+  "gdp": 5494797541,
+  "gdpYear": 2023,
+  "area": 18272,
+  "lat": -18,
+  "lon": 175,
+  "centroid": [
+   178.512,
+   -17.428
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 15,
+    "white": 13,
+    "blue": 72
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "FRA",
+  "iso2": "fr",
+  "name": "Francie",
+  "aliases": [
+   "Francouzská republika"
+  ],
+  "capital": "Paříž",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 68720337,
+  "populationYear": 2025,
+  "avgTemp": 11.65,
+  "gdp": 3030904089608,
+  "gdpYear": 2023,
+  "area": 551695,
+  "lat": 46,
+  "lon": 2,
+  "centroid": [
+   2.573,
+   46.506
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AND",
+   "BEL",
+   "CHE",
+   "DEU",
+   "ESP",
+   "ITA",
+   "LUX",
+   "MCO"
+  ],
+  "overseasNeighbors": [
+   "BRA",
+   "NLD",
+   "SUR"
+  ],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "blue": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "FSM",
+  "iso2": "fm",
+  "name": "Mikronésie",
+  "aliases": [
+   "Federativní státy Mikronésie"
+  ],
+  "capital": "Palikir",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Micronesia",
+  "population": 113683,
+  "populationYear": 2025,
+  "avgTemp": 27.28,
+  "gdp": 460000000,
+  "gdpYear": 2023,
+  "area": 702,
+  "lat": 6.91666666,
+  "lon": 158.25,
+  "centroid": [
+   153.297,
+   7.536
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 4,
+    "blue": 96
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GAB",
+  "iso2": "ga",
+  "name": "Gabon",
+  "aliases": [
+   "Gabonská republika"
+  ],
+  "capital": "Libreville",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 2593130,
+  "populationYear": 2025,
+  "avgTemp": 25.2,
+  "gdp": 20516134389,
+  "gdpYear": 2023,
+  "area": 267668,
+  "lat": -1,
+  "lon": 11.75,
+  "centroid": [
+   11.788,
+   -0.586
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CMR",
+   "COG",
+   "GNQ"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 33,
+    "green": 33,
+    "yellow": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GBR",
+  "iso2": "gb",
+  "name": "Spojené království",
+  "aliases": [
+   "Spojené království Velké Británie a Severního Irska",
+   "Velká Británie",
+   "Británie",
+   "UK",
+   "Anglie"
+  ],
+  "capital": "Londýn",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 69487000,
+  "populationYear": 2025,
+  "avgTemp": 9.24,
+  "gdp": 3340032380668,
+  "gdpYear": 2023,
+  "area": 242900,
+  "lat": 54,
+  "lon": -2,
+  "centroid": [
+   -2.758,
+   54.011
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IRL"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 43,
+    "white": 36,
+    "blue": 21
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GEO",
+  "iso2": "ge",
+  "name": "Gruzie",
+  "aliases": [],
+  "capital": "Tbilisi",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 3935766,
+  "populationYear": 2025,
+  "avgTemp": 9.01,
+  "gdp": 30535530479,
+  "gdpYear": 2023,
+  "area": 69700,
+  "lat": 42,
+  "lon": 43.5,
+  "centroid": [
+   43.524,
+   42.173
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARM",
+   "AZE",
+   "RUS",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 37,
+    "white": 63
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GHA",
+  "iso2": "gh",
+  "name": "Ghana",
+  "aliases": [
+   "Ghanská republika"
+  ],
+  "capital": "Accra",
+  "capitalAlt": [
+   "Akkra"
+  ],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 35064272,
+  "populationYear": 2025,
+  "avgTemp": 27.66,
+  "gdp": 76370394412,
+  "gdpYear": 2023,
+  "area": 238533,
+  "lat": 8,
+  "lon": -2,
+  "centroid": [
+   -1.217,
+   7.948
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BFA",
+   "CIV",
+   "TGO"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "green": 33,
+    "yellow": 31,
+    "black": 3
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GIN",
+  "iso2": "gn",
+  "name": "Guinea",
+  "aliases": [
+   "Guinejská republika"
+  ],
+  "capital": "Conakry",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 15099727,
+  "populationYear": 2025,
+  "avgTemp": 25.86,
+  "gdp": 23612295818,
+  "gdpYear": 2023,
+  "area": 245857,
+  "lat": 11,
+  "lon": -10,
+  "centroid": [
+   -10.935,
+   10.437
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CIV",
+   "GNB",
+   "LBR",
+   "MLI",
+   "SEN",
+   "SLE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "green": 33,
+    "yellow": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GMB",
+  "iso2": "gm",
+  "name": "Gambie",
+  "aliases": [
+   "Gambijská republika"
+  ],
+  "capital": "Banjul",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 2822093,
+  "populationYear": 2025,
+  "avgTemp": 28.38,
+  "gdp": 2339904157,
+  "gdpYear": 2023,
+  "area": 10689,
+  "lat": 13.46666666,
+  "lon": -16.56666666,
+  "centroid": [
+   -15.396,
+   13.451
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "SEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "red": 28,
+    "white": 15,
+    "blue": 29,
+    "green": 28
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GNB",
+  "iso2": "gw",
+  "name": "Guinea-Bissau",
+  "aliases": [
+   "Republika Guinea-Bissau"
+  ],
+  "capital": "Bissau",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 2249515,
+  "populationYear": 2025,
+  "avgTemp": 27.98,
+  "gdp": 1966461400,
+  "gdpYear": 2023,
+  "area": 36125,
+  "lat": 12,
+  "lon": -15,
+  "centroid": [
+   -14.95,
+   12.048
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GIN",
+   "SEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 32,
+    "green": 33,
+    "yellow": 33,
+    "black": 2
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GNQ",
+  "iso2": "gq",
+  "name": "Rovníková Guinea",
+  "aliases": [
+   "Republika Rovníková Guinea"
+  ],
+  "capital": "Malabo",
+  "capitalAlt": [
+   "Ciudad de la Paz"
+  ],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 1938431,
+  "populationYear": 2025,
+  "avgTemp": 24.66,
+  "gdp": 12116922539,
+  "gdpYear": 2023,
+  "area": 28051,
+  "lat": 2,
+  "lon": 10,
+  "centroid": [
+   10.342,
+   1.706
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CMR",
+   "GAB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "red": 30,
+    "white": 25,
+    "blue": 14,
+    "green": 31
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "GRC",
+  "iso2": "gr",
+  "name": "Řecko",
+  "aliases": [
+   "Řecká republika"
+  ],
+  "capital": "Athény",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 10413962,
+  "populationYear": 2025,
+  "avgTemp": 14.26,
+  "gdp": 238206312633,
+  "gdpYear": 2023,
+  "area": 131990,
+  "lat": 39,
+  "lon": 22,
+  "centroid": [
+   22.965,
+   39.048
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ALB",
+   "BGR",
+   "MKD",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 44,
+    "blue": 56
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GRD",
+  "iso2": "gd",
+  "name": "Grenada",
+  "aliases": [],
+  "capital": "Saint George's",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 117303,
+  "populationYear": 2025,
+  "avgTemp": 26.49,
+  "gdp": 1320334236,
+  "gdpYear": 2023,
+  "area": 344,
+  "lat": 12.11666666,
+  "lon": -61.66666666,
+  "centroid": [
+   -61.682,
+   12.117
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 43,
+    "green": 26,
+    "yellow": 31
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GTM",
+  "iso2": "gt",
+  "name": "Guatemala",
+  "aliases": [
+   "Republika Guatemala"
+  ],
+  "capital": "Ciudad de Guatemala",
+  "capitalAlt": [
+   "Guatemala"
+  ],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 18687881,
+  "populationYear": 2025,
+  "avgTemp": 23.65,
+  "gdp": 102050473864,
+  "gdpYear": 2023,
+  "area": 108889,
+  "lat": 15.5,
+  "lon": -90.25,
+  "centroid": [
+   -90.367,
+   15.69
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLZ",
+   "HND",
+   "MEX",
+   "SLV"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 31,
+    "blue": 69
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "GUY",
+  "iso2": "gy",
+  "name": "Guyana",
+  "aliases": [
+   "Kooperativní republika Guyana"
+  ],
+  "capital": "Georgetown",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 835986,
+  "populationYear": 2025,
+  "avgTemp": 26.12,
+  "gdp": 16786302158,
+  "gdpYear": 2023,
+  "area": 214969,
+  "lat": 5,
+  "lon": -59,
+  "centroid": [
+   -58.98,
+   4.79
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BRA",
+   "SUR",
+   "VEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 18,
+    "white": 8,
+    "green": 52,
+    "yellow": 18,
+    "black": 5
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "HND",
+  "iso2": "hn",
+  "name": "Honduras",
+  "aliases": [
+   "Honduraská republika"
+  ],
+  "capital": "Tegucigalpa",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 11005850,
+  "populationYear": 2025,
+  "avgTemp": 24.72,
+  "gdp": 34400509852,
+  "gdpYear": 2023,
+  "area": 112492,
+  "lat": 15,
+  "lon": -86.5,
+  "centroid": [
+   -86.618,
+   14.829
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GTM",
+   "NIC",
+   "SLV"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 32,
+    "blue": 68
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "HRV",
+  "iso2": "hr",
+  "name": "Chorvatsko",
+  "aliases": [
+   "Chorvatská republika"
+  ],
+  "capital": "Záhřeb",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 3876200,
+  "populationYear": 2025,
+  "avgTemp": 11.96,
+  "gdp": 82688842717,
+  "gdpYear": 2023,
+  "area": 56594,
+  "lat": 45.16666666,
+  "lon": 15.5,
+  "centroid": [
+   16.401,
+   45.076
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BIH",
+   "HUN",
+   "MNE",
+   "SRB",
+   "SVN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 35,
+    "white": 30,
+    "blue": 35
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "HTI",
+  "iso2": "ht",
+  "name": "Haiti",
+  "aliases": [
+   "Republika Haiti"
+  ],
+  "capital": "Port-au-Prince",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 11906095,
+  "populationYear": 2025,
+  "avgTemp": 24.95,
+  "gdp": 19850829758,
+  "gdpYear": 2023,
+  "area": 27750,
+  "lat": 19,
+  "lon": -72.41666666,
+  "centroid": [
+   -72.687,
+   18.935
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DOM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 48,
+    "white": 3,
+    "blue": 49
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "HUN",
+  "iso2": "hu",
+  "name": "Maďarsko",
+  "aliases": [],
+  "capital": "Budapešť",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 9514251,
+  "populationYear": 2025,
+  "avgTemp": 11.5,
+  "gdp": 212388906459,
+  "gdpYear": 2023,
+  "area": 93028,
+  "lat": 47,
+  "lon": 20,
+  "centroid": [
+   19.379,
+   47.166
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "HRV",
+   "ROU",
+   "SRB",
+   "SVK",
+   "SVN",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "green": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "IDN",
+  "iso2": "id",
+  "name": "Indonésie",
+  "aliases": [
+   "Indonéská republika"
+  ],
+  "capital": "Jakarta",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 285721236,
+  "populationYear": 2025,
+  "avgTemp": 25.96,
+  "gdp": 1371171152331,
+  "gdpYear": 2023,
+  "area": 1904569,
+  "lat": -5,
+  "lon": 120,
+  "centroid": [
+   117.181,
+   -2.264
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [
+   "MYS",
+   "PNG",
+   "TLS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 50
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "IND",
+  "iso2": "in",
+  "name": "Indie",
+  "aliases": [
+   "Indická republika"
+  ],
+  "capital": "Nové Dillí",
+  "capitalAlt": [
+   "Dillí"
+  ],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 1463865525,
+  "populationYear": 2025,
+  "avgTemp": 24.94,
+  "gdp": 3549918918778,
+  "gdpYear": 2023,
+  "area": 3287590,
+  "lat": 20,
+  "lon": 77,
+  "centroid": [
+   79.564,
+   22.777
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BGD",
+   "BTN",
+   "CHN",
+   "MMR",
+   "NPL",
+   "PAK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "white": 31,
+    "blue": 2,
+    "green": 33,
+    "orange": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "IRL",
+  "iso2": "ie",
+  "name": "Irsko",
+  "aliases": [],
+  "capital": "Dublin",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 5484367,
+  "populationYear": 2025,
+  "avgTemp": 9.73,
+  "gdp": 545629450404,
+  "gdpYear": 2023,
+  "area": 70273,
+  "lat": 53,
+  "lon": -8,
+  "centroid": [
+   -8.146,
+   53.162
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GBR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "white": 33,
+    "green": 33,
+    "orange": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "IRN",
+  "iso2": "ir",
+  "name": "Írán",
+  "aliases": [
+   "Islámská republika Írán"
+  ],
+  "capital": "Teherán",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 92417681,
+  "populationYear": 2025,
+  "avgTemp": 18.34,
+  "gdp": 401504514719,
+  "gdpYear": 2023,
+  "area": 1648195,
+  "lat": 32,
+  "lon": 53,
+  "centroid": [
+   54.441,
+   32.527
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "ARM",
+   "AZE",
+   "IRQ",
+   "PAK",
+   "TKM",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 35,
+    "green": 31
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "IRQ",
+  "iso2": "iq",
+  "name": "Irák",
+  "aliases": [
+   "Irácká republika"
+  ],
+  "capital": "Bagdád",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 47020774,
+  "populationYear": 2025,
+  "avgTemp": 22.95,
+  "gdp": 250842782139,
+  "gdpYear": 2023,
+  "area": 438317,
+  "lat": 33,
+  "lon": 44,
+  "centroid": [
+   43.774,
+   33.01
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IRN",
+   "JOR",
+   "KWT",
+   "SAU",
+   "SYR",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 31,
+    "green": 3,
+    "black": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ISL",
+  "iso2": "is",
+  "name": "Island",
+  "aliases": [],
+  "capital": "Reykjavík",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 392404,
+  "populationYear": 2025,
+  "avgTemp": 1.85,
+  "gdp": 31020032583,
+  "gdpYear": 2023,
+  "area": 103000,
+  "lat": 65,
+  "lon": -18,
+  "centroid": [
+   -18.58,
+   64.998
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 19,
+    "white": 17,
+    "blue": 65
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ISR",
+  "iso2": "il",
+  "name": "Izrael",
+  "aliases": [
+   "Stát Izrael"
+  ],
+  "capital": "Jeruzalém",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 10122800,
+  "populationYear": 2025,
+  "avgTemp": 19.99,
+  "gdp": 509901495702,
+  "gdpYear": 2023,
+  "area": 20770,
+  "lat": 31.47,
+  "lon": 35.13,
+  "centroid": [
+   35,
+   31.452
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "EGY",
+   "JOR",
+   "LBN",
+   "PSE",
+   "SYR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 70,
+    "blue": 31
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ITA",
+  "iso2": "it",
+  "name": "Itálie",
+  "aliases": [
+   "Italská republika"
+  ],
+  "capital": "Řím",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 58915656,
+  "populationYear": 2025,
+  "avgTemp": 13.22,
+  "gdp": 2254851212732,
+  "gdpYear": 2023,
+  "area": 301336,
+  "lat": 42.83333333,
+  "lon": 12.83333333,
+  "centroid": [
+   12.201,
+   42.716
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "CHE",
+   "FRA",
+   "SMR",
+   "SVN",
+   "VAT"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "green": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "JAM",
+  "iso2": "jm",
+  "name": "Jamajka",
+  "aliases": [],
+  "capital": "Kingston",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 2837077,
+  "populationYear": 2025,
+  "avgTemp": 25.91,
+  "gdp": 19423355367,
+  "gdpYear": 2023,
+  "area": 10991,
+  "lat": 18.25,
+  "lon": -77.5,
+  "centroid": [
+   -77.315,
+   18.157
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "green": 33,
+    "yellow": 34,
+    "black": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "JOR",
+  "iso2": "jo",
+  "name": "Jordánsko",
+  "aliases": [
+   "Jordánské hášimovské království"
+  ],
+  "capital": "Ammán",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 11520684,
+  "populationYear": 2025,
+  "avgTemp": 19.52,
+  "gdp": 50813642349,
+  "gdpYear": 2023,
+  "area": 89342,
+  "lat": 31,
+  "lon": 36,
+  "centroid": [
+   36.757,
+   31.239
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IRQ",
+   "ISR",
+   "PSE",
+   "SAU",
+   "SYR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 37,
+    "white": 13,
+    "green": 25,
+    "black": 25
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "JPN",
+  "iso2": "jp",
+  "name": "Japonsko",
+  "aliases": [],
+  "capital": "Tokio",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 123366734,
+  "populationYear": 2025,
+  "avgTemp": 11.78,
+  "gdp": 4212945159781,
+  "gdpYear": 2023,
+  "area": 377930,
+  "lat": 36,
+  "lon": 138,
+  "centroid": [
+   137.66,
+   37.461
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 23,
+    "white": 77
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KAZ",
+  "iso2": "kz",
+  "name": "Kazachstán",
+  "aliases": [
+   "Republika Kazachstán"
+  ],
+  "capital": "Astana",
+  "capitalAlt": [
+   "Nur-Sultan"
+  ],
+  "continent": "Asie",
+  "subregion": "Central Asia",
+  "population": 20843754,
+  "populationYear": 2025,
+  "avgTemp": 7.11,
+  "gdp": 261421121086,
+  "gdpYear": 2023,
+  "area": 2724900,
+  "lat": 48,
+  "lon": 68,
+  "centroid": [
+   67.246,
+   48.362
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "KGZ",
+   "RUS",
+   "TKM",
+   "UZB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 87,
+    "yellow": 13
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KEN",
+  "iso2": "ke",
+  "name": "Keňa",
+  "aliases": [
+   "Keňská republika"
+  ],
+  "capital": "Nairobi",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 57532493,
+  "populationYear": 2025,
+  "avgTemp": 25.08,
+  "gdp": 107440575838,
+  "gdpYear": 2023,
+  "area": 580367,
+  "lat": 1,
+  "lon": 38,
+  "centroid": [
+   37.796,
+   0.6
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ETH",
+   "SOM",
+   "SSD",
+   "TZA",
+   "UGA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 30,
+    "white": 11,
+    "green": 29,
+    "black": 30
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KGZ",
+  "iso2": "kg",
+  "name": "Kyrgyzstán",
+  "aliases": [
+   "Kyrgyzská republika",
+   "Kirgizstán",
+   "Kyrgyzie"
+  ],
+  "capital": "Biškek",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Central Asia",
+  "population": 7343064,
+  "populationYear": 2025,
+  "avgTemp": 2.65,
+  "gdp": 13987627909,
+  "gdpYear": 2023,
+  "area": 199951,
+  "lat": 41,
+  "lon": 75,
+  "centroid": [
+   74.509,
+   41.474
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "KAZ",
+   "TJK",
+   "UZB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 90,
+    "yellow": 10
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KHM",
+  "iso2": "kh",
+  "name": "Kambodža",
+  "aliases": [
+   "Kambodžské království"
+  ],
+  "capital": "Phnompenh",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 17847982,
+  "populationYear": 2025,
+  "avgTemp": 27.41,
+  "gdp": 31772759999,
+  "gdpYear": 2023,
+  "area": 181035,
+  "lat": 13,
+  "lon": 105,
+  "centroid": [
+   104.905,
+   12.719
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "LAO",
+   "THA",
+   "VNM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 39,
+    "white": 9,
+    "blue": 52
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KIR",
+  "iso2": "ki",
+  "name": "Kiribati",
+  "aliases": [
+   "Republika Kiribati"
+  ],
+  "capital": "Jižní Tarawa",
+  "capitalAlt": [
+   "Tarawa"
+  ],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Micronesia",
+  "population": 136488,
+  "populationYear": 2025,
+  "avgTemp": 27.77,
+  "gdp": 279034355,
+  "gdpYear": 2023,
+  "area": 811,
+  "lat": 1.41666666,
+  "lon": 173,
+  "centroid": [
+   -167.922,
+   0.893
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 48,
+    "white": 22,
+    "blue": 23,
+    "yellow": 8
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KNA",
+  "iso2": "kn",
+  "name": "Svatý Kryštof a Nevis",
+  "aliases": [
+   "Federace Sv. Kryštof a Nevis",
+   "Sv. Kryštof a Nevis"
+  ],
+  "capital": "Basseterre",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 46922,
+  "populationYear": 2025,
+  "avgTemp": 27.47,
+  "gdp": 1077033111,
+  "gdpYear": 2023,
+  "area": 261,
+  "lat": 17.33333333,
+  "lon": -62.75,
+  "centroid": [
+   -62.687,
+   17.265
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 29,
+    "white": 2,
+    "green": 27,
+    "yellow": 8,
+    "black": 33
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KOR",
+  "iso2": "kr",
+  "name": "Jižní Korea",
+  "aliases": [
+   "Korejská republika"
+  ],
+  "capital": "Soul",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 51684564,
+  "populationYear": 2025,
+  "avgTemp": 12.22,
+  "gdp": 1712792854202,
+  "gdpYear": 2023,
+  "area": 100210,
+  "lat": 37,
+  "lon": 127.5,
+  "centroid": [
+   127.835,
+   36.373
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "PRK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "black"
+   ],
+   "shares": {
+    "red": 7,
+    "white": 76,
+    "blue": 7,
+    "black": 9
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "KWT",
+  "iso2": "kw",
+  "name": "Kuvajt",
+  "aliases": [
+   "Stát Kuvajt"
+  ],
+  "capital": "Kuvajt",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 4865298,
+  "populationYear": 2025,
+  "avgTemp": 26.31,
+  "gdp": 161772221951,
+  "gdpYear": 2023,
+  "area": 17818,
+  "lat": 29.5,
+  "lon": 45.75,
+  "centroid": [
+   47.588,
+   29.333
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IRQ",
+   "SAU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 27,
+    "white": 21,
+    "green": 27,
+    "black": 25
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LAO",
+  "iso2": "la",
+  "name": "Laos",
+  "aliases": [
+   "Laoská lidově demokratická republika"
+  ],
+  "capital": "Vientiane",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 7873046,
+  "populationYear": 2025,
+  "avgTemp": 24.16,
+  "gdp": 15843155731,
+  "gdpYear": 2023,
+  "area": 236800,
+  "lat": 18,
+  "lon": 105,
+  "centroid": [
+   103.775,
+   18.487
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "KHM",
+   "MMR",
+   "THA",
+   "VNM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 49,
+    "white": 11,
+    "blue": 40
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LBN",
+  "iso2": "lb",
+  "name": "Libanon",
+  "aliases": [
+   "Libanonská republika"
+  ],
+  "capital": "Bejrút",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 5849421,
+  "populationYear": 2025,
+  "avgTemp": 15.45,
+  "gdp": 20992421949,
+  "gdpYear": 2022,
+  "area": 10452,
+  "lat": 33.83333333,
+  "lon": 35.83333333,
+  "centroid": [
+   35.878,
+   33.921
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ISR",
+   "SYR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 41,
+    "green": 9
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LBR",
+  "iso2": "lr",
+  "name": "Libérie",
+  "aliases": [
+   "Liberijská republika"
+  ],
+  "capital": "Monrovia",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 5731206,
+  "populationYear": 2025,
+  "avgTemp": 25.45,
+  "gdp": 4332000000,
+  "gdpYear": 2023,
+  "area": 111369,
+  "lat": 6.5,
+  "lon": -9.5,
+  "centroid": [
+   -9.32,
+   6.452
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CIV",
+   "GIN",
+   "SLE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 45,
+    "white": 41,
+    "blue": 14
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LBY",
+  "iso2": "ly",
+  "name": "Libye",
+  "aliases": [
+   "Stát Libye"
+  ],
+  "capital": "Tripolis",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 7458555,
+  "populationYear": 2025,
+  "avgTemp": 22.81,
+  "gdp": 50491722446,
+  "gdpYear": 2023,
+  "area": 1759540,
+  "lat": 25,
+  "lon": 17,
+  "centroid": [
+   18.066,
+   27.017
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DZA",
+   "EGY",
+   "NER",
+   "SDN",
+   "TCD",
+   "TUN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 25,
+    "white": 2,
+    "green": 25,
+    "black": 48
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LCA",
+  "iso2": "lc",
+  "name": "Svatá Lucie",
+  "aliases": [
+   "Sv. Lucie"
+  ],
+  "capital": "Castries",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 180149,
+  "populationYear": 2025,
+  "avgTemp": 27,
+  "gdp": 2519925939,
+  "gdpYear": 2023,
+  "area": 616,
+  "lat": 13.88333333,
+  "lon": -60.96666666,
+  "centroid": [
+   -60.97,
+   13.895
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "white": 5,
+    "blue": 79,
+    "yellow": 10,
+    "black": 5
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LIE",
+  "iso2": "li",
+  "name": "Lichtenštejnsko",
+  "aliases": [
+   "Knížectví Lichtenštejnské"
+  ],
+  "capital": "Vaduz",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 41024,
+  "populationYear": 2025,
+  "avgTemp": 7.55,
+  "gdp": 7364654515,
+  "gdpYear": 2022,
+  "area": 160,
+  "lat": 47.26666666,
+  "lon": 9.53333333,
+  "centroid": [
+   9.536,
+   47.137
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "AUT",
+   "CHE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 51,
+    "blue": 46,
+    "yellow": 3
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LKA",
+  "iso2": "lk",
+  "name": "Srí Lanka",
+  "aliases": [
+   "Srílanská demokratická socialistická republika",
+   "Cejlon"
+  ],
+  "capital": "Šrí Džajavardanapura Kotte",
+  "capitalAlt": [
+   "Kotte",
+   "Kolombo"
+  ],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 21756000,
+  "populationYear": 2025,
+  "avgTemp": 27.25,
+  "gdp": 84356860421,
+  "gdpYear": 2023,
+  "area": 65610,
+  "lat": 7,
+  "lon": 81,
+  "centroid": [
+   80.702,
+   7.611
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow",
+    "orange"
+   ],
+   "shares": {
+    "red": 43,
+    "green": 13,
+    "yellow": 32,
+    "orange": 13
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LSO",
+  "iso2": "ls",
+  "name": "Lesotho",
+  "aliases": [
+   "Lesothské království"
+  ],
+  "capital": "Maseru",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Southern Africa",
+  "population": 2363325,
+  "populationYear": 2025,
+  "avgTemp": 12.38,
+  "gdp": 2046039024,
+  "gdpYear": 2023,
+  "area": 30355,
+  "lat": -29.5,
+  "lon": 28.5,
+  "centroid": [
+   28.229,
+   -29.579
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ZAF"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "white": 36,
+    "blue": 30,
+    "green": 30,
+    "black": 4
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LTU",
+  "iso2": "lt",
+  "name": "Litva",
+  "aliases": [
+   "Litevská republika"
+  ],
+  "capital": "Vilnius",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 2888774,
+  "populationYear": 2025,
+  "avgTemp": 7.38,
+  "gdp": 77836396963,
+  "gdpYear": 2023,
+  "area": 65300,
+  "lat": 56,
+  "lon": 24,
+  "centroid": [
+   23.897,
+   55.324
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLR",
+   "LVA",
+   "POL",
+   "RUS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "green": 34,
+    "yellow": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LUX",
+  "iso2": "lu",
+  "name": "Lucembursko",
+  "aliases": [
+   "Lucemburské velkovévodství"
+  ],
+  "capital": "Lucemburk",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 686970,
+  "populationYear": 2025,
+  "avgTemp": 10.02,
+  "gdp": 85755006124,
+  "gdpYear": 2023,
+  "area": 2586,
+  "lat": 49.75,
+  "lon": 6.16666666,
+  "centroid": [
+   6.072,
+   49.767
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "BEL",
+   "DEU",
+   "FRA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "blue": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "LVA",
+  "iso2": "lv",
+  "name": "Lotyšsko",
+  "aliases": [
+   "Lotyšská republika"
+  ],
+  "capital": "Riga",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 1847785,
+  "populationYear": 2025,
+  "avgTemp": 6.87,
+  "gdp": 43627078481,
+  "gdpYear": 2023,
+  "area": 64559,
+  "lat": 57,
+  "lon": 25,
+  "centroid": [
+   24.92,
+   56.86
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLR",
+   "EST",
+   "LTU",
+   "RUS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 80,
+    "white": 20
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MAR",
+  "iso2": "ma",
+  "name": "Maroko",
+  "aliases": [
+   "Marocké království"
+  ],
+  "capital": "Rabat",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 38430770,
+  "populationYear": 2025,
+  "avgTemp": 18.14,
+  "gdp": 141109373209,
+  "gdpYear": 2023,
+  "area": 446550,
+  "lat": 32,
+  "lon": -5,
+  "centroid": [
+   -8.728,
+   29.767
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DZA",
+   "ESP"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green"
+   ],
+   "shares": {
+    "red": 98,
+    "green": 2
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MCO",
+  "iso2": "mc",
+  "name": "Monako",
+  "aliases": [
+   "Monacké knížectví"
+  ],
+  "capital": "Monako",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 38341,
+  "populationYear": 2025,
+  "avgTemp": 13.53,
+  "gdp": 8784002932,
+  "gdpYear": 2022,
+  "area": 2.02,
+  "lat": 43.73333333,
+  "lon": 7.4,
+  "centroid": [
+   7.407,
+   43.753
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "FRA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 50
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MDA",
+  "iso2": "md",
+  "name": "Moldavsko",
+  "aliases": [
+   "Moldavská republika",
+   "Moldávie"
+  ],
+  "capital": "Kišiněv",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Eastern Europe",
+  "population": 2360527,
+  "populationYear": 2025,
+  "avgTemp": 10.89,
+  "gdp": 16539436547,
+  "gdpYear": 2023,
+  "area": 33846,
+  "lat": 47,
+  "lon": 29,
+  "centroid": [
+   28.466,
+   47.187
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ROU",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 39,
+    "blue": 37,
+    "yellow": 24
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MDG",
+  "iso2": "mg",
+  "name": "Madagaskar",
+  "aliases": [
+   "Madagaskarská republika"
+  ],
+  "capital": "Antananarivo",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 32740678,
+  "populationYear": 2025,
+  "avgTemp": 22.64,
+  "gdp": 16031702915,
+  "gdpYear": 2023,
+  "area": 587041,
+  "lat": -20,
+  "lon": 47,
+  "centroid": [
+   46.743,
+   -19.317
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "green": 33
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MDV",
+  "iso2": "mv",
+  "name": "Maledivy",
+  "aliases": [
+   "Maledivská republika"
+  ],
+  "capital": "Malé",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 529676,
+  "populationYear": 2025,
+  "avgTemp": 28.11,
+  "gdp": 6600000000,
+  "gdpYear": 2023,
+  "area": 300,
+  "lat": 3.25,
+  "lon": 73,
+  "centroid": [
+   73.457,
+   3.732
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 69,
+    "white": 2,
+    "green": 30
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MEX",
+  "iso2": "mx",
+  "name": "Mexiko",
+  "aliases": [
+   "Spojené státy mexické"
+  ],
+  "capital": "Ciudad de México",
+  "capitalAlt": [
+   "Mexiko",
+   "Mexico City"
+  ],
+  "continent": "Severní Amerika",
+  "subregion": "North America",
+  "population": 131946900,
+  "populationYear": 2025,
+  "avgTemp": 21.31,
+  "gdp": 1788886821047,
+  "gdpYear": 2023,
+  "area": 1964375,
+  "lat": 23,
+  "lon": -102,
+  "centroid": [
+   -102.171,
+   23.924
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLZ",
+   "GTM",
+   "USA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 35,
+    "white": 31,
+    "green": 35
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MHL",
+  "iso2": "mh",
+  "name": "Marshallovy ostrovy",
+  "aliases": [
+   "Republika Marshallovy ostrovy"
+  ],
+  "capital": "Majuro",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Micronesia",
+  "population": 36282,
+  "populationYear": 2025,
+  "avgTemp": 28.01,
+  "gdp": 284000000,
+  "gdpYear": 2023,
+  "area": 181,
+  "lat": 9,
+  "lon": 168,
+  "centroid": [
+   170.331,
+   7.015
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "orange"
+   ],
+   "shares": {
+    "white": 20,
+    "blue": 70,
+    "orange": 10
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MKD",
+  "iso2": "mk",
+  "name": "Severní Makedonie",
+  "aliases": [
+   "Republika Severní Makedonie",
+   "Makedonie"
+  ],
+  "capital": "Skopje",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 1820909,
+  "populationYear": 2025,
+  "avgTemp": 10.79,
+  "gdp": 14761237042,
+  "gdpYear": 2023,
+  "area": 25713,
+  "lat": 41.83333333,
+  "lon": 22,
+  "centroid": [
+   21.681,
+   41.595
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ALB",
+   "BGR",
+   "GRC",
+   "SRB",
+   "UNK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 66,
+    "yellow": 34
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MLI",
+  "iso2": "ml",
+  "name": "Mali",
+  "aliases": [
+   "Republika Mali"
+  ],
+  "capital": "Bamako",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 25198821,
+  "populationYear": 2025,
+  "avgTemp": 29.21,
+  "gdp": 20904898296,
+  "gdpYear": 2023,
+  "area": 1240192,
+  "lat": 17,
+  "lon": -4,
+  "centroid": [
+   -3.59,
+   17.315
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BFA",
+   "CIV",
+   "DZA",
+   "GIN",
+   "MRT",
+   "NER",
+   "SEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "green": 33,
+    "yellow": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MLT",
+  "iso2": "mt",
+  "name": "Malta",
+  "aliases": [
+   "Maltská republika"
+  ],
+  "capital": "Valletta",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 579704,
+  "populationYear": 2025,
+  "avgTemp": 19.58,
+  "gdp": 20956999452,
+  "gdpYear": 2023,
+  "area": 316,
+  "lat": 35.83333333,
+  "lon": 14.58333333,
+  "centroid": [
+   14.405,
+   35.922
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 52,
+    "white": 48
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MMR",
+  "iso2": "mm",
+  "name": "Myanmar",
+  "aliases": [
+   "Republika Myanmarský svaz",
+   "Barma"
+  ],
+  "capital": "Neipyijto",
+  "capitalAlt": [
+   "Naypyidaw",
+   "Nay Pyi Taw"
+  ],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 54850648,
+  "populationYear": 2025,
+  "avgTemp": 23.82,
+  "gdp": 64815031669,
+  "gdpYear": 2023,
+  "area": 676578,
+  "lat": 22,
+  "lon": 98,
+  "centroid": [
+   96.495,
+   21.113
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BGD",
+   "CHN",
+   "IND",
+   "LAO",
+   "THA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 31,
+    "white": 11,
+    "green": 25,
+    "yellow": 33
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MNE",
+  "iso2": "me",
+  "name": "Černá Hora",
+  "aliases": [],
+  "capital": "Podgorica",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 623129,
+  "populationYear": 2025,
+  "avgTemp": 9.93,
+  "gdp": 7404541965,
+  "gdpYear": 2023,
+  "area": 13812,
+  "lat": 42.5,
+  "lon": 19.3,
+  "centroid": [
+   19.239,
+   42.788
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ALB",
+   "BIH",
+   "HRV",
+   "SRB",
+   "UNK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 73,
+    "yellow": 27
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MNG",
+  "iso2": "mn",
+  "name": "Mongolsko",
+  "aliases": [
+   "Stát Mongolsko"
+  ],
+  "capital": "Ulánbátar",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 3568978,
+  "populationYear": 2025,
+  "avgTemp": 1.07,
+  "gdp": 19872180370,
+  "gdpYear": 2023,
+  "area": 1564110,
+  "lat": 46,
+  "lon": 105,
+  "centroid": [
+   103.124,
+   46.956
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "RUS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 59,
+    "blue": 33,
+    "yellow": 8
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MOZ",
+  "iso2": "mz",
+  "name": "Mosambik",
+  "aliases": [
+   "Mosambická republika"
+  ],
+  "capital": "Maputo",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 35631653,
+  "populationYear": 2025,
+  "avgTemp": 24.41,
+  "gdp": 20624597847,
+  "gdpYear": 2023,
+  "area": 801590,
+  "lat": -18.25,
+  "lon": 35,
+  "centroid": [
+   35.603,
+   -17.196
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "MWI",
+   "SWZ",
+   "TZA",
+   "ZAF",
+   "ZMB",
+   "ZWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 22,
+    "white": 5,
+    "green": 27,
+    "yellow": 28,
+    "black": 19
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "MRT",
+  "iso2": "mr",
+  "name": "Mauritánie",
+  "aliases": [
+   "Mauritánská islámská republika"
+  ],
+  "capital": "Nuakšott",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 5315065,
+  "populationYear": 2025,
+  "avgTemp": 28.82,
+  "gdp": 10452577063,
+  "gdpYear": 2023,
+  "area": 1030700,
+  "lat": 20,
+  "lon": -12,
+  "centroid": [
+   -10.37,
+   20.22
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DZA",
+   "MLI",
+   "SEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 30,
+    "green": 64,
+    "yellow": 6
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MUS",
+  "iso2": "mu",
+  "name": "Mauricius",
+  "aliases": [
+   "Mauricijská republika"
+  ],
+  "capital": "Port Louis",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 1243741,
+  "populationYear": 2025,
+  "avgTemp": 23.33,
+  "gdp": 14397127281,
+  "gdpYear": 2023,
+  "area": 2040,
+  "lat": -20.28333333,
+  "lon": 57.55,
+  "centroid": [
+   57.571,
+   -20.278
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 25,
+    "blue": 25,
+    "green": 25,
+    "yellow": 25
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MWI",
+  "iso2": "mw",
+  "name": "Malawi",
+  "aliases": [
+   "Malawiská republika"
+  ],
+  "capital": "Lilongwe",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 22216120,
+  "populationYear": 2025,
+  "avgTemp": 22.66,
+  "gdp": 14084341062,
+  "gdpYear": 2023,
+  "area": 118484,
+  "lat": -13.5,
+  "lon": 34,
+  "centroid": [
+   34.283,
+   -13.204
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "MOZ",
+   "TZA",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 39,
+    "green": 33,
+    "black": 27
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "MYS",
+  "iso2": "my",
+  "name": "Malajsie",
+  "aliases": [],
+  "capital": "Kuala Lumpur",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 35977838,
+  "populationYear": 2025,
+  "avgTemp": 26.38,
+  "gdp": 399648828547,
+  "gdpYear": 2023,
+  "area": 330803,
+  "lat": 2.5,
+  "lon": 112.5,
+  "centroid": [
+   109.7,
+   3.811
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [
+   "BRN",
+   "IDN",
+   "THA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 36,
+    "blue": 25,
+    "yellow": 4
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NAM",
+  "iso2": "na",
+  "name": "Namibie",
+  "aliases": [
+   "Namibijská republika"
+  ],
+  "capital": "Windhoek",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Southern Africa",
+  "population": 3092816,
+  "populationYear": 2025,
+  "avgTemp": 20.45,
+  "gdp": 12351024844,
+  "gdpYear": 2023,
+  "area": 825615,
+  "lat": -22,
+  "lon": 17,
+  "centroid": [
+   17.195,
+   -22.07
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AGO",
+   "BWA",
+   "ZAF",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 8,
+    "blue": 25,
+    "green": 29,
+    "yellow": 3
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NER",
+  "iso2": "ne",
+  "name": "Niger",
+  "aliases": [
+   "Nigerská republika"
+  ],
+  "capital": "Niamey",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 27917831,
+  "populationYear": 2025,
+  "avgTemp": 28.04,
+  "gdp": 16819170421,
+  "gdpYear": 2023,
+  "area": 1267000,
+  "lat": 16,
+  "lon": 8,
+  "centroid": [
+   9.332,
+   17.412
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BEN",
+   "BFA",
+   "DZA",
+   "LBY",
+   "MLI",
+   "NGA",
+   "TCD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green",
+    "orange"
+   ],
+   "shares": {
+    "white": 29,
+    "green": 33,
+    "orange": 38
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NGA",
+  "iso2": "ng",
+  "name": "Nigérie",
+  "aliases": [
+   "Nigerijská federativní republika"
+  ],
+  "capital": "Abuja",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 237527782,
+  "populationYear": 2025,
+  "avgTemp": 27.3,
+  "gdp": 362814951696,
+  "gdpYear": 2023,
+  "area": 923768,
+  "lat": 10,
+  "lon": 8,
+  "centroid": [
+   8.08,
+   9.591
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BEN",
+   "CMR",
+   "NER",
+   "TCD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green"
+   ],
+   "shares": {
+    "white": 33,
+    "green": 67
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NIC",
+  "iso2": "ni",
+  "name": "Nikaragua",
+  "aliases": [
+   "Republika Nikaragua"
+  ],
+  "capital": "Managua",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 7007502,
+  "populationYear": 2025,
+  "avgTemp": 25.88,
+  "gdp": 17829215284,
+  "gdpYear": 2023,
+  "area": 130373,
+  "lat": 13,
+  "lon": -85,
+  "centroid": [
+   -85.032,
+   12.845
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CRI",
+   "HND"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 32,
+    "blue": 68
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NLD",
+  "iso2": "nl",
+  "name": "Nizozemsko",
+  "aliases": [
+   "Nizozemské království",
+   "Holandsko"
+  ],
+  "capital": "Amsterdam",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Western Europe",
+  "population": 18087633,
+  "populationYear": 2025,
+  "avgTemp": 10.49,
+  "gdp": 1118124749886,
+  "gdpYear": 2023,
+  "area": 41850,
+  "lat": 52.5,
+  "lon": 5.75,
+  "centroid": [
+   5.58,
+   52.262
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BEL",
+   "DEU"
+  ],
+  "overseasNeighbors": [
+   "FRA"
+  ],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "blue": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NOR",
+  "iso2": "no",
+  "name": "Norsko",
+  "aliases": [
+   "Norské království"
+  ],
+  "capital": "Oslo",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 5610870,
+  "populationYear": 2025,
+  "avgTemp": 2.21,
+  "gdp": 485513316504,
+  "gdpYear": 2023,
+  "area": 323802,
+  "lat": 62,
+  "lon": 10,
+  "centroid": [
+   12.746,
+   66.361
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "FIN",
+   "RUS",
+   "SWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 61,
+    "white": 18,
+    "blue": 21
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NPL",
+  "iso2": "np",
+  "name": "Nepál",
+  "aliases": [
+   "Federativní demokratická republika Nepál"
+  ],
+  "capital": "Káthmándú",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 29618118,
+  "populationYear": 2025,
+  "avgTemp": 14.17,
+  "gdp": 40908073367,
+  "gdpYear": 2023,
+  "area": 147181,
+  "lat": 28,
+  "lon": 84,
+  "centroid": [
+   83.947,
+   28.258
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "IND"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 23,
+    "white": 69,
+    "blue": 7
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NRU",
+  "iso2": "nr",
+  "name": "Nauru",
+  "aliases": [
+   "Republika Nauru"
+  ],
+  "capital": "Yaren",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Micronesia",
+  "population": 12025,
+  "populationYear": 2025,
+  "avgTemp": 27.83,
+  "gdp": 154127798,
+  "gdpYear": 2023,
+  "area": 21,
+  "lat": -0.53333333,
+  "lon": 166.91666666,
+  "centroid": [
+   166.933,
+   -0.519
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "white": 3,
+    "blue": 88,
+    "yellow": 8
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "NZL",
+  "iso2": "nz",
+  "name": "Nový Zéland",
+  "aliases": [],
+  "capital": "Wellington",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Australia and New Zealand",
+  "population": 5324700,
+  "populationYear": 2025,
+  "avgTemp": 10.46,
+  "gdp": 253465703232,
+  "gdpYear": 2023,
+  "area": 270467,
+  "lat": -41,
+  "lon": 174,
+  "centroid": [
+   172.921,
+   -41.703
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 11,
+    "white": 10,
+    "blue": 79
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "OMN",
+  "iso2": "om",
+  "name": "Omán",
+  "aliases": [
+   "Sultanát Omán"
+  ],
+  "capital": "Maskat",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 5494691,
+  "populationYear": 2025,
+  "avgTemp": 27.64,
+  "gdp": 108192457737,
+  "gdpYear": 2023,
+  "area": 309500,
+  "lat": 21,
+  "lon": 57,
+  "centroid": [
+   56.062,
+   20.586
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARE",
+   "SAU",
+   "YEM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 51,
+    "white": 25,
+    "green": 25
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PAK",
+  "iso2": "pk",
+  "name": "Pákistán",
+  "aliases": [
+   "Pákistánská islámská republika"
+  ],
+  "capital": "Islámábád",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Southern Asia",
+  "population": 255219554,
+  "populationYear": 2025,
+  "avgTemp": 21.38,
+  "gdp": 338368455318,
+  "gdpYear": 2023,
+  "area": 881912,
+  "lat": 30,
+  "lon": 70,
+  "centroid": [
+   69.168,
+   29.884
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "CHN",
+   "IND",
+   "IRN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green"
+   ],
+   "shares": {
+    "white": 27,
+    "green": 74
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PAN",
+  "iso2": "pa",
+  "name": "Panama",
+  "aliases": [
+   "Panamská republika"
+  ],
+  "capital": "Panama",
+  "capitalAlt": [
+   "Ciudad de Panamá"
+  ],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 4571189,
+  "populationYear": 2025,
+  "avgTemp": 25.6,
+  "gdp": 83382400000,
+  "gdpYear": 2023,
+  "area": 75417,
+  "lat": 9,
+  "lon": -80,
+  "centroid": [
+   -80.119,
+   8.52
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "COL",
+   "CRI"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 25,
+    "white": 46,
+    "blue": 29
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PER",
+  "iso2": "pe",
+  "name": "Peru",
+  "aliases": [
+   "Peruánská republika"
+  ],
+  "capital": "Lima",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 34576665,
+  "populationYear": 2025,
+  "avgTemp": 19.72,
+  "gdp": 267603248655,
+  "gdpYear": 2023,
+  "area": 1285216,
+  "lat": -10,
+  "lon": -76,
+  "centroid": [
+   -74.421,
+   -9.107
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BOL",
+   "BRA",
+   "CHL",
+   "COL",
+   "ECU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 67,
+    "white": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PHL",
+  "iso2": "ph",
+  "name": "Filipíny",
+  "aliases": [
+   "Filipínská republika"
+  ],
+  "capital": "Manila",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 116786962,
+  "populationYear": 2025,
+  "avgTemp": 26.27,
+  "gdp": 437146372730,
+  "gdpYear": 2023,
+  "area": 342353,
+  "lat": 13,
+  "lon": 122,
+  "centroid": [
+   122.919,
+   11.729
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 34,
+    "white": 27,
+    "blue": 34,
+    "yellow": 5
+   },
+   "stripes": null,
+   "star": true,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "PLW",
+  "iso2": "pw",
+  "name": "Palau",
+  "aliases": [
+   "Republika Palau"
+  ],
+  "capital": "Ngerulmud",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Micronesia",
+  "population": 17663,
+  "populationYear": 2025,
+  "avgTemp": 27.9,
+  "gdp": 263020734,
+  "gdpYear": 2023,
+  "area": 459,
+  "lat": 7.5,
+  "lon": 134.5,
+  "centroid": [
+   134.406,
+   7.286
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 81,
+    "yellow": 19
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PNG",
+  "iso2": "pg",
+  "name": "Papua Nová Guinea",
+  "aliases": [
+   "Papua-Nová Guinea",
+   "Nezávislý stát Papua Nová Guinea"
+  ],
+  "capital": "Port Moresby",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Melanesia",
+  "population": 10762817,
+  "populationYear": 2025,
+  "avgTemp": 24.74,
+  "gdp": 30932496250,
+  "gdpYear": 2023,
+  "area": 462840,
+  "lat": -6,
+  "lon": 147,
+  "centroid": [
+   145.201,
+   -6.469
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IDN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 43,
+    "white": 2,
+    "yellow": 6,
+    "black": 48
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "POL",
+  "iso2": "pl",
+  "name": "Polsko",
+  "aliases": [
+   "Polská republika"
+  ],
+  "capital": "Varšava",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 36435861,
+  "populationYear": 2025,
+  "avgTemp": 8.78,
+  "gdp": 811229100688,
+  "gdpYear": 2023,
+  "area": 312679,
+  "lat": 52,
+  "lon": 20,
+  "centroid": [
+   19.42,
+   52.112
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLR",
+   "CZE",
+   "DEU",
+   "LTU",
+   "RUS",
+   "SVK",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 50,
+    "white": 50
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PRK",
+  "iso2": "kp",
+  "name": "Severní Korea",
+  "aliases": [
+   "Korejská lidově demokratická republika",
+   "KLDR"
+  ],
+  "capital": "Pchjongjang",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 26571036,
+  "populationYear": 2025,
+  "avgTemp": 6.98,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 120538,
+  "lat": 40,
+  "lon": 127,
+  "centroid": [
+   127.159,
+   40.14
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "KOR",
+   "RUS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 46,
+    "white": 18,
+    "blue": 36
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PRT",
+  "iso2": "pt",
+  "name": "Portugalsko",
+  "aliases": [
+   "Portugalská republika"
+  ],
+  "capital": "Lisabon",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 10804871,
+  "populationYear": 2025,
+  "avgTemp": 15.85,
+  "gdp": 287080013574,
+  "gdpYear": 2023,
+  "area": 92090,
+  "lat": 39.5,
+  "lon": -8,
+  "centroid": [
+   -8.529,
+   39.606
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ESP"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 60,
+    "green": 36,
+    "yellow": 4
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PRY",
+  "iso2": "py",
+  "name": "Paraguay",
+  "aliases": [
+   "Paraguayská republika"
+  ],
+  "capital": "Asunción",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 7013078,
+  "populationYear": 2025,
+  "avgTemp": 23.92,
+  "gdp": 42956263544,
+  "gdpYear": 2023,
+  "area": 406752,
+  "lat": -23,
+  "lon": -58,
+  "centroid": [
+   -58.443,
+   -23.209
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARG",
+   "BOL",
+   "BRA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 34,
+    "white": 33,
+    "blue": 34
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "PSE",
+  "iso2": "ps",
+  "name": "Palestina",
+  "aliases": [
+   "Stát Palestina"
+  ],
+  "capital": "Ramalláh",
+  "capitalAlt": [
+   "Východní Jeruzalém"
+  ],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 5413596,
+  "populationYear": 2025,
+  "avgTemp": 20.04,
+  "gdp": 17396300000,
+  "gdpYear": 2023,
+  "area": 6220,
+  "lat": 31.9,
+  "lon": 35.2,
+  "centroid": [
+   35.195,
+   31.915
+  ],
+  "landlocked": false,
+  "unMember": false,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "EGY",
+   "ISR",
+   "JOR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 25,
+    "white": 19,
+    "green": 28,
+    "black": 28
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "QAT",
+  "iso2": "qa",
+  "name": "Katar",
+  "aliases": [
+   "Stát Katar"
+  ],
+  "capital": "Dauhá",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 2972215,
+  "populationYear": 2025,
+  "avgTemp": 28.02,
+  "gdp": 235770403735,
+  "gdpYear": 2022,
+  "area": 11586,
+  "lat": 25.5,
+  "lon": 51.25,
+  "centroid": [
+   51.184,
+   25.305
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "SAU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 68,
+    "white": 32
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ROU",
+  "iso2": "ro",
+  "name": "Rumunsko",
+  "aliases": [],
+  "capital": "Bukurešť",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 19020271,
+  "populationYear": 2025,
+  "avgTemp": 10.18,
+  "gdp": 351002579630,
+  "gdpYear": 2023,
+  "area": 238391,
+  "lat": 46,
+  "lon": 25,
+  "centroid": [
+   24.983,
+   45.849
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BGR",
+   "HUN",
+   "MDA",
+   "SRB",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "blue": 33,
+    "yellow": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "RUS",
+  "iso2": "ru",
+  "name": "Rusko",
+  "aliases": [
+   "Ruská federace"
+  ],
+  "capital": "Moskva",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Eastern Europe",
+  "population": 143513328,
+  "populationYear": 2025,
+  "avgTemp": -3.79,
+  "gdp": 2021421476035,
+  "gdpYear": 2023,
+  "area": 17098242,
+  "lat": 60,
+  "lon": 100,
+  "centroid": [
+   95.789,
+   66.034
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AZE",
+   "BLR",
+   "CHN",
+   "EST",
+   "FIN",
+   "GEO",
+   "KAZ",
+   "LTU",
+   "LVA",
+   "MNG",
+   "NOR",
+   "POL",
+   "PRK",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "blue": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "RWA",
+  "iso2": "rw",
+  "name": "Rwanda",
+  "aliases": [
+   "Rwandská republika"
+  ],
+  "capital": "Kigali",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 14569341,
+  "populationYear": 2025,
+  "avgTemp": 19.2,
+  "gdp": 14097768648,
+  "gdpYear": 2023,
+  "area": 26338,
+  "lat": -2,
+  "lon": 30,
+  "centroid": [
+   29.92,
+   -1.99
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BDI",
+   "COD",
+   "TZA",
+   "UGA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 48,
+    "green": 25,
+    "yellow": 27
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SAU",
+  "iso2": "sa",
+  "name": "Saúdská Arábie",
+  "aliases": [
+   "Saúdskoarabské království"
+  ],
+  "capital": "Rijád",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 36973555,
+  "populationYear": 2025,
+  "avgTemp": 25.94,
+  "gdp": 1067582933333,
+  "gdpYear": 2023,
+  "area": 2149690,
+  "lat": 25,
+  "lon": 45,
+  "centroid": [
+   44.663,
+   24.087
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARE",
+   "IRQ",
+   "JOR",
+   "KWT",
+   "OMN",
+   "QAT",
+   "YEM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "green"
+   ],
+   "shares": {
+    "white": 8,
+    "green": 92
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SDN",
+  "iso2": "sd",
+  "name": "Súdán",
+  "aliases": [
+   "Súdánská republika"
+  ],
+  "capital": "Chartúm",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 51662147,
+  "populationYear": 2025,
+  "avgTemp": 27.95,
+  "gdp": 109327023589,
+  "gdpYear": 2023,
+  "area": 1886068,
+  "lat": 15,
+  "lon": 30,
+  "centroid": [
+   29.907,
+   15.968
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CAF",
+   "EGY",
+   "ERI",
+   "ETH",
+   "LBY",
+   "SSD",
+   "TCD"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 28,
+    "white": 19,
+    "green": 25,
+    "black": 28
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "SEN",
+  "iso2": "sn",
+  "name": "Senegal",
+  "aliases": [
+   "Senegalská republika"
+  ],
+  "capital": "Dakar",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 18931966,
+  "populationYear": 2025,
+  "avgTemp": 28.9,
+  "gdp": 31013986429,
+  "gdpYear": 2023,
+  "area": 196722,
+  "lat": 14,
+  "lon": -14,
+  "centroid": [
+   -14.469,
+   14.365
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GIN",
+   "GMB",
+   "GNB",
+   "MLI",
+   "MRT"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "green": 37,
+    "yellow": 30
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SGP",
+  "iso2": "sg",
+  "name": "Singapur",
+  "aliases": [
+   "Singapurská republika"
+  ],
+  "capital": "Singapur",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 6111175,
+  "populationYear": 2025,
+  "avgTemp": 27.68,
+  "gdp": 501427500080,
+  "gdpYear": 2023,
+  "area": 710,
+  "lat": 1.36666666,
+  "lon": 103.8,
+  "centroid": [
+   103.817,
+   1.359
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 47,
+    "white": 53
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SLB",
+  "iso2": "sb",
+  "name": "Šalamounovy ostrovy",
+  "aliases": [],
+  "capital": "Honiara",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Melanesia",
+  "population": 838645,
+  "populationYear": 2025,
+  "avgTemp": 25.92,
+  "gdp": 1631286701,
+  "gdpYear": 2023,
+  "area": 28896,
+  "lat": -8,
+  "lon": 159,
+  "centroid": [
+   159.62,
+   -8.922
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "white": 4,
+    "blue": 57,
+    "green": 28,
+    "yellow": 11
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SLE",
+  "iso2": "sl",
+  "name": "Sierra Leone",
+  "aliases": [
+   "Republika Sierra Leone"
+  ],
+  "capital": "Freetown",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 8819794,
+  "populationYear": 2025,
+  "avgTemp": 26.54,
+  "gdp": 3809832237,
+  "gdpYear": 2023,
+  "area": 71740,
+  "lat": 8.5,
+  "lon": -11.5,
+  "centroid": [
+   -11.793,
+   8.562
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GIN",
+   "LBR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "white": 33,
+    "blue": 33,
+    "green": 34
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SLV",
+  "iso2": "sv",
+  "name": "Salvador",
+  "aliases": [
+   "Salvadorská republika"
+  ],
+  "capital": "San Salvador",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Central America",
+  "population": 6365503,
+  "populationYear": 2025,
+  "avgTemp": 25.23,
+  "gdp": 34015620000,
+  "gdpYear": 2023,
+  "area": 21041,
+  "lat": 13.83333333,
+  "lon": -88.91666666,
+  "centroid": [
+   -88.871,
+   13.74
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "GTM",
+   "HND"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 32,
+    "blue": 68
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SMR",
+  "iso2": "sm",
+  "name": "San Marino",
+  "aliases": [
+   "Republika San Marino"
+  ],
+  "capital": "San Marino",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 34109,
+  "populationYear": 2025,
+  "avgTemp": 12.83,
+  "gdp": 1855382833,
+  "gdpYear": 2021,
+  "area": 61,
+  "lat": 43.76666666,
+  "lon": 12.41666666,
+  "centroid": [
+   12.459,
+   43.942
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "ITA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 51,
+    "blue": 49
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": true,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SOM",
+  "iso2": "so",
+  "name": "Somálsko",
+  "aliases": [
+   "Somálská demokratická republika"
+  ],
+  "capital": "Mogadišo",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 19654739,
+  "populationYear": 2025,
+  "avgTemp": 26.95,
+  "gdp": 11679800110,
+  "gdpYear": 2023,
+  "area": 637657,
+  "lat": 10,
+  "lon": 49,
+  "centroid": [
+   45.829,
+   6.052
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DJI",
+   "ETH",
+   "KEN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "white": 6,
+    "blue": 94
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SRB",
+  "iso2": "rs",
+  "name": "Srbsko",
+  "aliases": [
+   "Srbská republika"
+  ],
+  "capital": "Bělehrad",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 6549143,
+  "populationYear": 2025,
+  "avgTemp": 11.4,
+  "gdp": 75187125427,
+  "gdpYear": 2023,
+  "area": 88361,
+  "lat": 44,
+  "lon": 21,
+  "centroid": [
+   20.806,
+   44.211
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BGR",
+   "BIH",
+   "HRV",
+   "HUN",
+   "MKD",
+   "MNE",
+   "ROU",
+   "UNK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 39,
+    "blue": 25
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SSD",
+  "iso2": "ss",
+  "name": "Jižní Súdán",
+  "aliases": [
+   "Jihosúdánská republika"
+  ],
+  "capital": "Džuba",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 12188788,
+  "populationYear": 2025,
+  "avgTemp": 27.97,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 619745,
+  "lat": 7,
+  "lon": 30,
+  "centroid": [
+   30.251,
+   7.309
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CAF",
+   "COD",
+   "ETH",
+   "KEN",
+   "SDN",
+   "UGA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 13,
+    "white": 6,
+    "blue": 30,
+    "green": 24,
+    "yellow": 2,
+    "black": 24
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "STP",
+  "iso2": "st",
+  "name": "Svatý Tomáš a Princův ostrov",
+  "aliases": [
+   "Demokratická republika Svatý Tomáš a Princův ostrov",
+   "Sv. Tomáš a Princův ostrov",
+   "Svatý Tomáš"
+  ],
+  "capital": "São Tomé",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 240254,
+  "populationYear": 2025,
+  "avgTemp": 24.49,
+  "gdp": 603240749,
+  "gdpYear": 2023,
+  "area": 964,
+  "lat": 1,
+  "lon": 7,
+  "centroid": [
+   6.723,
+   0.443
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 19,
+    "green": 51,
+    "yellow": 27,
+    "black": 3
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "SUR",
+  "iso2": "sr",
+  "name": "Surinam",
+  "aliases": [
+   "Republika Surinam"
+  ],
+  "capital": "Paramaribo",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 639850,
+  "populationYear": 2025,
+  "avgTemp": 26.58,
+  "gdp": 3782437296,
+  "gdpYear": 2023,
+  "area": 163820,
+  "lat": 4,
+  "lon": -56,
+  "centroid": [
+   -55.913,
+   4.13
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BRA",
+   "GUY"
+  ],
+  "overseasNeighbors": [
+   "FRA"
+  ],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 37,
+    "white": 20,
+    "green": 40,
+    "yellow": 3
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SVK",
+  "iso2": "sk",
+  "name": "Slovensko",
+  "aliases": [
+   "Slovenská republika"
+  ],
+  "capital": "Bratislava",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 5413813,
+  "populationYear": 2025,
+  "avgTemp": 8.83,
+  "gdp": 132793622283,
+  "gdpYear": 2023,
+  "area": 49037,
+  "lat": 48.66666666,
+  "lon": 19.5,
+  "centroid": [
+   19.469,
+   48.711
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "CZE",
+   "HUN",
+   "POL",
+   "UKR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 40,
+    "white": 34,
+    "blue": 26
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SVN",
+  "iso2": "si",
+  "name": "Slovinsko",
+  "aliases": [
+   "Slovinská republika"
+  ],
+  "capital": "Lublaň",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Central Europe",
+  "population": 2130986,
+  "populationYear": 2025,
+  "avgTemp": 9.86,
+  "gdp": 68216781411,
+  "gdpYear": 2023,
+  "area": 20273,
+  "lat": 46.11666666,
+  "lon": 14.81666666,
+  "centroid": [
+   14.801,
+   46.116
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AUT",
+   "HRV",
+   "HUN",
+   "ITA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 34,
+    "white": 31,
+    "blue": 35
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SWE",
+  "iso2": "se",
+  "name": "Švédsko",
+  "aliases": [
+   "Švédské království"
+  ],
+  "capital": "Stockholm",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Northern Europe",
+  "population": 10596620,
+  "populationYear": 2025,
+  "avgTemp": 3.23,
+  "gdp": 593267701033,
+  "gdpYear": 2023,
+  "area": 450295,
+  "lat": 62,
+  "lon": 15,
+  "centroid": [
+   16.267,
+   62.383
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "FIN",
+   "NOR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 68,
+    "yellow": 32
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SWZ",
+  "iso2": "sz",
+  "name": "Eswatini",
+  "aliases": [
+   "Svazijsko",
+   "Svazijské království"
+  ],
+  "capital": "Mbabane",
+  "capitalAlt": [
+   "Lobamba"
+  ],
+  "continent": "Afrika",
+  "subregion": "Southern Africa",
+  "population": 1256174,
+  "populationYear": 2025,
+  "avgTemp": 20.64,
+  "gdp": 4597855845,
+  "gdpYear": 2023,
+  "area": 17364,
+  "lat": -26.5,
+  "lon": 31.5,
+  "centroid": [
+   31.482,
+   -26.558
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "MOZ",
+   "ZAF"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 31,
+    "white": 7,
+    "blue": 38,
+    "yellow": 14,
+    "black": 10
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SYC",
+  "iso2": "sc",
+  "name": "Seychely",
+  "aliases": [
+   "Seychelská republika"
+  ],
+  "capital": "Victoria",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 122730,
+  "populationYear": 2025,
+  "avgTemp": 27.09,
+  "gdp": 2141450171,
+  "gdpYear": 2023,
+  "area": 452,
+  "lat": -4.58333333,
+  "lon": 55.66666666,
+  "centroid": [
+   55.476,
+   -4.66
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 17,
+    "blue": 17,
+    "green": 17,
+    "yellow": 17
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "SYR",
+  "iso2": "sy",
+  "name": "Sýrie",
+  "aliases": [
+   "Syrská arabská republika"
+  ],
+  "capital": "Damašek",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 25620427,
+  "populationYear": 2025,
+  "avgTemp": 18.75,
+  "gdp": 8980060819,
+  "gdpYear": 2021,
+  "area": 185180,
+  "lat": 35,
+  "lon": 38,
+  "centroid": [
+   38.488,
+   35.019
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IRQ",
+   "ISR",
+   "JOR",
+   "LBN",
+   "TUR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "black"
+   ],
+   "shares": {
+    "red": 5,
+    "white": 29,
+    "green": 33,
+    "black": 33
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TCD",
+  "iso2": "td",
+  "name": "Čad",
+  "aliases": [
+   "Čadská republika"
+  ],
+  "capital": "N'Djamena",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Middle Africa",
+  "population": 21003705,
+  "populationYear": 2025,
+  "avgTemp": 27.63,
+  "gdp": 13149325359,
+  "gdpYear": 2023,
+  "area": 1284000,
+  "lat": 15,
+  "lon": 19,
+  "centroid": [
+   18.635,
+   15.275
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CAF",
+   "CMR",
+   "LBY",
+   "NER",
+   "NGA",
+   "SDN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "blue": 34,
+    "yellow": 33
+   },
+   "stripes": "vertical",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TGO",
+  "iso2": "tg",
+  "name": "Togo",
+  "aliases": [
+   "Republika Togo"
+  ],
+  "capital": "Lomé",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Western Africa",
+  "population": 8591626,
+  "populationYear": 2025,
+  "avgTemp": 27.33,
+  "gdp": 9171261835,
+  "gdpYear": 2023,
+  "area": 56785,
+  "lat": 8,
+  "lon": 1.16666666,
+  "centroid": [
+   0.964,
+   8.521
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BEN",
+   "BFA",
+   "GHA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 25,
+    "white": 2,
+    "green": 42,
+    "yellow": 30
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "THA",
+  "iso2": "th",
+  "name": "Thajsko",
+  "aliases": [
+   "Thajské království"
+  ],
+  "capital": "Bangkok",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 71619863,
+  "populationYear": 2025,
+  "avgTemp": 26.85,
+  "gdp": 514944993834,
+  "gdpYear": 2023,
+  "area": 513120,
+  "lat": 15,
+  "lon": 100,
+  "centroid": [
+   101.001,
+   15.083
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "KHM",
+   "LAO",
+   "MMR",
+   "MYS"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 34,
+    "white": 33,
+    "blue": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TJK",
+  "iso2": "tj",
+  "name": "Tádžikistán",
+  "aliases": [
+   "Republika Tádžikistán"
+  ],
+  "capital": "Dušanbe",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Central Asia",
+  "population": 10786734,
+  "populationYear": 2025,
+  "avgTemp": 3.85,
+  "gdp": 12060602009,
+  "gdpYear": 2023,
+  "area": 143100,
+  "lat": 39,
+  "lon": 71,
+  "centroid": [
+   71.027,
+   38.537
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "CHN",
+   "KGZ",
+   "UZB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "red": 29,
+    "white": 41,
+    "green": 29,
+    "yellow": 2
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TKM",
+  "iso2": "tm",
+  "name": "Turkmenistán",
+  "aliases": [],
+  "capital": "Ašchabad",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Central Asia",
+  "population": 7618847,
+  "populationYear": 2025,
+  "avgTemp": 16.66,
+  "gdp": 59887334844,
+  "gdpYear": 2023,
+  "area": 488100,
+  "lat": 40,
+  "lon": 60,
+  "centroid": [
+   59.447,
+   39.125
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "IRN",
+   "KAZ",
+   "UZB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green"
+   ],
+   "shares": {
+    "red": 12,
+    "white": 2,
+    "green": 86
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TLS",
+  "iso2": "tl",
+  "name": "Východní Timor",
+  "aliases": [
+   "Demokratická republika Východní Timor",
+   "Timor-Leste"
+  ],
+  "capital": "Dili",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 1418517,
+  "populationYear": 2025,
+  "avgTemp": 24.57,
+  "gdp": 2243142908,
+  "gdpYear": 2023,
+  "area": 14874,
+  "lat": -8.83333333,
+  "lon": 125.91666666,
+  "centroid": [
+   125.846,
+   -8.829
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "IDN"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 62,
+    "white": 2,
+    "yellow": 13,
+    "black": 23
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "TON",
+  "iso2": "to",
+  "name": "Tonga",
+  "aliases": [
+   "Království Tonga"
+  ],
+  "capital": "Nuku'alofa",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Polynesia",
+  "population": 103742,
+  "populationYear": 2025,
+  "avgTemp": 25.01,
+  "gdp": 500274898,
+  "gdpYear": 2022,
+  "area": 747,
+  "lat": -20,
+  "lon": -175,
+  "centroid": [
+   -174.8,
+   -20.416
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 87,
+    "white": 13
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TTO",
+  "iso2": "tt",
+  "name": "Trinidad a Tobago",
+  "aliases": [
+   "Republika Trinidad a Tobago"
+  ],
+  "capital": "Port of Spain",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 1367764,
+  "populationYear": 2025,
+  "avgTemp": 26.55,
+  "gdp": 28139944790,
+  "gdpYear": 2023,
+  "area": 5130,
+  "lat": 11,
+  "lon": -61,
+  "centroid": [
+   -61.266,
+   10.457
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "black"
+   ],
+   "shares": {
+    "red": 72,
+    "white": 9,
+    "black": 19
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TUN",
+  "iso2": "tn",
+  "name": "Tunisko",
+  "aliases": [
+   "Tuniská republika"
+  ],
+  "capital": "Tunis",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Northern Africa",
+  "population": 12348573,
+  "populationYear": 2025,
+  "avgTemp": 20.53,
+  "gdp": 48529595417,
+  "gdpYear": 2023,
+  "area": 163610,
+  "lat": 34,
+  "lon": 9,
+  "centroid": [
+   9.556,
+   34.089
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "DZA",
+   "LBY"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 90,
+    "white": 11
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TUR",
+  "iso2": "tr",
+  "name": "Turecko",
+  "aliases": [
+   "Turecká republika",
+   "Türkiye"
+  ],
+  "capital": "Ankara",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 85878556,
+  "populationYear": 2025,
+  "avgTemp": 11.66,
+  "gdp": 1108022373260,
+  "gdpYear": 2023,
+  "area": 783562,
+  "lat": 39,
+  "lon": 35,
+  "centroid": [
+   35.173,
+   39.137
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARM",
+   "AZE",
+   "BGR",
+   "GEO",
+   "GRC",
+   "IRN",
+   "IRQ",
+   "SYR"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white"
+   ],
+   "shares": {
+    "red": 93,
+    "white": 7
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TUV",
+  "iso2": "tv",
+  "name": "Tuvalu",
+  "aliases": [],
+  "capital": "Funafuti",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Polynesia",
+  "population": 9492,
+  "populationYear": 2025,
+  "avgTemp": 28.62,
+  "gdp": 62280312,
+  "gdpYear": 2023,
+  "area": 26,
+  "lat": -8,
+  "lon": 178,
+  "centroid": [
+   178.522,
+   -7.758
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 11,
+    "white": 9,
+    "blue": 76,
+    "yellow": 4
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": true,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TWN",
+  "iso2": "tw",
+  "name": "Tchaj-wan",
+  "aliases": [
+   "Čínská republika",
+   "Taiwan"
+  ],
+  "capital": "Tchaj-pej",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Eastern Asia",
+  "population": 23568378,
+  "populationYear": 2020,
+  "avgTemp": null,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 36193,
+  "lat": 23.5,
+  "lon": 121,
+  "centroid": [
+   120.951,
+   23.75
+  ],
+  "landlocked": false,
+  "unMember": false,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 72,
+    "white": 4,
+    "blue": 24
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "TZA",
+  "iso2": "tz",
+  "name": "Tanzanie",
+  "aliases": [
+   "Sjednocená tanzanská republika"
+  ],
+  "capital": "Dodoma",
+  "capitalAlt": [
+   "Dar es Salaam"
+  ],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 70545865,
+  "populationYear": 2025,
+  "avgTemp": 22.92,
+  "gdp": 79158286334,
+  "gdpYear": 2023,
+  "area": 945087,
+  "lat": -6,
+  "lon": 35,
+  "centroid": [
+   34.802,
+   -6.268
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BDI",
+   "COD",
+   "KEN",
+   "MOZ",
+   "MWI",
+   "RWA",
+   "UGA",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "blue": 28,
+    "green": 28,
+    "yellow": 13,
+    "black": 31
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "UGA",
+  "iso2": "ug",
+  "name": "Uganda",
+  "aliases": [
+   "Ugandská republika"
+  ],
+  "capital": "Kampala",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 51384894,
+  "populationYear": 2025,
+  "avgTemp": 23.25,
+  "gdp": 49272882214,
+  "gdpYear": 2023,
+  "area": 241550,
+  "lat": 1,
+  "lon": 32,
+  "centroid": [
+   32.369,
+   1.274
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "COD",
+   "KEN",
+   "RWA",
+   "SSD",
+   "TZA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 31,
+    "white": 4,
+    "yellow": 33,
+    "black": 31
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "UKR",
+  "iso2": "ua",
+  "name": "Ukrajina",
+  "aliases": [],
+  "capital": "Kyjev",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Eastern Europe",
+  "population": 38980376,
+  "populationYear": 2025,
+  "avgTemp": 9.27,
+  "gdp": 178757021387,
+  "gdpYear": 2023,
+  "area": 603500,
+  "lat": 49,
+  "lon": 32,
+  "centroid": [
+   31.463,
+   49.022
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BLR",
+   "HUN",
+   "MDA",
+   "POL",
+   "ROU",
+   "RUS",
+   "SVK"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 50,
+    "yellow": 50
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "UNK",
+  "iso2": "xk",
+  "name": "Kosovo",
+  "aliases": [
+   "Kosovská republika"
+  ],
+  "capital": "Priština",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southeast Europe",
+  "population": 1576876,
+  "populationYear": 2025,
+  "avgTemp": 10.02,
+  "gdp": 10438351483,
+  "gdpYear": 2023,
+  "area": 10908,
+  "lat": 42.666667,
+  "lon": 21.166667,
+  "centroid": [
+   20.873,
+   42.571
+  ],
+  "landlocked": true,
+  "unMember": false,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ALB",
+   "MKD",
+   "MNE",
+   "SRB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "white": 2,
+    "blue": 89,
+    "yellow": 10
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "URY",
+  "iso2": "uy",
+  "name": "Uruguay",
+  "aliases": [
+   "Uruguayská východní republika"
+  ],
+  "capital": "Montevideo",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 3384688,
+  "populationYear": 2025,
+  "avgTemp": 17.97,
+  "gdp": 77240831587,
+  "gdpYear": 2023,
+  "area": 181034,
+  "lat": -33,
+  "lon": -56,
+  "centroid": [
+   -56.025,
+   -32.791
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "ARG",
+   "BRA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "white": 61,
+    "blue": 36,
+    "yellow": 4
+   },
+   "stripes": null,
+   "star": false,
+   "sun": true,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "USA",
+  "iso2": "us",
+  "name": "Spojené státy americké",
+  "aliases": [
+   "Spojené státy",
+   "USA",
+   "Amerika"
+  ],
+  "capital": "Washington",
+  "capitalAlt": [
+   "Washington, D.C."
+  ],
+  "continent": "Severní Amerika",
+  "subregion": "North America",
+  "population": 341784857,
+  "populationYear": 2025,
+  "avgTemp": 9.46,
+  "gdp": 27360935000000,
+  "gdpYear": 2023,
+  "area": 9372610,
+  "lat": 38,
+  "lon": -97,
+  "centroid": [
+   -103.63,
+   44.744
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CAN",
+   "MEX"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 36,
+    "white": 33,
+    "blue": 31
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "UZB",
+  "iso2": "uz",
+  "name": "Uzbekistán",
+  "aliases": [
+   "Republika Uzbekistán"
+  ],
+  "capital": "Taškent",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "Central Asia",
+  "population": 37053428,
+  "populationYear": 2025,
+  "avgTemp": 13.69,
+  "gdp": 90889149307,
+  "gdpYear": 2023,
+  "area": 447400,
+  "lat": 41,
+  "lon": 64,
+  "centroid": [
+   63.303,
+   41.776
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AFG",
+   "KAZ",
+   "KGZ",
+   "TJK",
+   "TKM"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green"
+   ],
+   "shares": {
+    "red": 4,
+    "white": 34,
+    "blue": 31,
+    "green": 32
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": true,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "VAT",
+  "iso2": "va",
+  "name": "Vatikán",
+  "aliases": [
+   "Městský stát Vatikán",
+   "Svatý stolec"
+  ],
+  "capital": "Vatikán",
+  "capitalAlt": [],
+  "continent": "Evropa",
+  "subregion": "Southern Europe",
+  "population": 825,
+  "populationYear": 2019,
+  "avgTemp": 15.2,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 0.44,
+  "lat": 41.9,
+  "lon": 12.45,
+  "centroid": [
+   12.434,
+   41.902
+  ],
+  "landlocked": true,
+  "unMember": false,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [
+   "ITA"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "white",
+    "yellow"
+   ],
+   "shares": {
+    "white": 47,
+    "yellow": 53
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "VCT",
+  "iso2": "vc",
+  "name": "Svatý Vincenc a Grenadiny",
+  "aliases": [
+   "Sv. Vincenc a Grenadiny"
+  ],
+  "capital": "Kingstown",
+  "capitalAlt": [],
+  "continent": "Severní Amerika",
+  "subregion": "Caribbean",
+  "population": 99924,
+  "populationYear": 2025,
+  "avgTemp": 26.17,
+  "gdp": 1065962963,
+  "gdpYear": 2023,
+  "area": 389,
+  "lat": 13.25,
+  "lon": -61.2,
+  "centroid": [
+   -61.201,
+   13.225
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "blue",
+    "green",
+    "yellow"
+   ],
+   "shares": {
+    "blue": 24,
+    "green": 30,
+    "yellow": 47
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "VEN",
+  "iso2": "ve",
+  "name": "Venezuela",
+  "aliases": [
+   "Bolívarská republika Venezuela"
+  ],
+  "capital": "Caracas",
+  "capitalAlt": [],
+  "continent": "Jižní Amerika",
+  "subregion": "South America",
+  "population": 28516896,
+  "populationYear": 2025,
+  "avgTemp": 25.71,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 916445,
+  "lat": 8,
+  "lon": -66,
+  "centroid": [
+   -66.171,
+   7.122
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BRA",
+   "COL",
+   "GUY"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "yellow"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 1,
+    "blue": 32,
+    "yellow": 33
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "VNM",
+  "iso2": "vn",
+  "name": "Vietnam",
+  "aliases": [
+   "Vietnamská socialistická republika"
+  ],
+  "capital": "Hanoj",
+  "capitalAlt": [],
+  "continent": "Asie",
+  "subregion": "South-Eastern Asia",
+  "population": 101598527,
+  "populationYear": 2025,
+  "avgTemp": 24.79,
+  "gdp": 429716969050,
+  "gdpYear": 2023,
+  "area": 331212,
+  "lat": 16.16666666,
+  "lon": 107.83333333,
+  "centroid": [
+   106.346,
+   16.544
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "CHN",
+   "KHM",
+   "LAO"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "yellow"
+   ],
+   "shares": {
+    "red": 92,
+    "yellow": 8
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "VUT",
+  "iso2": "vu",
+  "name": "Vanuatu",
+  "aliases": [
+   "Republika Vanuatu"
+  ],
+  "capital": "Port Vila",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Melanesia",
+  "population": 335169,
+  "populationYear": 2025,
+  "avgTemp": 24.44,
+  "gdp": 1126313359,
+  "gdpYear": 2023,
+  "area": 12189,
+  "lat": -16,
+  "lon": 167,
+  "centroid": [
+   167.675,
+   -16.217
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 31,
+    "green": 31,
+    "yellow": 12,
+    "black": 26
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "WSM",
+  "iso2": "ws",
+  "name": "Samoa",
+  "aliases": [
+   "Nezávislý stát Samoa"
+  ],
+  "capital": "Apia",
+  "capitalAlt": [],
+  "continent": "Austrálie a Oceánie",
+  "subregion": "Polynesia",
+  "population": 219306,
+  "populationYear": 2025,
+  "avgTemp": 27.58,
+  "gdp": 934100336,
+  "gdpYear": 2023,
+  "area": 2842,
+  "lat": -13.58333333,
+  "lon": -172.33333333,
+  "centroid": [
+   -172.165,
+   -13.754
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": true,
+  "drawable": false,
+  "neighbors": [],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue"
+   ],
+   "shares": {
+    "red": 75,
+    "white": 2,
+    "blue": 23
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "YEM",
+  "iso2": "ye",
+  "name": "Jemen",
+  "aliases": [
+   "Jemenská republika"
+  ],
+  "capital": "Saná",
+  "capitalAlt": [
+   "San'á"
+  ],
+  "continent": "Asie",
+  "subregion": "Western Asia",
+  "population": 41773878,
+  "populationYear": 2025,
+  "avgTemp": 25.54,
+  "gdp": null,
+  "gdpYear": null,
+  "area": 527968,
+  "lat": 15,
+  "lon": 48,
+  "centroid": [
+   47.568,
+   15.917
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "OMN",
+   "SAU"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "black"
+   ],
+   "shares": {
+    "red": 33,
+    "white": 33,
+    "black": 33
+   },
+   "stripes": "horizontal",
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ZAF",
+  "iso2": "za",
+  "name": "Jihoafrická republika",
+  "aliases": [
+   "JAR",
+   "Jižní Afrika"
+  ],
+  "capital": "Pretoria",
+  "capitalAlt": [
+   "Kapské Město",
+   "Bloemfontein"
+  ],
+  "continent": "Afrika",
+  "subregion": "Southern Africa",
+  "population": 64747319,
+  "populationYear": 2025,
+  "avgTemp": 18.23,
+  "gdp": 377781600986,
+  "gdpYear": 2023,
+  "area": 1221037,
+  "lat": -29,
+  "lon": 24,
+  "centroid": [
+   25.194,
+   -28.974
+  ],
+  "landlocked": false,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BWA",
+   "LSO",
+   "MOZ",
+   "NAM",
+   "SWZ",
+   "ZWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "blue",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 20,
+    "white": 12,
+    "blue": 20,
+    "green": 34,
+    "yellow": 6,
+    "black": 10
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": false,
+   "text": false,
+   "hoistTriangle": true
+  }
+ },
+ {
+  "id": "ZMB",
+  "iso2": "zm",
+  "name": "Zambie",
+  "aliases": [
+   "Zambijská republika"
+  ],
+  "capital": "Lusaka",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 21913874,
+  "populationYear": 2025,
+  "avgTemp": 22.23,
+  "gdp": 28162630954,
+  "gdpYear": 2023,
+  "area": 752612,
+  "lat": -15,
+  "lon": 30,
+  "centroid": [
+   27.809,
+   -13.455
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "AGO",
+   "BWA",
+   "COD",
+   "MOZ",
+   "MWI",
+   "NAM",
+   "TZA",
+   "ZWE"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "green",
+    "black",
+    "orange"
+   ],
+   "shares": {
+    "red": 9,
+    "green": 71,
+    "black": 9,
+    "orange": 11
+   },
+   "stripes": null,
+   "star": false,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": false
+  }
+ },
+ {
+  "id": "ZWE",
+  "iso2": "zw",
+  "name": "Zimbabwe",
+  "aliases": [
+   "Zimbabwská republika"
+  ],
+  "capital": "Harare",
+  "capitalAlt": [],
+  "continent": "Afrika",
+  "subregion": "Eastern Africa",
+  "population": 16950795,
+  "populationYear": 2025,
+  "avgTemp": 21.9,
+  "gdp": 26538273499,
+  "gdpYear": 2023,
+  "area": 390757,
+  "lat": -20,
+  "lon": 30,
+  "centroid": [
+   29.851,
+   -18.997
+  ],
+  "landlocked": true,
+  "unMember": true,
+  "marker": false,
+  "drawable": true,
+  "neighbors": [
+   "BWA",
+   "MOZ",
+   "ZAF",
+   "ZMB"
+  ],
+  "overseasNeighbors": [],
+  "flag": {
+   "colors": [
+    "red",
+    "white",
+    "green",
+    "yellow",
+    "black"
+   ],
+   "shares": {
+    "red": 20,
+    "white": 21,
+    "green": 26,
+    "yellow": 23,
+    "black": 11
+   },
+   "stripes": null,
+   "star": true,
+   "sun": false,
+   "crescent": false,
+   "cross": false,
+   "animal": true,
+   "text": false,
+   "hoistTriangle": true
+  }
+ }
+]

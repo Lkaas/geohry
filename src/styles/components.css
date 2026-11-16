@@ -1,0 +1,761 @@
+/* Sdílené komponenty: rám hry, mapa, našeptávač, modální okno, statistiky. */
+
+/* ---------- Rám hry ---------- */
+.shell__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  padding: 0.7rem 1.25rem;
+  border-bottom: var(--line) solid var(--ink);
+  background: var(--paper);
+}
+
+.shell__home {
+  text-decoration: none;
+}
+
+.shell__title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: auto;
+}
+
+.shell__title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.shell__actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.shell__main {
+  padding: 1rem 1.25rem 2rem;
+}
+
+/* přepínač Denní výzva / Volná hra: dvě záložky */
+.segmented {
+  display: inline-flex;
+  overflow: hidden;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.segmented button {
+  padding: 0.35rem 0.95rem;
+  border: 0;
+  border-radius: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.segmented button + button {
+  border-left: var(--line) solid var(--ink);
+}
+
+.segmented button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ---------- Rozložení hry: mapa vlevo, panel vpravo ---------- */
+.game {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 1rem;
+  align-items: start;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.game__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.panel-heading {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  font-weight: 650;
+  color: var(--ink-dim);
+}
+
+@media (max-width: 900px) {
+  .game {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Rám s dílky: černobílý okraj jako stupnice na okraji námořní mapy ---------- */
+.map,
+.border__canvas,
+.silhouette__canvas {
+  padding: 8px;
+  outline: var(--line) solid var(--ink);
+  background:
+    repeating-linear-gradient(90deg, var(--ink) 0 32px, var(--paper) 32px 64px) top / 100% 8px no-repeat,
+    repeating-linear-gradient(90deg, var(--paper) 0 32px, var(--ink) 32px 64px) bottom / 100% 8px no-repeat,
+    repeating-linear-gradient(0deg, var(--ink) 0 32px, var(--paper) 32px 64px) left / 8px 100% no-repeat,
+    repeating-linear-gradient(0deg, var(--paper) 0 32px, var(--ink) 32px 64px) right / 8px 100% no-repeat,
+    var(--paper);
+}
+
+.map__svg,
+.border__canvas svg,
+.silhouette__canvas svg {
+  border: var(--line) solid var(--ink);
+}
+
+/* ---------- Mapa ---------- */
+.map {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2000 / 1010;
+}
+
+.map--loading {
+  display: grid;
+  place-items: center;
+  color: var(--on-sea-dim);
+}
+
+.map__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.map__svg:active {
+  cursor: grabbing;
+}
+
+.map__sphere {
+  fill: var(--sea);
+}
+
+.map__graticule {
+  fill: none;
+  stroke: var(--sea-line);
+  stroke-width: 0.6;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.map__territory {
+  fill: var(--land-other);
+  stroke: #b9b08c;
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.map__country {
+  fill: var(--land);
+  stroke: #7a6f4a;
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+.map__country--filled {
+  stroke: var(--ink);
+  stroke-width: 0.9;
+}
+
+.map__country--outlined,
+.map__marker--outlined {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+
+.map__country--ghost {
+  fill: rgb(20 23 28 / 0.06);
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-dasharray: 5 4;
+}
+
+.map__country--clickable {
+  cursor: pointer;
+}
+
+.map__marker {
+  fill: var(--land);
+  fill-opacity: 0.55;
+  stroke: #7a6f4a;
+  stroke-width: 0.8;
+  vector-effect: non-scaling-stroke;
+}
+
+.map__marker--filled {
+  fill-opacity: 1;
+  stroke: var(--ink);
+  stroke-width: 1.4;
+}
+
+.map__controls {
+  position: absolute;
+  right: calc(8px + 0.6rem);
+  bottom: calc(8px + 0.6rem);
+  display: flex;
+  flex-direction: column;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.map__controls button {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-bottom: 1px solid rgb(20 23 28 / 0.2);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.map__controls button:last-child {
+  border-bottom: 0;
+}
+
+.map__controls button:hover {
+  background: var(--magenta-soft);
+}
+
+.map__tooltip {
+  position: absolute;
+  z-index: 2;
+  transform: translate(12px, -130%);
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* ---------- Našeptávač zemí ---------- */
+.country-input {
+  position: relative;
+}
+
+.country-input__field {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 2px solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.country-input__field::placeholder {
+  color: #8894a3;
+  font-weight: 400;
+}
+
+.country-input__list {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  list-style: none;
+  box-shadow: 0 10px 24px rgb(5 20 40 / 0.28);
+}
+
+.country-input__option {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.country-input__option--active {
+  background: var(--magenta-soft);
+}
+
+.country-input__alias {
+  margin-left: auto;
+  color: var(--ink-dim);
+  font-size: 0.88rem;
+}
+
+.country-input__empty {
+  padding: 0.5rem 0.55rem;
+  color: var(--ink-dim);
+}
+
+/* ---------- Modální okno ---------- */
+.modal {
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 2rem);
+  padding: 0;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.modal::backdrop {
+  background: rgb(5 20 40 / 0.6);
+}
+
+.modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem;
+}
+
+.modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal__header h2 {
+  font-size: 1.5rem;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.prose ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.prose li + li {
+  margin-top: 0.3rem;
+}
+
+.help-example {
+  padding: 0.6rem 0.8rem !important;
+  border-radius: var(--radius);
+  background: var(--paper-dim);
+  list-style: none;
+}
+
+.help-example li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* ---------- Statistiky ---------- */
+.stats__mode {
+  font-size: 1.15rem;
+  padding-top: 0.5rem;
+  border-top: var(--line) solid var(--ink);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.stats h3 {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--ink-dim);
+}
+
+.stats__numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.stats__numbers dd {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 750;
+  font-stretch: 80%;
+  line-height: 1;
+}
+
+.stats__numbers dt {
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+}
+
+.stats__bars {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stats__bars li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stats__attempts {
+  width: 2.6rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.stats__bar {
+  padding: 0.05rem 0.5rem;
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: #fff;
+  font-weight: 650;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* ---------- Sdílení ---------- */
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.share__text {
+  width: 100%;
+  padding: 0.5rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  resize: vertical;
+}
+
+/* ---------- Seznam tipů a výsledek kola (společné pro hry) ---------- */
+.guess-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 46vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.guess {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto 2.2rem;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.3rem 0.4rem;
+  border-bottom: 1px dashed #b6c0c8;
+}
+
+.guess--newest {
+  font-weight: 700;
+}
+
+.guess__chip {
+  display: inline-block;
+  flex: none;
+  width: 0.95rem;
+  height: 0.95rem;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+}
+
+.guess__name {
+  overflow: hidden;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.guess__distance {
+  font-variant-numeric: tabular-nums;
+}
+
+.guess__order {
+  color: var(--ink-dim);
+  font-size: 0.85rem;
+  text-align: right;
+}
+
+.give-up {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.result__headline {
+  margin-top: 0.3rem;
+  font-weight: 700;
+  color: var(--ink-dim);
+}
+
+.result__headline--won {
+  color: var(--green);
+}
+
+.result__country {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* ---------- Legenda pod mapou (barevné puntíky s popisem) ---------- */
+.route-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.2rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  color: var(--on-sea-dim);
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.route-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.route-legend .guess__chip {
+  border-color: var(--ink);
+}
+
+/* ---------- Zadání s vlajkou v panelu a zpráva o posledním tipu (společné pro hry) ---------- */
+.border__task {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.geogrid__feedback {
+  padding: 0.6rem 0.8rem;
+  border-left: 8px solid var(--ink-dim);
+  border-radius: var(--radius);
+  background: var(--paper-dim);
+}
+
+.geogrid__feedback--hit {
+  border-color: var(--green);
+}
+
+.geogrid__feedback--miss {
+  border-color: var(--red);
+}
+
+.plain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plain-list .flag {
+  vertical-align: -0.2em;
+}
+
+/* ---------- Easter egg: pamětní obrazovka Československa ---------- */
+/* Šedý smuteční motiv: vlajka na půl žerdi, vybledlé barvy, žádné barevné akcenty. */
+.easter-egg {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: radial-gradient(ellipse at 50% 40%, #6d7176 0%, #55595e 55%, #3d4044 100%);
+  color: #f0f0f0;
+  cursor: pointer;
+  animation: easter-egg-in 1.6s ease-out;
+}
+
+.easter-egg__stage {
+  display: grid;
+  grid-template-columns: auto minmax(0, 24rem);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+/* žerď: svislá čára s kuličkou, vlajka je přivázaná k jejímu levému okraji */
+.easter-egg__mast {
+  position: relative;
+  width: min(19rem, 60vw);
+  height: min(26rem, 60vh);
+  padding-left: 7px;
+}
+
+.easter-egg__mast::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 7px;
+  background: #d6d6d6;
+}
+
+.easter-egg__ball {
+  position: absolute;
+  top: -10px;
+  left: -4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #e8e8e8;
+}
+
+.easter-egg__flag {
+  position: absolute;
+  top: 2%;
+  left: 7px;
+  width: calc(100% - 7px);
+  aspect-ratio: 4 / 3;
+  border: 1.5px solid #2b2d30;
+  filter: saturate(0.5) brightness(0.92);
+  transform-origin: left top;
+  /* jediný pohyb: vlajka pomalu sjede na půl žerdi a tam zůstane */
+  animation: easter-egg-half-mast 4.5s 0.9s cubic-bezier(0.45, 0, 0.25, 1) both;
+}
+
+.easter-egg__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.easter-egg h2 {
+  font-size: clamp(2.6rem, 7vw, 4.4rem);
+  font-weight: 800;
+  font-stretch: 78%;
+  line-height: 0.95;
+}
+
+.easter-egg__dates {
+  display: flex;
+  gap: 2.2rem;
+  margin: 0;
+  padding-top: 1rem;
+  border-top: var(--line) solid #d6d6d6;
+}
+
+.easter-egg__dates dt {
+  color: #c4c4c4;
+  font-size: 0.95rem;
+}
+
+.easter-egg__dates dd {
+  margin: 0;
+  font-size: clamp(1.3rem, 3.4vw, 1.8rem);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.easter-egg__note {
+  color: #c4c4c4;
+  font-size: 0.95rem;
+}
+
+.easter-egg__close {
+  align-self: flex-start;
+  padding: 0.4rem 1.1rem;
+  border: var(--line) solid #d6d6d6;
+  border-radius: var(--radius);
+  background: transparent;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+
+.easter-egg__close:hover {
+  background: rgb(255 255 255 / 0.12);
+}
+
+@keyframes easter-egg-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes easter-egg-half-mast {
+  from {
+    top: 2%;
+  }
+
+  to {
+    top: 36%;
+  }
+}
+
+@media (max-width: 760px) {
+  .easter-egg__stage {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .easter-egg__mast {
+    width: min(14rem, 60vw);
+    height: min(18rem, 38vh);
+  }
+
+  .easter-egg__text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .easter-egg__close {
+    align-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .easter-egg__flag {
+    animation: none;
+    top: 36%;
+  }
+}
