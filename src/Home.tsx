@@ -1,10 +1,14 @@
+import { useEffect, useState } from 'react'
 import { GAMES, type GameInfo } from './games/registry'
 import { CompassButton } from './shared/components/CompassButton'
 import { Emblem } from './shared/components/Emblem'
+import { FlagOfDay } from './shared/components/FlagOfDay'
 import { SignalFlags } from './shared/components/SignalFlags'
 import { ThemeToggle } from './shared/components/ThemeToggle'
 import { dateKey, formatDateKey } from './shared/random'
-import { specialDayNote } from './shared/secrets'
+import { reachedOnce, totalPlayed } from './shared/milestones'
+import { isAprilFools, specialDayNote } from './shared/secrets'
+import { showToast } from './shared/toast'
 import { collectedCountries, dailyStatus, loadStats } from './shared/stats'
 import { COUNTRIES } from './shared/data'
 
@@ -21,11 +25,22 @@ export function Home() {
   // dlaždice: hlavní hry a všechny už naprogramované; ostatní jsou jen v seznamu "v plánu"
   const mainGames = GAMES.filter((g) => !g.extra || g.component)
   const extraGames = GAMES.filter((g) => g.extra && !g.component)
-  const dayNote = specialDayNote(new Date())
+  const now = new Date()
+  const dayNote = specialDayNote(now)
+  const april = isAprilFools(now)
+  const [planClicks, setPlanClicks] = useState(0)
+
+  // easter egg: 197. odehraná hra (jedna za každou zemi)
+  useEffect(() => {
+    const played = totalPlayed(GAMES.map((g) => g.id))
+    if (reachedOnce('played-all-countries', played, COUNTRIES.length)) {
+      showToast({ title: `${COUNTRIES.length} odehraných her`, lines: [`Jedna za každou zemi na mapě.`] })
+    }
+  }, [])
   const collected = Object.keys(collectedCountries()).length
 
   return (
-    <div className="home">
+    <div className={'home' + (april ? ' home--april' : '')}>
       <div className="home__toolbar">
         <ThemeToggle />
       </div>
@@ -35,12 +50,14 @@ export function Home() {
           <h1 className="wordmark">GeoHry</h1>
           <p className="home__lead">Hry o mapách a vlajkách. Každý den čeká u každé hry nová výzva, stejná pro všechny.</p>
           <p className="home__meta">
-            Dnes je {formatDateKey(today)}. Ve sbírce máš {collected} z {COUNTRIES.length} zemí.
+            Dnes je {formatDateKey(today)}. Ve <a href="#sbirka">sbírce</a> máš {collected} z {COUNTRIES.length} zemí.
           </p>
           {dayNote && <p className="home__day">{dayNote}</p>}
         </div>
         <CompassButton />
       </header>
+
+      <FlagOfDay />
 
       <ul className="tiles">
         {mainGames.map((game, index) => (
@@ -51,7 +68,8 @@ export function Home() {
       </ul>
 
       <section className="home__extra">
-        <h2>Další hry v plánu</h2>
+        {/* easter egg: pět kliknutí na nadpis přidá do seznamu přeškrtnutou položku */}
+        <h2 onClick={() => setPlanClicks((n) => n + 1)}>Další hry v plánu</h2>
         <ul>
           {extraGames.map((g) => (
             <li key={g.id}>
@@ -59,6 +77,12 @@ export function Home() {
               <span>{g.description}</span>
             </li>
           ))}
+          {planClicks >= 5 && (
+            <li className="home__extra-secret">
+              <strong>Ušít vlajku Nepálu</strong>
+              <span>Postup je přímo v nepálské ústavě. Dokončení: nikdy.</span>
+            </li>
+          )}
         </ul>
       </section>
 

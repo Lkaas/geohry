@@ -543,3 +543,10 @@ a.tile:hover .emblem {
   background: var(--ink);
   color: var(--paper);
 }
+
+.home__meta a {
+  color: var(--ink);
+  text-decoration-color: var(--magenta);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}

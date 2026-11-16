@@ -99,7 +99,6 @@ export const GAMES: GameInfo[] = [
   { id: 'click-map', route: 'klikni-na-mapu', title: 'Klikni na mapu', description: 'Najdi zemi na mapě na čas.', emblem: 'star', extra: true },
   { id: 'name-all', route: 'vyjmenuj-vsechny', title: 'Vyjmenuj všechny', description: 'Vypiš všechny země kontinentu.', emblem: 'star', extra: true },
   { id: 'capitals', route: 'hlavni-mesta', title: 'Hlavní města', description: 'Země a jejich hlavní města.', emblem: 'star', extra: true },
-  { id: 'album', route: 'album-vlajek', title: 'Album vlajek', description: 'Sbírka vlajek zemí, které jsi uhodl.', emblem: 'star', extra: true },
 ]
 
 export function findGame(route: string): GameInfo | undefined {

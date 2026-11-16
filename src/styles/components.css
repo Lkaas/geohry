@@ -865,3 +865,103 @@
   color: var(--magenta);
   font-weight: 600;
 }
+
+/* Sbírka zemí */
+.collection__count {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.collection__hint {
+  color: var(--magenta);
+  font-weight: 600;
+}
+
+.collection__continents,
+.collection__neighbors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.collection__continents li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  border-bottom: 1px dashed var(--dash);
+}
+
+.collection__neighbors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.collection__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.collection__facts {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.collection__facts dt {
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+}
+
+.collection__facts dd {
+  margin: 0;
+}
+
+/* Vlajka dne na domovské stránce */
+.flag-day {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 0.8rem 1rem;
+  border: var(--line) dashed var(--ink);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.flag-day__flag {
+  width: 4.5rem;
+  height: auto;
+  border: 1px solid var(--flag-border);
+}
+
+.flag-day p {
+  margin: 0;
+}
+
+.flag-day__fact {
+  color: var(--ink-dim);
+}
+
+/* 1. dubna visí vymyšlené vlajky her vzhůru nohama */
+.home--april .tile .emblem {
+  transform: rotate(180deg);
+}
+
+.home__extra h2 {
+  cursor: default;
+}
+
+.home__extra-secret strong {
+  text-decoration: line-through;
+}
+
+.home--april .tile .emblem {
+  transform-origin: center;
+}
+
+.home--april a.tile:hover .emblem {
+  transform: rotate(180deg) skewY(-4deg);
+}

@@ -54,6 +54,32 @@ export const SECRET_WORDS: SecretWord[] = [
     title: 'Antarktida',
     lines: ['Nepatří žádnému státu. Smlouva z roku 1959 ji vyhradila vědě a míru.'],
   },
+  // zvláštní místa na mapě (údaje podle Wikipedie, viz HANDOFF)
+  {
+    names: ['Sealand', 'Knížectví Sealand'],
+    title: 'Sealand',
+    lines: ['Bývalá válečná plošina v Severním moři, asi 12 km od pobřeží Suffolku. Roy Bates ji v roce 1967 prohlásil za samostatný stát, žádný stát ji ale neuznává.'],
+  },
+  {
+    names: ['Bir Tawil'],
+    title: 'Bir Tawil',
+    lines: ['Asi 2 060 km² pouště mezi Egyptem a Súdánem, které si nenárokuje ani jeden stát. Egypt se drží hranice z roku 1899, Súdán z roku 1902. Podle obou patří sporný Halaibský trojúhelník jim, a Bir Tawil tak zbývá nikomu.'],
+  },
+  {
+    names: ['Liberland'],
+    title: 'Liberland',
+    lines: ['Asi 7 km² lužního lesa u Dunaje, který si kvůli sporu o hranici nenárokuje Chorvatsko ani Srbsko. Český aktivista Vít Jedlička ho 13. dubna 2015 prohlásil za samostatný stát. Žádný členský stát OSN ho neuznává.'],
+  },
+  {
+    names: ['Pobřeží Čech', 'České moře', 'Bohemia'],
+    title: 'Pobřeží Čech',
+    lines: ['Zná ho jen Shakespeare. V Zimní pohádce (3. dějství, 3. scéna) je děj zasazen do „pouštní země u moře“ v Čechách. Česko moře nemá.'],
+  },
+  {
+    names: ['Nemo', 'Bod Nemo', 'Point Nemo'],
+    title: 'Bod Nemo',
+    lines: ['Místo v jižním Pacifiku (48°52,6′ j. š., 123°23,6′ z. d.), které je nejdál od jakékoli pevniny: asi 2 688 km. Nejblíž k němu bývají často astronauti na kosmické stanici.'],
+  },
   // zaniklé státy: jen věcně, tip se nepočítá
   {
     names: ['Sovětský svaz', 'SSSR', 'CCCP'],
@@ -95,6 +121,11 @@ export const FLAG_MEANINGS: [letter: string, meaning: string][] = [
   ['Y', 'Vleče se mi kotva.'],
 ]
 
+/** Je 1. dubna? Dlaždice her pak visí vzhůru nohama. */
+export function isAprilFools(date: Date): boolean {
+  return date.getDate() === 1 && date.getMonth() === 3
+}
+
 /** Věta pod nadpisem domovské stránky ve vybraných dnech, jinak null. */
 export function specialDayNote(date: Date): string | null {
   const day = date.getDate()
@@ -103,6 +134,13 @@ export function specialDayNote(date: Date): string | null {
   if (day === 17 && month === 11) return 'Dnes je státní svátek: Den boje za svobodu a demokracii.'
   if (day === 1 && month === 1) return 'Dnes je Nový rok a Den obnovy samostatného českého státu.'
   if (day === 22 && month === 4) return 'Dnes je Den Země. Tuhle planetu hrajeme celou.'
+  if (day === 30 && month === 3) {
+    const years = date.getFullYear() - 1920
+    return `30. března 1920 schválilo Národní shromáždění zákon o státní vlajce Československa. Používá ji dnes Česko, a je to přesně ${years} let.`
+  }
+  if (isAprilFools(date)) {
+    return 'Dnes visí vlajky na dlaždicích vzhůru nohama. Na Filipínách se vlajka podle zákona otáčí červenou nahoru, když je země ve válce. Tady je to jen apríl.'
+  }
   return null
 }
 

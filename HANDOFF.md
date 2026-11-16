@@ -180,7 +180,19 @@ Nic se neukazuje samo, všechno se musí najít. Zprávy dole na obrazovce (`Toa
 - **Konami kód** (↑ ↑ ↓ ↓ ← → ← → B A, kdekoli): déšť signálních vlajek (`FlagRain.tsx`), při `prefers-reduced-motion` jen hláška.
 - **Klik na signální vlajky nad nápisem GeoHry** (domovská stránka): hláška, co vlajka znamená (`FLAG_MEANINGS`; G potřebuji lodivoda, E měním kurz doprava, O člověk přes palubu, H mám lodivoda na palubě, R dnes bez významu, Y vleče se mi kotva). Významy jsem ověřil vyhledáním, **kresby vlajek ne**.
 - **Klik na kompasovou růžici** (domovská stránka): roztočí se, sedmý klik v řadě přidá hlášku.
-- **Svátky** (`specialDayNote`): věta pod datem na domovské stránce 28. 10., 17. 11., 1. 1. a 22. 4. (Den Země).
+- **Svátky a výročí** (`specialDayNote` v `secrets.ts`): věta pod datem na domovské stránce 28. 10., 17. 11., 1. 1., 22. 4. (Den Země), 30. 3. (výročí zákona č. 252/1920 Sb. o státní vlajce, počítá počet let) a 1. 4. (apríl: vymyšlené vlajky na dlaždicích visí vzhůru nohama, třída `home--april`; věta o Filipínách).
+- **Další tajná slova** (`SECRET_WORDS`): Sealand, Bir Tawil, Liberland, Pobřeží Čech / České moře / Bohemia (pozor: „Čechy“ je alias Česka, takže je to normální tip), Nemo / Bod Nemo.
+- **Národní domény v políčku pro zemi** (`trivia.ts`, `CountryInput`): `.tv` vybere Tuvalu jako normální tip, `.fm` Mikronésii, `.uk` Spojené království (výjimka) atd. K `.tv`, `.fm`, `.cz`, `.ai`, `.su` přijde poznámka (`DOMAIN_NOTES`). `.ai` a `.su` nepatří žádné zemi v seznamu, tak jen ukážou poznámku.
+- **Perličky o zemích** (`COUNTRY_TRIVIA` v `trivia.ts`): při zadání Lichtenštejnska, Uzbekistánu, Nepálu, Vatikánu, Švýcarska, Čadu, Rumunska, Indonésie, Monaka, Haiti, Irska, Pobřeží slonoviny a Filipín se jednou (klíč `geohry:trivia-seen`) ukáže věcná poznámka o vlajce nebo poloze. Ve hrách s `showFlags={false}` (vlajkové hry) se nezobrazují, aby nenapovídaly. Test porovnává část tvrzení s daty (dvojnásobně vnitrozemské jsou právě LIE a UZB, nejmenší stát je VAT, barvy vlajek párů).
+- **Tajný plán**: pět kliknutí na nadpis „Další hry v plánu“ přidá přeškrtnutou položku „Ušít vlajku Nepálu“.
+- **197. odehraná hra** (`milestones.ts`): při načtení domovské stránky, když součet odehraných her (denních i volných, všechny hry) dosáhne počtu zemí; ukáže se jednou.
+
+Zdroje faktů pro easter eggy (ověřeno vyhledáním 16. 11. 2026): Wikipedie (Bir Tawil, Sealand/HM Fort Roughs, Liberland, Flag of Liechtenstein, Flag of Nepal, Flag of the Philippines, Point Nemo), Britannica a Worldatlas (dvojnásobně vnitrozemské státy, podobné vlajky, čtvercové vlajky), Project Gutenberg (Zimní pohádka, 3. dějství, 3. scéna), psp.cz a Česká televize (zákon z 30. 3. 1920), vexi.info (číslo 252/1920 Sb.), IANA/AFNIC/ICANN wiki (domény). Čísla: Sealand asi 12 km od Suffolku (zdroje uvádějí 11 až 13 km), Bir Tawil 2 060 km², Liberland 7 km², Point Nemo 2 688 km. Z paměti, bez vyhledání: Irsko a Pobřeží slonoviny mají stejné barvy v opačném pořadí (test kontroluje jen shodu sady barev).
+
+### Sbírka zemí a Vlajka dne
+
+- **Sbírka** (`#sbirka`, `CollectionPage.tsx`, líně načítaná v `App.tsx`; odkaz je slovo „sbírce“ ve větě pod nadpisem domovské stránky): mapa světa s obarvenými uhodnutými zeměmi (z klíče `geohry:album`, který plní `collectCountry` při výhře ve hrách Tajemná země, Countryle, Tajemná vlajka, Sousedé a Nakresli hranici). Klik na obarvenou zemi otevře kartu (vlajka, kontinent, hlavní město, obyvatelé a rozloha s pořadím ze 197, datum uhodnutí, sousedé, které už hráč má, jako tlačítka). Neuhodnuté země zůstávají bez jména a bez karty. Výpočty pořadí a postupu po kontinentech jsou v `collection.ts` (testy). Plánovaná hra „Album vlajek“ byla z přehledu odstraněna, Sbírka ji nahrazuje.
+- **Vlajka dne** (`FlagOfDay.tsx`, `flagOfDay.ts`): rámeček pod nadpisem domovské stránky. Země se bere z `dailyPick` jen mezi těmi, o kterých jde říct něco zajímavého (`flagFacts`: podíl barvy v první desítce, vzácný symbol na vlajce, pořadí v obyvatelích a rozloze), a nikdy to není země, která je dnes hledaná v některé hře (`dailyAnswers.ts` bere `pickTarget` šesti her). Věty o symbolech začínají „Podle dat v GeoHrách“, protože atributy vlajek jsou psané ručně a mohou být nepřesné.
 - **Přepnutí na jinou kartu**: titulek karty se změní na „Mapa na tebe čeká…“, po návratu se vrátí.
 - **Konzole prohlížeče** (F12): pozdrav s nápovědou (`main.tsx`).
 
@@ -190,7 +202,7 @@ Pro toho, kdo bude ladit vzhled (redesign „Námořní mapa“ je hotový, viz 
 
 1. **Měň jen soubory `.css` a JSX v komponentách `*Game.tsx`, `*Help.tsx`, `Home.tsx` a `src/shared/components/`.** Nesahej na `logic.ts`, `categories.ts`, `scene.ts`, `shape.ts`, `src/shared/*.ts`, `src/data/` ani `scripts/`. Tam je herní logika a data, vzhled se jich netýká.
 0. **Zadání vzhledu, podle kterého je aplikace přestavěná, je v `DESIGN-PROMPT.md`** (motiv „Námořní mapa“), maketa v `design/maketa.html`. Slouží jako vzor, kdyby se vzhled ladil dál; body níže jsou obecná pravidla.
-2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 183 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
+2. **Po každé změně spusť** `npm run typecheck && npm test && npm run build`. Všech 198 testů musí projít. Testy vzhled nehlídají, jen logiku, takže výsledek si vždy prohlédni v prohlížeči (`npm run dev`).
 3. **Barvy a písmo se mění na jednom místě:** proměnné `--ink`, `--sea-deep`, `--sea`, `--land`, `--paper`, `--red`, `--yellow`, `--green`, ... nahoře v `src/styles/base.css`. Většina aplikace je bere odtud.
    Výjimky, kde jsou barvy napsané přímo: barevná škála Tajemné země (`HEAT_STOPS` v `src/games/mystery/logic.ts` + přechod v `mystery.css`, musí zůstat stejné; studené body ztmavené kvůli světlému moři), barvy tipů v `RouteGame.tsx` (`KIND_COLOR`), `NeighborsGame.tsx` (`COLORS`), vymyšlené vlajky her v `src/shared/components/Emblem.tsx`.
 4. **Kde co je:**
@@ -280,11 +292,14 @@ src/
     easterEgg.ts                easter egg Československo: rozpoznání slova, melodie (Web Audio)
     secrets.ts, toast.ts        další easter eggy: tajná slova, výklad signálních vlajek, svátky, Konami kód; zprávy dole (showToast)
     theme.ts                    tmavý režim (useTheme, setTheme, initTheme)
+    trivia.ts, collection.ts    perličky o zemích a domény; pořadí a postup po kontinentech pro Sbírku
+    flagOfDay.ts, dailyAnswers.ts   vlajka dne a seznam dnešních hledaných zemí
+    milestones.ts               197. odehraná hra
     storage.ts                  loadJson / saveJson (bezpečný localStorage)
     stats.ts                    statistiky (applyResult, recordResult), denní stav, album
     world.ts, useWorld.ts       líné načtení mapy a příprava SVG tvarů
     router.ts                   useRoute (část adresy za #)
-    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg, Toast, FlagRain, ThemeToggle, SignalFlags, CompassRose, CompassButton
+    components/                 WorldMap, CountryInput, GameShell, Modal, StatsView, ShareButton, Flag, Emblem, EasterEgg, Toast, FlagRain, ThemeToggle, SignalFlags, CompassRose, CompassButton, CollectionPage, FlagOfDay
     *.test.ts                   testy sdílené logiky
   games/
     registry.ts                 seznam všech her (názvy, adresy, popisy, komponenty)
@@ -363,6 +378,7 @@ flag { colors ["red","white","blue"], shares { red: 36, white: 36, blue: 28 } (p
 | – | Easter egg Československo | **hotovo** | funguje v každém políčku pro zadání země |
 | – | Tmavý režim | **hotovo** | tlačítko, pamatuje si volbu |
 | – | Další easter eggy | **hotovo** | viz „Katalog easter eggů“ |
+| – | Sbírka zemí a Vlajka dne | **hotovo** | `#sbirka`, rámeček na domovské stránce |
 | 10 | Vlajkový kvíz* | nezačato | jen nápad, autor ho zatím nechtěl |
 | 11 | Flagle* | nezačato | jen nápad |
 | 12 | Klikni na mapu* | nezačato | jen nápad |
@@ -443,3 +459,4 @@ Nic rozdělaného. Fáze 0–5 jsou hotové a commitnuté: devět her a easter e
 - 2026-11-16: Redesign „Námořní mapa“ dokončen (krok 10): proklikány všechny hry (nápověda, rozehraná, dohraná, statistiky, úzké okno), HANDOFF přepsán. Easter egg přepracován: smuteční obrazovka s vlajkou na půl žerdi a melodie „Kde domov můj“ (česká část hymny) podle notového zápisu místo vlastní fráze; 170 testů prochází.
 - 2026-11-16: Fáze 6: `.github/workflows/deploy.yml` (GitHub Pages přes Actions), `NASAZENI.md` (návod pro začátečníka), na domovské stránce odstavec „Zdroje dat“ (licence CC BY, ODbL a CC BY-SA vyžadují uvedení zdroje). Build ověřen v podsložce `/moje-hry/` (dlaždice, mapa, vlajky, obnovení stránky). 170 testů prochází.
 - 2026-11-16: Tmavý režim „noční mapa“ s tlačítkem (proměnné `:root[data-theme='dark']`, `theme.ts`, test) a sada dalších easter eggů (tajná slova, Konami kód, klikací vlajky a kompas, svátky, titulek karty, pozdrav v konzoli; komponenty `Toast`, `FlagRain`, `CompassButton`). Vitest nově spouští i `*.test.tsx`. 183 testů prochází, tmavý režim prohlédnut ve všech hrách.
+- 2026-11-16: Z návrhů jiného modelu (`PROMPT-NAPADY.md`) vybráno jen to, co sedí k zeměpisu a vlajkám a nejsou to hry: Sbírka zemí s mapou a kartou, Vlajka dne, domény, tajná slova (Sealand, Bir Tawil, Liberland, Pobřeží Čech, Bod Nemo), perličky o vlajkách, tajný plán, 197. hra, výročí zákona o vlajce a apríl. Vynecháno: všechny nové hry, nápady kolem námořnictví (signální šifra, hodnosti, maják, loď, SOS), nápady vyžadující zápis historie po dnech (Lodní deník, Tři ztroskotání), narozeniny (chybí datum) a nápady vázané na zoom mapy nebo konec hry. 198 testů prochází.

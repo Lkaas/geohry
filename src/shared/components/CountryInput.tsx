@@ -3,6 +3,7 @@ import { isCzechoslovakia, triggerEasterEgg } from '../easterEgg'
 import { searchCountries } from '../normalize'
 import { findSecretWord } from '../secrets'
 import { showToast } from '../toast'
+import { DOMAIN_NOTES, countryForDomain, parseDomain, takeTrivia } from '../trivia'
 import type { Country } from '../types'
 import { Flag } from './Flag'
 
@@ -34,11 +35,16 @@ export function CountryInput({ onSelect, exclude, placeholder = 'Napiš zemi…'
 
   useEffect(() => setActive(0), [text])
 
-  const choose = (country: Country) => {
+  const choose = (country: Country, quiet = false) => {
     onSelect(country)
     setText('')
     setOpen(false)
     inputRef.current?.focus()
+    // perlička o zemi (jednou za zemi). V hrách o vlajkách se nezobrazuje, aby nic nenapovídala.
+    if (!quiet && showFlags) {
+      const note = takeTrivia(country.id)
+      if (note) showToast({ title: note.title, lines: note.lines })
+    }
   }
 
   const onKeyDown = (event: React.KeyboardEvent) => {
@@ -57,6 +63,21 @@ export function CountryInput({ onSelect, exclude, placeholder = 'Napiš zemi…'
         setText('')
         setOpen(false)
         return
+      }
+      // národní doména (.tv, .fm, .uk): vybere zemi, a když je k doméně poznámka, ukáže ji
+      const tld = parseDomain(text)
+      if (tld) {
+        const domainCountry = countryForDomain(tld)
+        const note = DOMAIN_NOTES[tld]
+        if (domainCountry || note) {
+          if (domainCountry && !exclude?.has(domainCountry.id)) choose(domainCountry, true)
+          else {
+            setText('')
+            setOpen(false)
+          }
+          if (note) showToast({ title: note.title, lines: note.lines })
+          return
+        }
       }
       // tajná slova (fiktivní a zaniklé země) ukážou hlášku a nepočítají se jako tip
       const secret = findSecretWord(text)

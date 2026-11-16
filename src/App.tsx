@@ -1,10 +1,12 @@
-import { Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Home } from './Home'
 import { findGame } from './games/registry'
 import { EasterEgg } from './shared/components/EasterEgg'
 import { FlagRain } from './shared/components/FlagRain'
 import { Toast } from './shared/components/Toast'
 import { useRoute } from './shared/router'
+
+const CollectionPage = lazy(() => import('./shared/components/CollectionPage'))
 
 export function App() {
   useAwayTitle()
@@ -22,6 +24,14 @@ export function App() {
 function Screen() {
   const route = useRoute()
   const game = findGame(route)
+
+  if (route === 'sbirka') {
+    return (
+      <Suspense fallback={<p className="loading">Načítám sbírku…</p>}>
+        <CollectionPage />
+      </Suspense>
+    )
+  }
 
   if (game?.component) {
     const Game = game.component
